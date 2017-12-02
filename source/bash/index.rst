@@ -1,0 +1,8 @@
+####
+BASH
+####
+
+.. toctree::
+
+   configure
+   snippets

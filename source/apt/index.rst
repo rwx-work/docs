@@ -1,0 +1,8 @@
+###
+APT
+###
+
+.. toctree::
+
+   configure
+   upgrade

@@ -1,0 +1,7 @@
+#####
+Rsync
+#####
+
+.. toctree::
+
+   snippets

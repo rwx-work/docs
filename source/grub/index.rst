@@ -1,0 +1,8 @@
+####
+GRUB
+####
+
+.. toctree::
+
+   modules
+   image

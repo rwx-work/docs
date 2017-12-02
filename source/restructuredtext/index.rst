@@ -1,0 +1,8 @@
+################
+ReStructuredText
+################
+
+.. toctree::
+
+   tree
+   syntax

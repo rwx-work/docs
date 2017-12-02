@@ -1,0 +1,8 @@
+###
+LXC
+###
+
+.. toctree::
+
+   host
+   container

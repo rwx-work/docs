@@ -1,0 +1,8 @@
+###
+Git
+###
+
+.. toctree::
+
+   configure
+   snippets

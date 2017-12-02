@@ -1,0 +1,8 @@
+#######
+SystemD
+#######
+
+.. toctree::
+
+   system
+   journal

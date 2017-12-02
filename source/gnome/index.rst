@@ -1,0 +1,6 @@
+#####
+GNOME
+#####
+
+.. toctree::
+   configure
