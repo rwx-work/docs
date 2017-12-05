@@ -19,8 +19,6 @@ Tasks
     * linux: toram=xxx.squashfs
     * ram disk size argument
     * panic kernel argument for seconds to automatically reboot
-    * ! gsettings doesn't work in chroot
-    * ? mount --rbind for proper chroot
     * ! manual build of live-boot system's initrd.img after kernel upgrade
 
     * /etc/skel
@@ -32,22 +30,22 @@ Tasks
     * reference missing mkdocs strict option
 
     * apt-transport-https
-    * isc-dhcp-server
     * dhcpcd
 
     * handle upstream GPG public keys
     * check authenticity mirrors with GPG
 
-    * lxc-create packages:
-    * ${init}
-    * ifupdown
-    * locales
-    * dialog
-    * isc-dhcp-client
-    * netbase
-    * net-tools
-    * iproute
-    * openssh-server
+    * lxc-create packages
+
+      * ${init}
+      * ifupdown
+      * locales
+      * dialog
+      * isc-dhcp-client
+      * netbase
+      * net-tools
+      * iproute
+      * openssh-server
 
 * extra
 
