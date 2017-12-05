@@ -5,4 +5,4 @@ GRUB
 .. toctree::
 
    modules
-   image
+   standalone
