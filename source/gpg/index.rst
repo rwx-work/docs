@@ -1,3 +1,208 @@
 ###
 GPG
 ###
+
+TODO
+====
+
+* setpref, or elsehow at key generation
+* ! suffix to exclude subkeys
+* trust
+* sign
+* delete
+* ssh authentication ???
+
+Configure
+=========
+
+wipe if needed
+--------------
+
+.. code:: shell
+
+  rm --force --recursive ~/.gnupg
+  mkdir -m 700 ~/.gnupg
+
+check available algorithms
+--------------------------
+
+.. code:: shell
+
+  gpg --version
+
+avoid default use of SHA256
+---------------------------
+
+* gpg.conf
+
+::
+
+  cert-digest-algo SHA512
+  personal-digest-preferences SHA512
+  personal-cipher-preferences CAMELLIA256 TWOFISH AES256
+  personal-compress-preferences BZIP2 ZLIB ZIP
+  default-preference-list SHA512 CAMELLIA256 TWOFISH AES256 BZIP2 ZLIB ZIP
+
+  keyserver-options include-revoked
+
+  with-subkey-fingerprint
+
+avoid DL/UL issues, depending on DNS
+------------------------------------
+
+* dirmngr.conf
+
+::
+
+  standard-resolver
+
+Also if up:
+
+.. code:: shell
+
+  gpgconf --kill gpg-agent
+  killall dirmngr
+
+Generate
+========
+
+master key
+----------
+
+.. code:: shell
+
+  gpg --full-generate-key
+
+::
+
+  1 → RSA and RSA
+  4096
+  0 → key does not expire
+  y → this is correct
+  First Last
+  user@domain.tld
+  Comment
+  o → ok
+  PassPhrase
+
+revocation certificate
+----------------------
+
+.. code:: shell
+
+  gpg --generate-revocation "KeyID" > "FFIINNGGEERRPPRRIINNTT.rev"
+
+.. warning::
+
+  Hide this file in an encrypted container!
+
+Search
+======
+
+.. code:: shell
+
+  gpg --search-keys "Key ID"
+
+Download
+========
+
+.. code:: shell
+
+  gpg --receive-keys "KEY ID"
+
+List
+====
+
+.. code:: shell
+
+  gpg --list-keys
+
+Modify
+======
+
+.. code:: shell
+
+  gpg --edit-key "KEY ID"
+
+[…]
+
+::
+
+  PassPhrase
+  save
+
+add a subkey to a master key
+----------------------------
+
+::
+
+  addkey
+
+set expiration date
+-------------------
+
+::
+
+  expire
+
+add another UserID
+------------------
+
+::
+
+  adduid
+  First Last
+  user@domain.tld
+  Comment
+
+set primary UserID
+------------------
+
+::
+
+  uid 1
+  primary
+
+Export
+======
+
+.. code:: shell
+
+  gpg --armor --export "Key ID" > pub.asc
+
+Dump
+====
+
+.. code:: shell
+
+  pgpdump pub.asc
+
+Secure
+======
+
+find out master keygrip
+-----------------------
+
+.. code:: shell
+
+  gpg --list-keys --with-keygrip
+
+hide the master key in an encrypted container
+---------------------------------------------
+
+* ~/.gnupg/private-keys-v1.d/KKEEYYGGRRIIPP.key
+
+Upload
+======
+
+.. code:: shell
+
+  gpg --send-keys "KEY ID"
+
+Revoke
+======
+
+.. code:: shell
+
+  gpg --import "FFIINNGGEERRPPRRIINNTT.rev"
+  gpg --send-keys "KEY ID"
