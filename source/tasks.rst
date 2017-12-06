@@ -9,6 +9,10 @@ Tasks
   * git LFS
   * apt-mirror
   * DEBIAN_FRONTEND=noninteractive for keyboard-configuration interactive prompt
+  * sudo, sudoers
+  * sqlite
+  * umask
+  * node, process.umask(2)
 
 * critical
 
