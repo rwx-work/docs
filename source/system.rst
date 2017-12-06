@@ -6,3 +6,4 @@ System
    :maxdepth: 2
 
    apt/index
+   debian/index
