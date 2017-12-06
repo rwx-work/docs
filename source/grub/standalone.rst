@@ -131,14 +131,17 @@ grub-editenv file unset variable
 
 ## démarrer un système préparé
 
-Attention, lamentables plantages en vue si :
+.. warning::
 
-* le live-media-path ne comprend aucun fichier .squashfs
-* le nom du fichier à charger ne finit pas par .squashfs
-* le nom du fichier à charger n’est que .squashfs
-* le nom du fichier à charger contient une virgule
+  Violent kernel crashes are to be expected if:
 
----
+  1. the live-media-path has no .squashfs file
+  #. the image basename:
+    * doesn't end with .squashfs
+    * is just .squashfs
+    * contains ,
+
+----
 
 * /live/name.squashfs
 
