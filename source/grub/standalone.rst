@@ -43,6 +43,7 @@ Or at worst:
 # Générer une image modulaire
 
 /bin/tar
+
 .. code:: shell
 
   tar
@@ -59,6 +60,7 @@ Or at worst:
 * *.mod
 
 /usr/bin/grub-mkimage
+
 .. code:: shell
 
   grub-mkimage
@@ -70,21 +72,25 @@ Or at worst:
 
 i386-pc-eltorito for ISO encapsulation
 
-# Rendre un périphérique amorçable
+Make a device bootable
+======================
 
 * boot.img
 * core.img
 
 /usr/sbin/grub-bios-setup
+
 .. code:: shell
 
   grub-bios-setup \
   --directory="i386-pc" \
   /dev/sd?
 
-# Créer un menu de démarrage
+Prepare a boot menu
+===================
 
-## couleurs disponibles
+available colors
+----------------
 
 ========= ============= =========== ==========
 black     blue          green       cyan
@@ -93,11 +99,12 @@ dark-gray light-blue    light-green light-cyan
 light-red light-magenta yellow      white
 ========= ============= =========== ==========
 
-les arrière-plans noirs sont en fait transparents !
+* black backgrounds are actually transparent!
 
-## variables d’environnement disponibles
+available environment variables
+-------------------------------
 
-==================== ========================================
+==================== =============================
 chosen               4
 color_highlight      black/light-gray
 color_normal         light-gray/black
@@ -110,11 +117,11 @@ locale_dir
 menu_color_highlight white/blue
 menu_color_normal    cyan/blue
 pager                1
-prefix               (hd?,msdos?)/Portable/Grub/Versions/grub
+prefix               (hd?,msdos?)/live/boot/2.02-2
 root                 hd?,msdos?
 theme                …/.txt
 timeout              -1
-==================== ========================================
+==================== =============================
 
 ======= =====
 cmdpath (hd?)
@@ -191,9 +198,11 @@ cmdpath (hd?)
 
 ----
 
-La recherche d’ISO ne va pas à plus d’1 niveau d’arborescence !
+* iso-scan's first pass goes only 1 subdirectories level down!
 
-Peut-on vraiment spécifier quelle ISO au préalable ?!
+.. todo::
+
+  Test if iso-scan/filename really works
 
 .. code:: shell
 
