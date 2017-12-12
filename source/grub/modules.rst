@@ -1,3 +1,5 @@
+.. _grub_modules:
+
 *******
 Modules
 *******

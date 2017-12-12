@@ -1,14 +1,17 @@
-**********
-Standalone
-**********
+************************
+Prepare a boot directory
+************************
 
-# Choisir les modules à inclure
+Choose useful modules
+=====================
 
-[Parmi la liste suivante](modules.md)
+Commented list: :ref:`grub_modules`
 
-# Télécharger les paquets nécessaires
+Download packages
+=================
 
-## actuels
+current
+-------
 
 ================== ===================================
 grub2-common       fichiers v2 communs
@@ -19,14 +22,16 @@ grub-pc            architecture BIOS avec installation
 grub-pc-bin        architecture BIOS avec installation
 ================== ===================================
 
-## anciens
+legacy
+------
 
 =========== ============
 grub-efi    transitional
 grub-legacy maintenance
 =========== ============
 
-# Créer une arborescence autonome
+Put up a functional directory
+=============================
 
 boot/grub/grub.cfg
 
@@ -40,7 +45,8 @@ Or at worst:
 
   search --set --label "LA_BEL"
 
-# Générer une image modulaire
+Generate a modular image
+========================
 
 /bin/tar
 
@@ -127,7 +133,8 @@ timeout              -1
 cmdpath (hd?)
 ======= =====
 
-## fichier de persistence d’environnement
+persistent environment variables file
+-------------------------------------
 
 * /usr/bin/grub-editenv
 
@@ -137,7 +144,8 @@ cmdpath (hd?)
   grub-editenv file set variable=value
   grub-editenv file unset variable
 
-## démarrer un système préparé
+boot a prepared system
+----------------------
 
 .. warning::
 
