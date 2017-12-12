@@ -3,6 +3,13 @@
    tasks
 
 .. toctree::
+   :maxdepth: 3
+
+   _toctree/quality/index
+   _toctree/administration/index
+   _toctree/development/index
+
+.. toctree::
    :caption: Pro
    :maxdepth: 3
    :numbered: 2
