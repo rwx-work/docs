@@ -6,7 +6,7 @@ import shutil
 PURGE = ["doctrees"]
 FORMATS = {
     "html": "html",
-    "xelatexpdf": "latex",
+#    "xelatexpdf": "latex",
 }
 
 
