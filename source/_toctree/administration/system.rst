@@ -5,5 +5,5 @@ System
 .. toctree::
    :maxdepth: 2
 
-   apt/index
-   debian/index
+   /apt/index
+   /debian/index
