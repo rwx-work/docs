@@ -1,18 +1,21 @@
+RTFD
+====
+
+.. toctree::
+   :maxdepth: 4
+   :numbered: 2
+
+   _toctree/index
+
 .. toctree::
 
    tasks
-
-.. toctree::
-
-   _toctree/index
 
 .. toctree::
    :maxdepth: 3
    :numbered: 2
 
    archive
-   documents
-   version
    script
    network
    data

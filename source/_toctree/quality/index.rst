@@ -2,3 +2,6 @@ Quality
 =======
 
 .. toctree::
+
+   documents
+   version
