@@ -13,11 +13,13 @@ Debian GNU/Linux distribution installation
 Choices
 =======
 
-1. ## disposer de miroirs à jour
+have up-to-date mirrors available
+---------------------------------
 
 .. todo::
 
-* ## choisir les paquets indispensables
+choose critical base packages
+-----------------------------
 
     paquets proposés pour pouvoir travailler correctement
 
@@ -27,7 +29,8 @@ Choices
     | dialog    | sans quoi APT remonte des messages d’alerte      |
     +-----------+--------------------------------------------------+
 
-* ## décider du type de système souhaité
+decide the desired type of system
+---------------------------------
 
     * le système sera-t-il architecturé
         * en 64 bits ?
@@ -57,7 +60,8 @@ apt-get install "debootstrap squashfs-tools"
 Create a base file hierarchy
 ============================
 
-## préparer le chroot
+prepare the system's directory
+------------------------------
 
 * devenir root
 * créer un répertoire, et s’y positionner
@@ -70,7 +74,8 @@ mkdir -p "chemin"
 cd "chemin"
 ```
 
-## générer le système de fichiers
+generate the minimal base
+-------------------------
 
 ```bash
 debootstrap \
@@ -85,7 +90,8 @@ debootstrap \
 Configure preinstalled packages
 ===============================
 
-## définir les claviers par défaut
+define default keyboard layouts
+-------------------------------
 
 * /etc/default/keyboard
 
@@ -97,7 +103,8 @@ XKBOPTIONS=""
 BACKSPACE="guess"
 ```
 
-## définir les locales à générer
+define default locales to generate
+----------------------------------
 
 * etc/default/locale
 
@@ -125,17 +132,21 @@ en_US.UTF-8 UTF-8
 fr_FR.UTF-8 UTF-8
 ```
 
-## [configurer l’interpréteur de commandes](../bash/index.md)
+[configure command shell](../bash/index.md)
+-------------------------------------------
 
-## [configurer le gestionnaire de paquets](../apt/index.md)
+[configure package manager](../apt/index.md)
+--------------------------------------------
 
-## redéfinir le nom d’hôte
+redefine hostname
+-----------------
 
 ```bash
 echo "hostname" > "etc/hostname"
 ```
 
-## renseigner les volumes connus
+provide known file systems
+--------------------------
 
 * etc/fstab
 
@@ -148,7 +159,8 @@ tmpfs /tmp tmpfs auto,mode=1777 0 0
 Install additional packages
 ===========================
 
-## changer de contexte
+switch into context
+-------------------
 
 ```bash
 mount --bind /proc proc
@@ -157,19 +169,22 @@ chroot .
 ```
 TODO ? /dev
 
-## générer les locales
+generate locales
+----------------
 
 ```bash
 locale-gen
 ```
 
-## définir le mot de passe root
+define root password
+--------------------
 
 ```bash
 passwd
 ```
 
-## utilisateur, invité, sudo
+user, guest, sudo
+-----------------
 
 ```bash
 apt-get install sudo
@@ -183,11 +198,13 @@ useradd -s /bin/bash guest
 chown guest: /home/guest
 ```
 
-## authentifications : mots de passe, clés SSH
+authentications: passwords, SSH keys
+------------------------------------
 
 TODO
 
-## mettre le système à jour
+upgrade system
+--------------
 
 * dans tous les cas :
 
@@ -202,7 +219,8 @@ apt-get upgrade
 apt-get dist-upgrade
 ```
 
-## appliquer le type de système choisi
+apply system type elements
+--------------------------
 
 |||
 |||
@@ -215,13 +233,14 @@ apt-get install -t stretch-backports "linux-image-amd64"
 apt-get install "live-boot"
 ```
 
----
+----
 
-## définir les paramètres d’initialisation
+initialization settings
+-----------------------
+
 ```bash
 apt-get install -t stretch-backports "systemd-sysv"
 ```
-
 
 * etc/sysctl.conf
 
@@ -233,13 +252,15 @@ vm.max_map_count=1048576
 vm.swappiness=0
 ```
 
-## pour s’en tenir au strict nécessaire
+keeping things light
+--------------------
 
 ```bash
 apt-get install --no-install-recommends …
 ```
 
-## installer des paquets utiles
+install useful packages
+-----------------------
 
 ```bash
 apt-get install \
@@ -256,7 +277,8 @@ apt-get install -t "stretch-backports" \
 debootstrap \
 ```
 
-## installer des paquets au choix
+install other packages
+----------------------
 
 [Choix de paquets commentés](packages.md)
 
@@ -265,7 +287,8 @@ apt-get install "package1" …
 apt-get install -t stretch-backports "package1" …
 ```
 
-## sortir correctement du contexte
+properly switch back from context
+---------------------------------
 
 * vider le cache d’APT
 
@@ -286,7 +309,8 @@ umount sys
 umount proc
 ```
 
-## épurer l’historique des commandes
+clean up commands history
+-------------------------
 
 * root/.bash_history
 
