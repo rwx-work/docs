@@ -1,27 +1,31 @@
-Installation d’une distribution GNU/Linux Debian
+******************************************
+Debian GNU/Linux distribution installation
+******************************************
 
----
+.. todo::
 
-TODO etc/motd
+* /etc/motd
 
-```
-```
+::
 
-# Décisions
+  
+
+Choices
+=======
 
 1. ## disposer de miroirs à jour
 
-    TODO
+.. todo::
 
 * ## choisir les paquets indispensables
 
     paquets proposés pour pouvoir travailler correctement
 
-    |||
-    |||
-    | locales         | générer des locales binaires pour les messages
-    | apt-utils       | sinon la configuration des paquets est repoussée
-    | dialog          | sans quoi APT remonte des messages d’alerte
+    +-----------+--------------------------------------------------+
+    | locales   | générer des locales binaires pour les messages   |
+    | apt-utils | sinon la configuration des paquets est repoussée |
+    | dialog    | sans quoi APT remonte des messages d’alerte      |
+    +-----------+--------------------------------------------------+
 
 * ## décider du type de système souhaité
 
@@ -38,7 +42,8 @@ TODO etc/motd
         * en écriture, sur un support de stockage ?
         * en lecture, chargé en mémoire au démarrage ?
 
-# Installer les outils nécessaires
+Install required tools
+======================
 
 |||
 |||
@@ -49,7 +54,8 @@ TODO etc/motd
 apt-get install "debootstrap squashfs-tools"
 ```
 
-# Créer une arborescence de base
+Create a base file hierarchy
+============================
 
 ## préparer le chroot
 
@@ -76,7 +82,8 @@ debootstrap \
 "miroir"
 ```
 
-# Configurer les paquets préinstallés
+Configure preinstalled packages
+===============================
 
 ## définir les claviers par défaut
 
@@ -138,7 +145,8 @@ Volume temporaire en RAM
 tmpfs /tmp tmpfs auto,mode=1777 0 0
 ```
 
-# Installation
+Install additional packages
+===========================
 
 ## changer de contexte
 
@@ -282,10 +290,14 @@ umount proc
 
 * root/.bash_history
 
-# Configurer les paquets installés
+Configure installed packages
+============================
 
-# Archiver le système de fichiers
+.. todo::
 
-```bash
-mksquashfs . "../name.squashfs" -comp "xz"
-```
+Archive prepared file system
+============================
+
+.. code:: shell
+
+  mksquashfs . "../name.squashfs" -comp "xz"
