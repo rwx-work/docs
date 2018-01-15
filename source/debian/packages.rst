@@ -68,10 +68,14 @@ Development
 Documentation
 =============
 
-+--------+
-| mkdocs |
-| pandoc |
-+--------+
++--------------------------------+
+| mkdocs                         |
+| pandoc                         |
+| python3-recommonmark           |
+| python3-sphinx                 |
+| python3-sphinx-bootstrap-theme |
+| python3-sphinx-rtd-theme       |
++--------------------------------+
 
 Hardware
 ========
