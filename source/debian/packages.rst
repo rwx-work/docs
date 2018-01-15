@@ -179,18 +179,19 @@ To sort
 +--------------------------+
 | firmware-linux-free      |
 | firmware-linux-nonfree   |
-| xserver-xorg-video-intel |
 | firmware-misc-nonfree    |
+| xserver-xorg-video-intel |
 +--------------------------+
 
-+---------------+
-| blender       |
-| deadbeef      |
-| filezilla     |
-| ghex          |
-| hexchat       |
-| libreoffice   |
-| mumble        |
-| texlive-xetex |
-| thunderbird   |
-+---------------+
++---------------------+
+| blender             |
+| deadbeef            |
+| filezilla           |
+| ghex                |
+| hexchat             |
+| libreoffice         |
+| mumble              |
+| texlive-lang-french |
+| texlive-xetex       |
+| thunderbird         |
++---------------------+
