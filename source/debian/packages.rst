@@ -167,7 +167,9 @@ To sort
 | less         |
 | locate       |
 | man          |
+| ncdu         |
 | numlockx     |
+| qdirstat     |
 | syslog-ng    |
 | tree         |
 +--------------+
