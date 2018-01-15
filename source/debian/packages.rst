@@ -153,15 +153,17 @@ Virtualization
 Web
 ===
 
-+---------+
-| firefox |
-| wget    |
-+---------+
++-------------+
+| firefox     |
+| firefox-esr |
+| wget        |
++-------------+
 
 To sort
 =======
 
 +--------------+
+| apparmor     |
 | curl         |
 | iputils-ping |
 | less         |
