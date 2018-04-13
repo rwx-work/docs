@@ -53,6 +53,7 @@ Tasks
 
 * extra
 
+    * tty screenshot → sudo fbcat > name.ppm
     * consoleblank=0 / setterm --blank 0
     * on-the-fly LibreOffice documents conversion
     * send emails as own domain name's alias
