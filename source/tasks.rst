@@ -53,6 +53,7 @@ Tasks
 
 * extra
 
+    * json.load(f, object_pairs_hook=collections.OrderedDict)
     * tty screenshot → sudo fbcat > name.ppm
     * consoleblank=0 / setterm --blank 0
     * on-the-fly LibreOffice documents conversion
