@@ -39,8 +39,9 @@ Configuration
 
 * etc/apt/sources.list
 
-deb.debian.org ↔ ftp.cc.debian.org
-file:/path
+.. todo::
+
+ deb.debian.org ↔ ftp.cc.debian.org
 
 ::
 
@@ -53,3 +54,11 @@ file:/path
   deb http://security.debian.org buster/updates main contrib non-free
 
   deb http://deb.debian.org/debian sid main contrib non-free
+
+.. warning::
+
+ apt's file protocol handling fails with locations containing spaces
+
+::
+
+  deb file:/media/deb.debian.org/debian stretch main contrib non-free
