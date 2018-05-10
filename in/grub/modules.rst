@@ -64,7 +64,7 @@ gcry_md5    md5 hash algorithm
 gcry_sha1   sha1 hash algorithm
 gcry_sha256 sha256 hash algorithm
 gcry_sha512 sha512 hash algorithm
-hashsum     hash file, needs gcry_ modules
+hashsum     hash file, needs gcry\_ modules
 loadenv     load and save menu environment file
 testspeed   file loading benchmark
 =========== ===================================

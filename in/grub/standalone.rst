@@ -63,7 +63,7 @@ Generate a modular image
 * kernel.img
 * lzma_decompress.img
 * diskboot.img
-* *.mod
+* \*.mod
 
 /usr/bin/grub-mkimage
 
@@ -153,9 +153,10 @@ boot a prepared system
 
   1. the live-media-path has no .squashfs file
   #. the image basename:
-    * doesn't end with .squashfs
-    * is just .squashfs
-    * contains ,
+
+     * doesn't end with .squashfs
+     * is just .squashfs
+     * contains ,
 
 ----
 
