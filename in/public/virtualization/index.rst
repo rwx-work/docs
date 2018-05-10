@@ -1,6 +1,5 @@
-##############
 Virtualization
-##############
+==============
 
 .. toctree::
    :maxdepth: 2

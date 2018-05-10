@@ -2,18 +2,23 @@ RTFD
 ====
 
 .. toctree::
+   :maxdepth: 2
+
+   public/virtualization/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Private
+
+   private/
+
+.. toctree::
    :maxdepth: 4
-   :numbered: 2
+   :caption: Dispatch
 
    _toctree/index
 
-.. toctree::
-
    tasks
-
-.. toctree::
-   :maxdepth: 3
-   :numbered: 2
 
    archive
    script
@@ -21,7 +26,6 @@ RTFD
    data
    code
    boot
-   virtualization
 
    desktop
    media
