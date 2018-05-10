@@ -4,6 +4,7 @@ Tasks
 
 * latest
 
+  * tig, bpython3
   * nuitka
   * sphinx configuration
   * __git_complete gco _git_checkout
