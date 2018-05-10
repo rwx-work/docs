@@ -12,7 +12,7 @@ Choices
 have up-to-date mirrors available
 ---------------------------------
 
-.. todo::
+.. todo:: mirrors
 
 choose critical base packages
 -----------------------------
