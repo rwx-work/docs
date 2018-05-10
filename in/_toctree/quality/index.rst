@@ -4,4 +4,3 @@ Quality
 .. toctree::
 
    documents
-   version
