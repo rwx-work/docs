@@ -5,7 +5,7 @@ Mirror
 apt-mirror
 ==========
 
-.. todo::
+.. todo:: syntax
 
 debmirror
 =========

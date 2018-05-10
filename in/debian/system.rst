@@ -4,11 +4,7 @@ Debian GNU/Linux distribution installation
 
 .. todo::
 
-* /etc/motd
-
-::
-
-  
+ * /etc/motd
 
 Choices
 =======
@@ -48,14 +44,14 @@ decide the desired type of system
 Install required tools
 ======================
 
-|||
-|||
-| debootstrap    | générer un système de fichiers de base minimal
-| squashfs-tools | compresser ou décompresser une image de système
+============== ===============================================
+debootstrap    générer un système de fichiers de base minimal
+squashfs-tools compresser ou décompresser une image de système
+============== ===============================================
 
-```bash
-apt-get install "debootstrap squashfs-tools"
-```
+.. code:: shell
+
+ apt-get install "debootstrap squashfs-tools"
 
 Create a base file hierarchy
 ============================
@@ -66,26 +62,27 @@ prepare the system's directory
 * devenir root
 * créer un répertoire, et s’y positionner
 
-```bash
-su
-```
-```bash
-mkdir -p "chemin"
-cd "chemin"
-```
+.. code:: shell
+
+ su
+
+.. code:: shell
+
+ mkdir -p "chemin"
+ cd "chemin"
 
 generate the minimal base
 -------------------------
 
-```bash
-debootstrap \
---arch="amd64" \
---include="locales,apt-utils,dialog" \
---variant="minbase" \
-"stretch" \
-. \
-"miroir"
-```
+.. code:: shell
+
+ debootstrap \
+ --arch="amd64" \
+ --include="locales,apt-utils,dialog" \
+ --variant="minbase" \
+ "stretch" \
+ . \
+ "miroir"
 
 Configure preinstalled packages
 ===============================
@@ -95,42 +92,42 @@ define default keyboard layouts
 
 * /etc/default/keyboard
 
-```bash
-XKBMODEL="pc105"
-XKBLAYOUT="fr,fr"
-XKBVARIANT="oss,bepo"
-XKBOPTIONS=""
-BACKSPACE="guess"
-```
+::
+
+ XKBMODEL="pc105"
+ XKBLAYOUT="fr,fr"
+ XKBVARIANT="oss,bepo"
+ XKBOPTIONS=""
+ BACKSPACE="guess"
 
 define default locales to generate
 ----------------------------------
 
 * etc/default/locale
 
-```
-LANG=en_US.UTF-8
-LANGUAGE=en_US
-LC_CTYPE="fr_FR.UTF-8"
-LC_NUMERIC="fr_FR.UTF-8"
-LC_TIME="fr_FR.UTF-8"
-LC_COLLATE="fr_FR.UTF-8"
-LC_MONETARY="fr_FR.UTF-8"
-LC_MESSAGES="en_US.UTF-8"
-LC_PAPER="fr_FR.UTF-8"
-LC_NAME="fr_FR.UTF-8"
-LC_ADDRESS="fr_FR.UTF-8"
-LC_TELEPHONE="fr_FR.UTF-8"
-LC_MEASUREMENT="fr_FR.UTF-8"
-LC_IDENTIFICATION="fr_FR.UTF-8"
-```
+::
+
+ LANG=en_US.UTF-8
+ LANGUAGE=en_US
+ LC_CTYPE="fr_FR.UTF-8"
+ LC_NUMERIC="fr_FR.UTF-8"
+ LC_TIME="fr_FR.UTF-8"
+ LC_COLLATE="fr_FR.UTF-8"
+ LC_MONETARY="fr_FR.UTF-8"
+ LC_MESSAGES="en_US.UTF-8"
+ LC_PAPER="fr_FR.UTF-8"
+ LC_NAME="fr_FR.UTF-8"
+ LC_ADDRESS="fr_FR.UTF-8"
+ LC_TELEPHONE="fr_FR.UTF-8"
+ LC_MEASUREMENT="fr_FR.UTF-8"
+ LC_IDENTIFICATION="fr_FR.UTF-8"
 
 * etc/locale.gen
 
-```
-en_US.UTF-8 UTF-8
-fr_FR.UTF-8 UTF-8
-```
+::
+
+ en_US.UTF-8 UTF-8
+ fr_FR.UTF-8 UTF-8
 
 [configure command shell](../bash/index.md)
 -------------------------------------------
@@ -141,9 +138,9 @@ fr_FR.UTF-8 UTF-8
 redefine hostname
 -----------------
 
-```bash
-echo "hostname" > "etc/hostname"
-```
+.. code:: shell
+
+ echo "hostname" > "etc/hostname"
 
 provide known file systems
 --------------------------
@@ -152,9 +149,9 @@ provide known file systems
 
 Volume temporaire en RAM
 
-```
-tmpfs /tmp tmpfs auto,mode=1777 0 0
-```
+::
+
+ tmpfs /tmp tmpfs auto,mode=1777 0 0
 
 Install additional packages
 ===========================
@@ -162,152 +159,153 @@ Install additional packages
 switch into context
 -------------------
 
-```bash
-mount --bind /proc proc
-mount --bind /sys sys
-chroot .
-```
-TODO ? /dev
+.. code:: shell
+
+ mount --bind /proc proc
+ mount --bind /sys sys
+ chroot .
+
+.. todo:: /dev
 
 generate locales
 ----------------
 
-```bash
-locale-gen
-```
+.. code:: shell
+
+ locale-gen
 
 define root password
 --------------------
 
-```bash
-passwd
-```
+.. code:: shell
+
+ passwd
 
 user, guest, sudo
 -----------------
 
-```bash
-apt-get install sudo
+.. code:: shell
 
-useradd -s /bin/bash user
-mkdir /home/user
-chown user: /home/user
-adduser user sudo
+ apt-get install sudo
 
-useradd -s /bin/bash guest
-chown guest: /home/guest
-```
+ useradd -s /bin/bash user
+ mkdir /home/user
+ chown user: /home/user
+ adduser user sudo
+
+ useradd -s /bin/bash guest
+ chown guest: /home/guest
 
 authentications: passwords, SSH keys
 ------------------------------------
 
-TODO
+.. todo:: files
 
 upgrade system
 --------------
 
 * dans tous les cas :
 
-```bash
-apt-get update
-apt-get upgrade
-```
+.. code:: shell
+
+ apt-get update
+ apt-get upgrade
 
 * si besoin, car des paquets rétroportés modifient la distribution :
 
-```bash
-apt-get dist-upgrade
-```
+.. code:: shell
+
+ apt-get dist-upgrade
 
 apply system type elements
 --------------------------
 
-|||
-|||
-| linux-image-amd64 | s’il ne s’agit pas d’un conteneur
-| live-boot         | si à destination de boot live
-| systemd-sysv      | sans quoi le système ne démarrera pas complètement
+================= ==================================================
+linux-image-amd64 s’il ne s’agit pas d’un conteneur
+live-boot         si à destination de boot live
+systemd-sysv      sans quoi le système ne démarrera pas complètement
+================= ==================================================
 
-```bash
-apt-get install -t stretch-backports "linux-image-amd64"
-apt-get install "live-boot"
-```
+.. code:: shell
+
+ apt-get install -t stretch-backports "linux-image-amd64"
+ apt-get install "live-boot"
 
 ----
 
 initialization settings
 -----------------------
 
-```bash
-apt-get install -t stretch-backports "systemd-sysv"
-```
+.. code:: shell
+
+ apt-get install -t stretch-backports "systemd-sysv"
 
 * etc/sysctl.conf
 
 Espace mémoire maximum allouable (à augmenter si hébergement de conteneurs)  
 Pourcentage de RAM disponible avant utilisation de la partition d’échange  
 
-```ini
-vm.max_map_count=1048576
-vm.swappiness=0
-```
+.. code:: ini
+
+ vm.max_map_count=1048576
+ vm.swappiness=0
 
 keeping things light
 --------------------
 
-```bash
-apt-get install --no-install-recommends …
-```
+.. code:: shell
+
+ apt-get install --no-install-recommends …
 
 install useful packages
 -----------------------
 
-```bash
-apt-get install \
-bash-completion \
-lxc \
-less nano vim \
-pciutils usbutils \
-python3 \
-squashfs-tools \
-```
+.. code:: shell
 
-```bash
-apt-get install -t "stretch-backports" \
-debootstrap \
-```
+ apt-get install \
+ bash-completion \
+ lxc \
+ less nano vim \
+ pciutils usbutils \
+ python3 \
+ squashfs-tools \
+
+.. code:: shell
+
+ apt-get install -t "stretch-backports" \
+ debootstrap \
 
 install other packages
 ----------------------
 
 [Choix de paquets commentés](packages.md)
 
-```bash
-apt-get install "package1" …
-apt-get install -t stretch-backports "package1" …
-```
+.. code:: shell
+
+ apt-get install "package1" …
+ apt-get install -t stretch-backports "package1" …
 
 properly switch back from context
 ---------------------------------
 
 * vider le cache d’APT
 
-```bash
-apt-get clean
-```
+.. code:: shell
+
+ apt-get clean
 
 * s’extraire de l’environnement
 
-```bash
-exit
-```
+.. code:: shell
+
+ exit
 
 * démonter les liens au système hôte
 
-```bash
-umount sys
-umount proc
-```
+.. code:: shell
+
+ umount sys
+ umount proc
 
 clean up commands history
 -------------------------
@@ -317,7 +315,7 @@ clean up commands history
 Configure installed packages
 ============================
 
-.. todo::
+.. todo:: files
 
 Archive prepared file system
 ============================
