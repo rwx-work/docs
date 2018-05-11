@@ -5,13 +5,13 @@ RTFD
    :maxdepth: 2
 
    public/archives/index
-   public/containerization/index
+   public/containers/index
    public/documents/index
-   public/virtualization/index
+   public/machines/index
    public/packages/index
    public/security/index
    public/systems/index
-   public/scm/index
+   public/versions/index
    public/web/index
 
 .. toctree::

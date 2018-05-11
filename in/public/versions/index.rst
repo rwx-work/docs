@@ -1,5 +1,5 @@
-Source Control Management
-=========================
+Versions
+========
 
 .. toctree::
    :maxdepth: 2

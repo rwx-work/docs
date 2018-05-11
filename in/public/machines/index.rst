@@ -1,5 +1,5 @@
-Virtualization
-==============
+Machines
+========
 
 .. toctree::
    :maxdepth: 2
