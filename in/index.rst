@@ -4,6 +4,7 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
+   public/documents/index
    public/scm/index
    public/virtualization/index
 

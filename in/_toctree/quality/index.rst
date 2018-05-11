@@ -1,6 +1,0 @@
-Quality
-=======
-
-.. toctree::
-
-   documents
