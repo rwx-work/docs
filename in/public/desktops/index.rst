@@ -1,6 +1,5 @@
-#######
-Desktop
-#######
+Desktops
+========
 
 .. toctree::
    :maxdepth: 2

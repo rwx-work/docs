@@ -6,6 +6,7 @@ RTFD
 
    public/archives/index
    public/containers/index
+   public/desktops/index
    public/documents/index
    public/machines/index
    public/packages/index
