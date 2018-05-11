@@ -73,6 +73,4 @@ types: rsa/ed25519/…?
 
 * authorized_keys
 
-::
-
-  TODO
+.. todo:: about

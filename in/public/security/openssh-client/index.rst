@@ -8,9 +8,7 @@ Configure
 
 * /etc/ssh/ssh_config
 
-::
-
-  TODO
+.. todo:: lines
 
 **********
 Create key
@@ -21,3 +19,5 @@ Create key
 .. code:: shell
 
   ssh-keygen -b 4096
+
+.. todo:: other arguments

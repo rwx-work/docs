@@ -1,3 +1,0 @@
-.. toctree::
-
-   administration/index

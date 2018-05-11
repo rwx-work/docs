@@ -25,3 +25,5 @@ Promiscuous Mode    Accept
 MAC Address Changes Accept
 Forged Transmits    Accept
 =================== ======
+
+.. todo:: same problem with VirtualBox network

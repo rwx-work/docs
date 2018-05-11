@@ -4,9 +4,14 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
+   public/containerization/index
    public/documents/index
-   public/scm/index
    public/virtualization/index
+   public/packages/index
+   public/security/index
+   public/systems/index
+   public/scm/index
+   public/web/index
 
 .. toctree::
    :maxdepth: 2
@@ -17,8 +22,6 @@ RTFD
 .. toctree::
    :maxdepth: 4
    :caption: Dispatch
-
-   _toctree/index
 
    tasks
 
