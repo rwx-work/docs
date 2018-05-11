@@ -9,6 +9,7 @@ RTFD
    public/desktops/index
    public/documents/index
    public/machines/index
+   public/media/index
    public/packages/index
    public/security/index
    public/systems/index

@@ -1,6 +1,5 @@
-#####
 Media
-#####
+=====
 
 .. toctree::
    :maxdepth: 2
