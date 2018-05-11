@@ -4,6 +4,7 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
+   public/archives/index
    public/containerization/index
    public/documents/index
    public/virtualization/index
