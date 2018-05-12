@@ -7,6 +7,7 @@ RTFD
    public/archives/index
    public/code/index
    public/containers/index
+   public/data/index
    public/desktops/index
    public/documents/index
    public/init/index
@@ -30,5 +31,4 @@ RTFD
 
    script
    network
-   data
    tasks

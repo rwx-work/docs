@@ -1,6 +1,5 @@
-####
 Data
-####
+====
 
 .. toctree::
    :maxdepth: 2
