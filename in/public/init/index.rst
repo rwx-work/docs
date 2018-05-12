@@ -1,6 +1,5 @@
-####
-Boot
-####
+Init
+====
 
 .. toctree::
    :maxdepth: 2

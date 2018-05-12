@@ -30,5 +30,4 @@ RTFD
    script
    network
    data
-   boot
    tasks
