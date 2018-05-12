@@ -5,6 +5,7 @@ RTFD
    :maxdepth: 2
 
    public/archives/index
+   public/code/index
    public/containers/index
    public/desktops/index
    public/documents/index
@@ -26,15 +27,9 @@ RTFD
    :maxdepth: 4
    :caption: Dispatch
 
-   tasks
-
-   archive
    script
    network
    data
-   code
    boot
-
-   desktop
-   media
    privacy
+   tasks
