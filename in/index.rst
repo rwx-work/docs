@@ -31,5 +31,4 @@ RTFD
    network
    data
    boot
-   privacy
    tasks
