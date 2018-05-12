@@ -13,6 +13,7 @@ RTFD
    public/init/index
    public/machines/index
    public/media/index
+   public/network/index
    public/packages/index
    public/security/index
    public/systems/index
@@ -30,5 +31,4 @@ RTFD
    :caption: Dispatch
 
    script
-   network
    tasks

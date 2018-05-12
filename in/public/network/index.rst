@@ -7,3 +7,4 @@ Network
    bind/index
    hosts/index
    isc-dhcp-server/index
+   unbound/index
