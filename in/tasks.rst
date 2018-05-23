@@ -4,6 +4,7 @@ Tasks
 
 * latest
 
+  * nuitka --exe --portable --python-version=3.5 --remove-output --show-progress --show-modules main.py
   * tig, bpython3
   * nuitka
   * sphinx configuration
