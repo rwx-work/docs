@@ -4,7 +4,9 @@ Tasks
 
 * latest
 
-  * LXC/AppArmor: lxc.aa_profile = unconfined
+  * AppArmor/unbound: /etc/apparmor.d/usr.sbin.unbound
+    /{,var/}run/systemd/notify w,
+  * AppArmor/lxc: lxc.aa_profile = unconfined
   * LD_LIBRARY_PATH=path/to/libs path/to/executable
   * upx --best executable
   * nuitka --portable --python-version=3.5 --remove-output --show-progress --show-modules main.py
