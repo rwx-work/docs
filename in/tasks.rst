@@ -5,6 +5,7 @@ Tasks
 * latest
 
   * AppArmor/lxc? lxc.aa_profile = unconfined
+  * graphviz
   * tig
   * upx-ucl
   * ?/vmlinuz apparmor=0 (KO backports profiles)
