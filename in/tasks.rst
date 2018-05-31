@@ -5,6 +5,8 @@ Tasks
 * latest
 
   * AppArmor/lxc? lxc.aa_profile = unconfined
+  * tig
+  * upx-ucl
   * ?/vmlinuz apparmor=0 (KO backports profiles)
   * LD_LIBRARY_PATH=path/to/libs path/to/executable
   * upx --best executable
