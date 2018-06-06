@@ -14,7 +14,7 @@ Tasks
   * LD_LIBRARY_PATH=path/to/libs path/to/executable
   * upx --best executable
   * nuitka --portable --python-version=3.5 --remove-output --show-progress --show-modules main.py
-  * tig, bpython3
+  * bpython3
   * sphinx configuration
   * __git_complete gco _git_checkout
   * git LFS
