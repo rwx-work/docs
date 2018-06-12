@@ -4,6 +4,8 @@ Tasks
 
 * latest
 
+  * console-setup -> /etc/default/keyboard
+  * console-data -> loadkeys fr
   * org.gnome.desktop.media-handling.autorun-never true
   * org.gnome.desktop.interface.text-scaling-factor 1.5
   * AppArmor/lxc? lxc.aa_profile = unconfined
