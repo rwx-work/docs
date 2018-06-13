@@ -4,6 +4,7 @@ Tasks
 
 * latest
 
+  * DEBIAN_FRONTEND="noninteractive" for apt install
   * console-setup -> /etc/default/keyboard
   * console-data -> loadkeys fr
   * org.gnome.desktop.media-handling.autorun-never true
