@@ -4,8 +4,10 @@ Tasks
 
 * latest
 
+  * Dir::Etc::sourceparts "";
   * Acquire::Check-Valid-Unitl false;
   * APT::Install-Recommends "false";
+  * APT::Install-Suggests "false";
   * debootstrap: minbase
   * debootstrap: umount machine-id afterwards
   * machine-id: /etc empty ⋅ /var/lib/dbus useless
