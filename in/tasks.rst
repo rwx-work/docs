@@ -4,6 +4,11 @@ Tasks
 
 * latest
 
+  * Acquire::Check-Valid-Unitl false;
+  * APT::Install-Recommends "false";
+  * debootstrap: minbase
+  * debootstrap: umount machine-id afterwards
+  * machine-id: /etc empty ⋅ /var/lib/dbus useless
   * DEBIAN_FRONTEND="noninteractive" for apt install
   * console-setup -> /etc/default/keyboard
   * console-data -> loadkeys fr
