@@ -1,6 +1,5 @@
-#####
 Tasks
-#####
+=====
 
 * latest
 
@@ -84,7 +83,7 @@ Tasks
     * personal GPG key signature
 
 Network interfaces
-==================
+------------------
 
 * /etc/network/interfaces
 
@@ -107,7 +106,7 @@ Network interfaces
   iface eth0 inet dhcp
 
 Name resolution
-===============
+---------------
 
 * /etc/hosts
 
