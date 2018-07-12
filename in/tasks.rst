@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * dependencies: readelf → ldd
   * DebFromScratch: tasks
   * /etc/dhcp/dhclient.conf no overwrite resolv.conf
   * Dir::Etc::sourceparts "";
