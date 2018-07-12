@@ -4,6 +4,8 @@ Tasks
 
 * latest
 
+  * DebFromScratch: tasks
+  * /etc/dhcp/dhclient.conf no overwrite resolv.conf
   * Dir::Etc::sourceparts "";
   * Acquire::Check-Valid-Unitl false;
   * APT::Install-Recommends "false";
