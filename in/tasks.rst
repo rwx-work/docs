@@ -3,7 +3,7 @@ Tasks
 
 * latest
 
-  * atop, netcat
+  * atop, jq, netcat
   * dependencies: readelf → ldd
   * DebFromScratch: tasks
   * /etc/dhcp/dhclient.conf no overwrite resolv.conf
