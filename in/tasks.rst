@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * python3: mutables persistent as constructors default
   * atop, jq, netcat
   * dependencies: readelf → ldd
   * DebFromScratch: tasks
