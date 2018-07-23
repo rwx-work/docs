@@ -16,6 +16,7 @@ RTFD
    public/network/index
    public/packages/index
    public/security/index
+   public/storage/index
    public/systems/index
    public/versions/index
    public/web/index
