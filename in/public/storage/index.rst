@@ -4,4 +4,5 @@ Storage
 .. toctree::
    :maxdepth: 2
 
-   mdadm/index
+ mdadm/index
+ parted/index
