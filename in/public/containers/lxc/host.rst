@@ -23,9 +23,9 @@ List
 Network bridge
 ==============
 
-Create bridge br0 onto host's network interface eth0:
+Create bridge br0 onto host's network main interface:
 
-* /etc/network/interfaces.d/eth0
+* /etc/network/interfaces.d/br0
 
 ::
 
@@ -37,6 +37,26 @@ Create bridge br0 onto host's network interface eth0:
       bridge_maxwait 0
       bridge_ports eth0
       bridge_stp on
+
+Example with a SoYouStart server:
+
+::
+
+ auto  br0
+ iface br0 inet static
+       address 192.99.37.216/24
+       gateway 192.99.37.254
+       bridge_fd 0
+       bridge_maxwait 0
+       bridge_ports enp4s0
+       bridge_stp on
+ iface br0 inet6 static
+       address 2607:5300:60:4cd8::/64
+       gateway 2607:5300:60:4cff:ff:ff:ff:ff
+       bridge_fd 0
+       bridge_maxwait 0
+       bridge_ports enp4s0
+       bridge_stp on
 
 Service
 =======
