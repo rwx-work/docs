@@ -45,15 +45,20 @@ Configuration
 
 ::
 
+  deb [arch=amd64,i386] https://deb.debian.org/debian sid main contrib non-free
+
+  deb [arch=amd64,i386] https://deb.debian.org/debian buster main contrib non-free
+  deb [arch=amd64,i386] https://deb.debian.org/debian-security buster/updates main contrib non-free
+
   deb [arch=amd64,i386] https://deb.debian.org/debian stretch main contrib non-free
   deb [arch=amd64,i386] https://deb.debian.org/debian stretch-backports main contrib non-free
   deb [arch=amd64,i386] https://deb.debian.org/debian stretch-updates main contrib non-free
   deb [arch=amd64,i386] https://deb.debian.org/debian-security stretch/updates main contrib non-free
 
-  deb [arch=amd64,i386] https://deb.debian.org/debian buster main contrib non-free
-  deb [arch=amd64,i386] https://deb.debian.org/debian-security buster/updates main contrib non-free
-
-  deb [arch=amd64,i386] https://deb.debian.org/debian sid main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian jessie main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian jessie-backports main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian jessie-updates main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian-security jessie/updates main contrib non-free
 
 .. warning::
 
