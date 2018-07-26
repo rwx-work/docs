@@ -60,6 +60,11 @@ Configuration
   deb [arch=amd64] https://deb.debian.org/debian jessie-updates main contrib non-free
   deb [arch=amd64] https://deb.debian.org/debian-security jessie/updates main contrib non-free
 
+  deb [arch=amd64] https://deb.debian.org/debian wheezy main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian wheezy-backports main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian wheezy-updates main contrib non-free
+  deb [arch=amd64] https://deb.debian.org/debian-security wheezy/updates main contrib non-free
+
 .. warning::
 
  apt's file protocol handling fails with locations containing spaces
