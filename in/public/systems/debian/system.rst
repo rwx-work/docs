@@ -108,7 +108,7 @@ define default locales to generate
 ::
 
  LANG=en_US.UTF-8
- LANGUAGE=en_US
+ LANGUAGE=en_US:en
  LC_CTYPE="fr_FR.UTF-8"
  LC_NUMERIC="fr_FR.UTF-8"
  LC_TIME="fr_FR.UTF-8"
