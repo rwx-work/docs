@@ -45,15 +45,15 @@ Configuration
 
 ::
 
-  deb http://deb.debian.org/debian stretch main contrib non-free
-  deb http://deb.debian.org/debian stretch-backports main contrib non-free
-  deb http://deb.debian.org/debian stretch-updates main contrib non-free
-  deb http://security.debian.org stretch/updates main contrib non-free
+  deb https://deb.debian.org/debian stretch main contrib non-free
+  deb https://deb.debian.org/debian stretch-backports main contrib non-free
+  deb https://deb.debian.org/debian stretch-updates main contrib non-free
+  deb https://deb.debian.org/debian-security stretch/updates main contrib non-free
 
-  deb http://deb.debian.org/debian buster main contrib non-free
-  deb http://security.debian.org buster/updates main contrib non-free
+  deb https://deb.debian.org/debian buster main contrib non-free
+  deb https://deb.debian.org/debian-security buster/updates main contrib non-free
 
-  deb http://deb.debian.org/debian sid main contrib non-free
+  deb https://deb.debian.org/debian sid main contrib non-free
 
 .. warning::
 
