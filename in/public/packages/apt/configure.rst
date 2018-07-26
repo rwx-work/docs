@@ -45,6 +45,8 @@ Configuration
 
 ::
 
+  deb-src [arch=amd64,i386] https://deb.debian.org/debian sid main contrib non-free
+
   deb [arch=amd64,i386] https://deb.debian.org/debian sid main contrib non-free
 
   deb [arch=amd64,i386] https://deb.debian.org/debian buster main contrib non-free
