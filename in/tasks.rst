@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * debian: buster/updates signed with archive-7 key
   * .git/config ← receive.denyCurrentBranch = updateInsted
   * python3: mutables persistent as constructors default
   * atop, jq, netcat
