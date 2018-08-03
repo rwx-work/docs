@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * deb [arch=amd64,i386] → /etc/apt/sources.list
   * /etc/localtime -> /usr/share/zoneinfo/Europe/Paris
   * /etc/timezone ← Europe/Paris
   * /usr/local/share/ca-certificates ⇒ update-ca-certificates
