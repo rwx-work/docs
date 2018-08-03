@@ -3,6 +3,8 @@ Tasks
 
 * latest
 
+  * /etc/localtime -> /usr/share/zoneinfo/Europe/Paris
+  * /etc/timezone ← Europe/Paris
   * /usr/local/share/ca-certificates ⇒ update-ca-certificates
   * debian: buster/updates signed with archive-7 key
   * .git/config ← receive.denyCurrentBranch = updateInsted
