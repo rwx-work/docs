@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * remove users' .bashrc files
   * deb [arch=amd64,i386] → /etc/apt/sources.list
   * /etc/localtime -> /usr/share/zoneinfo/Europe/Paris
   * /etc/timezone ← Europe/Paris
