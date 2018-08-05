@@ -2,14 +2,46 @@
 Repositories
 ************
 
+Keys
+====
+
+archive
+-------
+
+Master key
+
+* E0B11894F66AEC98 Debian Archive Automatic Signing Key <ftpmaster@debian.org>
+
+Subkey
+
+* 04EE7237B7D453EC Debian Archive Automatic Signing Key (9/stretch) <ftpmaster@debian.org>
+
+Deprecated
+
+* 7638D0442B90D010 Debian Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+
+security
+--------
+
+* 9D6D8F6BC857C906 Debian Security Archive Automatic Signing Key (8/jessie) <ftpmaster@debian.org>
+
+And, for some reason, this one used with testing/updates
+
+* 8B48AD6246925553 Debian Archive Automatic Signing Key (7.0/wheezy) <ftpmaster@debian.org>
+
 Locations
 =========
 
-* http://deb.debian.org/debian
-* http://ftp.fr.debian.org/debian
-* http://ftp.us.debian.org/debian
+* content delivery network
 
-* http://security.debian.org
+  * https://deb.debian.org/debian
+  * https://deb.debian.org/debian-security
+
+* legacy
+
+  * http://ftp.fr.debian.org/debian
+  * http://ftp.us.debian.org/debian
+  * http://security.debian.org
 
 Structure
 =========
