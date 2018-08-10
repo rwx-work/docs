@@ -3,6 +3,8 @@ Tasks
 
 * latest
 
+  * grub/efi: no biosdisk or ntldr
+  * chromium as alternate browser
   * ['sphinx.ext.graphviz'] ⋅ graphviz_output_format = 'svg'
   * remove users' .bashrc files
   * deb [arch=amd64,i386] → /etc/apt/sources.list
