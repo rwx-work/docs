@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * optipng
   * grub/efi: no biosdisk or ntldr
   * chromium as alternate browser
   * ['sphinx.ext.graphviz'] ⋅ graphviz_output_format = 'svg'
