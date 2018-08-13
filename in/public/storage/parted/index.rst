@@ -33,6 +33,6 @@ GPT
  mkpart data 1 3966128
  mkpart swap 2 4000527
 
-.. info::
+.. note::
 
  Start offset of a partition can be inferior than actual free space beginning.

@@ -10,7 +10,7 @@ user
  loginctl enable-linger
  systemctl --user start name.service
 
-.. info::
+.. note::
 
  enable-linger prevents daemon to be killed at session exit
 
@@ -33,6 +33,6 @@ Example:
  [Install]
  WantedBy=multi-user.target
 
-.. info::
+.. note::
 
  %h is replaced by the user's home directory
