@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * mount -t overlay overlay -o lowerdir=squashmount,upperdir=rwdir,workdir=emptydir squashfs-root
   * optipng
   * grub/efi: no biosdisk or ntldr
   * chromium as alternate browser
