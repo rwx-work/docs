@@ -6,7 +6,8 @@ Unbound
   ::
 
     server:
-        access-control: 192.168.0.0/16 allow
+        access-control: 192.168.0.0/24 allow
+        access-control: 192.168.1.0/24 allow
         do-ip4: yes
         do-ip6: yes
         do-tcp: yes
