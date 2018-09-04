@@ -10,8 +10,8 @@ Prevent short session lock timeout
 
 .. code::
 
- Set shell = WScript.CreateObject("WScript.Shell")
- Do While True
-     shell.sendkeys("{F15}")
-     Wscript.Sleep(1000*59)
- Loop
+ set shell = wscript.createobject("wscript.shell")
+ do while true
+     shell.sendkeys("{F16}")
+     wscript.sleep(1000*59)
+ loop
