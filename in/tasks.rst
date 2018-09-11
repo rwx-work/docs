@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * sys: firmware-{misc-nonfree,netxen,realtek}
   * catimg
   * mount -t overlay overlay -o lowerdir=squashmount,upperdir=rwdir,workdir=emptydir squashfs-root
   * optipng
