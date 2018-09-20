@@ -3,6 +3,14 @@ Tasks
 
 * latest
 
+  * qemu-img convert -p -O format input.ext output.ext
+  * qemu-img create -f format -o ?
+  * qemu-img create -f format name.ext [size]
+  * qemu-img info name.ext
+  * modprobe nbd
+  * qemu-nbd -c /dev/nbd? name.ext
+  * qemu-nbd -d /dev/nbd?
+  * qemu-system-x86_64 -enable-kvm -sdl -m 2048 -drive file=name.ext
   * sys: firmware-{misc-nonfree,netxen,realtek}
   * catimg
   * mount -t overlay overlay -o lowerdir=squashmount,upperdir=rwdir,workdir=emptydir squashfs-root
