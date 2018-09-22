@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * adduser user kvm for -enable-kvm
   * qemu-img convert -p -O format input.ext output.ext
   * qemu-img create -f format -o ?
   * qemu-img create -f format name.ext [size]
