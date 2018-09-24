@@ -11,7 +11,7 @@ Tasks
   * modprobe nbd
   * qemu-nbd -c /dev/nbd? name.ext
   * qemu-nbd -d /dev/nbd?
-  * qemu-system-x86_64 -enable-kvm -sdl -m 2048 -drive file=name.ext,if=virtio
+  * qemu-system-x86_64 -enable-kvm -display sdl -m 2048 -drive file=name.ext,if=virtio
   * sys: firmware-{misc-nonfree,netxen,realtek}
   * catimg
   * mount -t overlay overlay -o lowerdir=squashmount,upperdir=rwdir,workdir=emptydir squashfs-root
