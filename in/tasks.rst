@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * qemu-system-x86_64 -initrd initrd.img -kernel vmlinuz -append root=/dev/sda1
   * adduser user kvm for -enable-kvm
   * qemu-img convert -p -O format input.ext output.ext
   * qemu-img create -f format -o ?
