@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * xtra.squashfs empty media/data ← lib/live/mount/medium + data auto fstab
   * grub-bios-setup not functionin with boot.img in an overlay fs
   * qemu-system-x86_64 -initrd initrd.img -kernel vmlinuz -append root=/dev/sda1
   * adduser user kvm for -enable-kvm
