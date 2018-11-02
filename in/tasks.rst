@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * grub-bios-setup not functionin with boot.img in an overlay fs
   * qemu-system-x86_64 -initrd initrd.img -kernel vmlinuz -append root=/dev/sda1
   * adduser user kvm for -enable-kvm
   * qemu-img convert -p -O format input.ext output.ext
