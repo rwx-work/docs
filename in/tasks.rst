@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * hexdump -C -v file_path
   * qemu-system avoid junk like floppy: -nodefaults -vga virtio
   * xtra.squashfs empty media/data ← lib/live/mount/medium + data auto fstab
   * grub-bios-setup not functionin with boot.img in an overlay fs
