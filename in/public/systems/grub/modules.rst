@@ -55,7 +55,6 @@ hw
 cpuid     | 
 lspci     | 
 terminfo  | 
-usbtest   | 
 videoinfo | 
 ========= ==
 
@@ -66,6 +65,7 @@ part
 lvm        | 
 mdraid1x   | 
 part_bsd   | 
+part_dfly  | 
 part_gpt   | 
 part_msdos | 
 raid5rec   | 
@@ -159,6 +159,7 @@ Useless
 ============ ==
 at_keyboard  | 
 gcry_crc     | 
+gcry_md4     | 
 gcry_md5     | 
 mdraid09     | 
 mdraid09_be  | 
@@ -166,6 +167,7 @@ random       |
 tga          | 
 time         | 
 usb_keyboard | 
+usbtest      | 
 videotest    | 
 ============ ==
 
@@ -179,18 +181,65 @@ i386-pc
 Untested
 --------
 
-======= ==
-affs    | 
-afs     | 
-bfs     | 
-cbfs    | 
-cpio    | 
-cpio_be | 
-======= ==
+========== ==
+part_acorn | 
+part_amiga | 
+part_apple | 
+part_dvh   | 
+part_plan  | 
+part_sun   | 
+part_sunpc | 
+========== ==
+
+========= ==
+affs      | 
+afs       | 
+bfs       | 
+cbfs      | 
+cpio      | 
+cpio_be   | 
+hfsplus   | 
+jfs       | 
+minix     | 
+minix_be  | 
+minix2    | 
+minix2_be | 
+minix3    | 
+minix3_be | 
+nilfs2    | 
+ntfs      | 
+procfs    | 
+reiserfs  | 
+romfs     | 
+sfs       | 
+ufs1      | 
+ufs1_be   | 
+ufs2      | 
+========= ==
+
+============== ==
+adler32        | 
+crc64          | 
+gcry_arcfour   | 
+gcry_blowfish  | 
+gcry_camellia  | 
+gcry_cast5     | 
+gcry_des       | 
+gcry_dsa       | 
+gcry_idea      | 
+gcry_rfc2268   | 
+gcry_rijndael  | 
+gcry_rmd160    | 
+gcry_rsa       | 
+gcry_seed      | 
+gcry_serpent   | 
+gcry_tiger     | 
+gcry_twofish   | 
+gcry_whirlpool | 
+============== ==
 
 ==================== ==
 acpi
-adler32
 ahci
 all_video
 aout
@@ -208,7 +257,6 @@ cbtime
 chain
 cmdline_cat_test
 cmp_test
-crc64
 cryptodisk
 cs5536
 ctz_test
@@ -225,109 +273,41 @@ exfctest
 font
 fshelp
 functional_test
-
-gcry_arcfour
-gcry_blowfish
-gcry_camellia
-gcry_cast5
-gcry_crc
-gcry_des
-gcry_dsa
-gcry_idea
-gcry_md4
-gcry_md5
-gcry_rfc2268
-gcry_rijndael
-gcry_rmd160
-gcry_rsa
-gcry_seed
-gcry_serpent
-gcry_sha1
-gcry_sha256
-gcry_sha512
-gcry_tiger
-gcry_twofish
-gcry_whirlpool
 geli
-gettext
 gfxmenu
-gfxterm_background
-gfxterm_menu
 gfxterm
+gfxterm_menu
 gptsync
 gzio
-halt
-hashsum
 hdparm
 hello
-help
-hexdump
-hfs
-hfspluscomp
-hfsplus
 http
 iorw
-iso9660
-jfs
-jpeg
-keylayouts
-keystatus
 ldm
 legacycfg
 legacy_password_test
 linux16
-linux
-loadenv
-loopback
 lsacpi
 lsmmap
-ls
-lspci
 luks
-lvm
 lzopio
 macbless
 macho
-mdraid09_be
-mdraid09
-mdraid1x
-memdisk
 memrw
 minicmd
-minix2_be
-minix2
-minix3_be
-minix3
-minix_be
-minix
 mmap
 morse
 mpi
 msdospart
 mul_test
-multiboot2
 multiboot
+multiboot2
 nativedisk
 net
 newc
-nilfs2
-normal
-ntfscomp
-ntfs
 odc
 offsetio
 ohci
-part_acorn
-part_amiga
-part_apple
-part_bsd
-part_dfly
-part_dvh
-part_gpt
-part_msdos
-part_plan
-part_sun
-part_sunpc
 parttool
 password
 password_pbkdf2
@@ -336,73 +316,42 @@ pbkdf2
 pbkdf2_test
 pcidump
 play
-png
 priority_queue
-probe
-procfs
-progress
-raid5rec
+
 raid6rec
-random
-read
-reboot
-regexp
-reiserfs
 relocator
-romfs
 scsi
 search_fs_file
 search_fs_uuid
 search_label
-search
 serial
 setjmp
 setjmp_test
 setpci
-sfs
 shift_test
 signature_test
-sleep
 sleep_test
 spkmodem
-squash4
 syslinuxcfg
-tar
-terminal
-terminfo
 test_blockarg
 testload
-test
-testspeed
 tftp
-tga
-time
 trig
 tr
-true
-udf
-ufs1_be
-ufs1
-ufs2
 uhci
-usb_keyboard
 usb
 usbms
 usbserial_common
 usbserial_ftdi
 usbserial_pl2303
 usbserial_usbdebug
-usbtest
 verify
 video_bochs
 video_cirrus
 video_colors
 video_fb
-videoinfo
 video
 videotest_checksum
-videotest
-xfs
 xnu
 xnu_uuid
 xnu_uuid_test
