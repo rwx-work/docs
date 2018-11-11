@@ -3,6 +3,14 @@
 Modules
 =======
 
+Included
+--------
+
+======= ==
+memdisk | 
+tar     | 
+======= ==
+
 Mandatory
 ---------
 
@@ -25,9 +33,116 @@ terminal |
 Useful
 ------
 
-= ==
-? | 
-= ==
+core
+^^^^
+
+========== ==
+date       | 
+echo       | 
+eval       | 
+help       | 
+keylayouts | 
+ls         | 
+sleep      | 
+test       | 
+true       | 
+========== ==
+
+hw
+^^
+
+========= ==
+cpuid     | 
+lspci     | 
+terminfo  | 
+usbtest   | 
+videoinfo | 
+========= ==
+
+part
+^^^^
+
+========== ==
+lvm        | 
+mdraid1x   | 
+part_bsd   | 
+part_gpt   | 
+part_msdos | 
+raid5rec   | 
+========== ==
+
+fs
+^^
+
+=========== ==
+btrfs       | 
+exfat       | 
+ext2        | 
+fat         | 
+hfs         | 
+hfspluscomp | 
+iso9660     | 
+ntfscomp    | 
+squash4     | 
+udf         | 
+xfs         | 
+zfs         | 
+=========== ==
+
+file
+^^^^
+
+======== ==
+cat      | 
+cmp      | 
+file     | 
+hexdump  | 
+loadenv  | 
+loopback | 
+probe    | 
+regexp   | 
+search   | 
+======== ==
+
+hash
+^^^^
+
+=========== ==
+hashsum     | 
+gcry_sha1   | 
+gcry_sha256 | 
+gcry_sha512 | 
+=========== ==
+
+action
+^^^^^^
+
+========== ==
+bsd        | 
+configfile | 
+halt       | 
+keystatus  | 
+linux      | 
+read       | 
+reboot     | 
+========== ==
+
+gfx
+^^^
+
+================== ==
+gfxterm_background | 
+jpeg               | 
+png                | 
+================== ==
+
+bench
+^^^^^
+
+========= ==
+progress  | 
+testspeed | 
+========= ==
 
 i386-pc
 ^^^^^^^
@@ -41,11 +156,16 @@ ntldr    | load windows bootmgr or ntldr
 Useless
 -------
 
-========= ==
-gcry_md5  | 
-random    | 
-videotest | 
-========= ==
+=========== ==
+gcry_crc    | 
+gcry_md5    | 
+mdraid09    | 
+mdraid09_be | 
+random      | 
+tga         | 
+time        | 
+videotest   | 
+=========== ==
 
 i386-pc
 ^^^^^^^
@@ -85,83 +205,10 @@ vga           |
 vga_text      | 
 ============= ==
 
-
-===== ==========================
-date  display/set date/time
-echo  display message
-eval  expression evaluation
-help  commands and args
-sleep escape interruptible pause
-test  if then else fi
-true  true/false nop commands
-===== ==========================
+OLD
+---
 
 =========== ============================================
 at_keyboard keyboard layouts handling for terminal_input
-keylayouts  change keyboard layout
-keystatus   test alt/ctrl/shift keys
-read        variable until enter
 =========== ============================================
 
-====== ========
-halt   shutdown
-reboot restart
-====== ========
-
-========= =========================================
-cpuid     check if cpu can handle 64 bit and/or PAE
-lspci     list pci devices
-videoinfo list video modes
-========= =========================================
-
-========== ======================================
-part_gpt   guid partition table partitions scheme
-part_msdos master boot record partitions scheme
-========== ======================================
-
-=========== ================================================
-btrfs       | better file system
-exfat       | ms extended file allocation table file system
-ext2        | linux file systems
-fat         | ms file allocation table file system
-hfs         | apple file system
-hfspluscomp | apple extended file system with compression
-iso9660     | older optical disk file system
-ntfscomp    | ms new technology file system with compression
-tar         | tar archive format handling
-            | (for embedded fonts,locales,etc.)
-udf         | optical disk file system
-=========== ================================================
-
-====== =====================================
-search set root according to uuid/label/file
-====== =====================================
-
-=========== ===================================
-cat         display file content
-configfile  load different menu/script file
-gcry_crc    crc hash algorithm
-gcry_sha1   sha1 hash algorithm
-gcry_sha256 sha256 hash algorithm
-gcry_sha512 sha512 hash algorithm
-hashsum     hash file, needs gcry\_ modules
-loadenv     load and save menu environment file
-testspeed   file loading benchmark
-=========== ===================================
-
-======== =================================
-loopback turn a file into a virtual device
-memdisk  ram disk
-======== =================================
-
-===== =========================
-linux kernel & initial ram disk
-===== =========================
-
-================== ===========================
-gfxterm_background | color/image
-                   | triggers graphic terminal
-jpeg               | jpeg image format
-png                | png image format
-tga                | tga image format
-================== ===========================
