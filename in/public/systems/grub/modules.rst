@@ -1,8 +1,88 @@
 .. _grub_modules:
 
-*******
 Modules
-*******
+=======
+
+Mandatory
+---------
+
+====== ==
+normal | 
+====== ==
+
+dependencies
+^^^^^^^^^^^^
+
+======== ==
+boot     | 
+bufio    | 
+crypto   | 
+extcmd   | 
+gettext  | 
+terminal | 
+======== ==
+
+Useful
+------
+
+= ==
+? | 
+= ==
+
+i386-pc
+^^^^^^^
+
+======== =================================
+biosdisk | detect disks through bios
+drivemap | map drives for windows bullshit
+ntldr    | load windows bootmgr or ntldr
+======== =================================
+
+Useless
+-------
+
+= ==
+? | 
+= ==
+
+i386-pc
+^^^^^^^
+
+= ==
+? | 
+= ==
+
+Untested
+--------
+
+= ==
+? | 
+= ==
+
+i386-pc
+^^^^^^^
+
+============= ==
+915resolution | 
+cmosdump      | 
+cmostest      | 
+efiemu        | 
+freedos       | 
+gdb           | 
+hwmatch       | 
+lsapm         | 
+mda_text      | 
+pci           | 
+plan9         | 
+pxechain      | 
+pxe           | 
+sendkey       | 
+truecrypt     | 
+vbe           | 
+vga           | 
+vga_text      | 
+============= ==
+
 
 ===== ==========================
 date  display/set date/time
@@ -27,7 +107,6 @@ reboot restart
 ====== ========
 
 ========= =========================================
-biosdisk  disks detection via bios
 cpuid     check if cpu can handle 64 bit and/or PAE
 lspci     list pci devices
 videoinfo list video modes
