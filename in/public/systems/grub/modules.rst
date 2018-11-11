@@ -156,16 +156,18 @@ ntldr    | load windows bootmgr or ntldr
 Useless
 -------
 
-=========== ==
-gcry_crc    | 
-gcry_md5    | 
-mdraid09    | 
-mdraid09_be | 
-random      | 
-tga         | 
-time        | 
-videotest   | 
-=========== ==
+============ ==
+at_keyboard  | 
+gcry_crc     | 
+gcry_md5     | 
+mdraid09     | 
+mdraid09_be  | 
+random       | 
+tga          | 
+time         | 
+usb_keyboard | 
+videotest    | 
+============ ==
 
 i386-pc
 ^^^^^^^
@@ -205,10 +207,7 @@ vga           |
 vga_text      | 
 ============= ==
 
-OLD
----
+TO SORT
+-------
 
-=========== ============================================
-at_keyboard keyboard layouts handling for terminal_input
-=========== ============================================
 
