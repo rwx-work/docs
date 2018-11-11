@@ -183,6 +183,24 @@ Untested
 ? | 
 = ==
 
+x86_64-efi
+^^^^^^^^^^
+
+=========== ==
+appleldr    | 
+efifwsetup  | 
+efi_gop     | 
+efinet      | 
+efi_uga     | 
+fixvideo    | 
+linuxefi    | 
+loadbios    | 
+lsefimmap   | 
+lsefi       | 
+lsefisystab | 
+lssal       | 
+=========== ==
+
 i386-pc
 ^^^^^^^
 
