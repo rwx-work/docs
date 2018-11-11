@@ -41,9 +41,11 @@ ntldr    | load windows bootmgr or ntldr
 Useless
 -------
 
-= ==
-? | 
-= ==
+========= ==
+gcry_md5  | 
+random    | 
+videotest | 
+========= ==
 
 i386-pc
 ^^^^^^^
@@ -139,7 +141,6 @@ search set root according to uuid/label/file
 cat         display file content
 configfile  load different menu/script file
 gcry_crc    crc hash algorithm
-gcry_md5    md5 hash algorithm
 gcry_sha1   sha1 hash algorithm
 gcry_sha256 sha256 hash algorithm
 gcry_sha512 sha512 hash algorithm
