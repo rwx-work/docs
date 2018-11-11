@@ -179,68 +179,53 @@ i386-pc
 Untested
 --------
 
-==================== ==
+======= ==
+affs    | 
+afs     | 
+bfs     | 
+cbfs    | 
+cpio    | 
+cpio_be | 
+======= ==
 
+==================== ==
 acpi
 adler32
-affs
-afs
 ahci
 all_video
 aout
 archelp
 ata
-at_keyboard
 backtrace
-bfs
 bitmap
 bitmap_scale
 blocklist
-boot
-bsd
 bswap_test
-btrfs
-bufio
-cat
-cbfs
 cbls
 cbmemc
 cbtable
 cbtime
 chain
 cmdline_cat_test
-cmp
 cmp_test
-configfile
-cpio_be
-cpio
-cpuid
 crc64
 cryptodisk
-crypto
 cs5536
 ctz_test
 datehook
-date
 datetime
-diskfilter
 disk
+diskfilter
 div
 div_test
 dm_nv
-echo
 ehci
 elf
-eval
-exfat
 exfctest
-ext2
-extcmd
-fat
-file
 font
 fshelp
 functional_test
+
 gcry_arcfour
 gcry_blowfish
 gcry_camellia
