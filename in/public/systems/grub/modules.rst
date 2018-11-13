@@ -163,6 +163,7 @@ gcry_md4     |
 gcry_md5     | 
 mdraid09     | 
 mdraid09_be  | 
+memrw        | 
 random       | 
 tga          | 
 time         | 
