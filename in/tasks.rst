@@ -5,6 +5,7 @@ Tasks
 
   * lxc private network: reach out
     * /etc/sysctl.conf net.ipv4.ip_forward=1 | /proc/sys/net/ipv4/ip_forward
+    * /etc/network/interfaces → up iptables -t nat -A POSTROUTING -o br0 -j MASQUERADE
     * iptables -t nat -A POSTROUTING -o br0 -s 10.0.0.0/8 -j MASQUERADE
   * hexdump -C -v file_path
   * qemu-system avoid junk like floppy: -nodefaults -vga virtio
