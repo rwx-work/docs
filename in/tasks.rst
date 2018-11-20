@@ -7,6 +7,8 @@ Tasks
     * /etc/sysctl.conf net.ipv4.ip_forward=1 | /proc/sys/net/ipv4/ip_forward
     * /etc/network/interfaces → up iptables -t nat -A POSTROUTING -o br0 -j MASQUERADE
     * iptables -t nat -A POSTROUTING -o br0 -s 10.0.0.0/8 -j MASQUERADE
+  * lxc private network: get in
+    * iptables -t nat -A PREROUTING -o br0 -p tcp --dport 2211 --to 10.0.1.1:22 -j DNAT
   * hexdump -C -v file_path
   * qemu-system avoid junk like floppy: -nodefaults -vga virtio
   * xtra.squashfs empty media/data ← lib/live/mount/medium + data auto fstab
