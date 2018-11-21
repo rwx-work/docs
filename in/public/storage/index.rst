@@ -6,3 +6,4 @@ Storage
 
    mdadm/index
    parted/index
+   rsync/index

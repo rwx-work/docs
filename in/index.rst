@@ -31,5 +31,4 @@ RTFD
    :maxdepth: 4
    :caption: Dispatch
 
-   script
    tasks

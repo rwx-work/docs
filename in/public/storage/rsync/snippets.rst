@@ -1,11 +1,10 @@
-********
 Snippets
-********
+========
 
 Simulate sync with deletion
-===========================
+---------------------------
 
-.. code:: bash
+.. code:: shell
 
   rsync \
   --archive \
