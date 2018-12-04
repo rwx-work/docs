@@ -8,7 +8,7 @@ Tasks
     * /etc/network/interfaces → up iptables -t nat -A POSTROUTING -o br0 -j MASQUERADE
     * iptables -t nat -A POSTROUTING -o br0 -s 10.0.0.0/8 -j MASQUERADE
   * lxc private network: get in
-    * iptables -t nat -A PREROUTING -o br0 -p tcp --dport 2211 --to 10.0.1.1:22 -j DNAT
+    * iptables -t nat -A PREROUTING -i br0 -p tcp --dport 2211 -j DNAT --to 10.0.1.1:22
   * hexdump -C -v file_path
   * qemu-system avoid junk like floppy: -nodefaults -vga virtio
   * xtra.squashfs empty media/data ← lib/live/mount/medium + data auto fstab
