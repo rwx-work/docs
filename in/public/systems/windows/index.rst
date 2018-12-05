@@ -12,6 +12,6 @@ Prevent short session lock timeout
 
  set shell = wscript.createobject("wscript.shell")
  do while true
-     shell.sendkeys("{F16}")
+     shell.sendkeys("{NUMLOCK}{NUMLOCK}")
      wscript.sleep(1000*59)
  loop
