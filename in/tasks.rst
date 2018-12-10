@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * firefox ~/.mozilla/plugins ← libflashplayer.so
   * lxc private network: reach out
     * /etc/sysctl.conf net.ipv4.ip_forward=1 | /proc/sys/net/ipv4/ip_forward
     * /etc/network/interfaces → up iptables -t nat -A POSTROUTING -o br0 -j MASQUERADE
