@@ -4,9 +4,9 @@ Tasks
 * latest
 
   * firefox ~/.mozilla/plugins ← libflashplayer.so
+  * /etc/sysctl.conf net.ipv4.ip_forward=1 | /proc/sys/net/ipv4/ip_forward
+  * /etc/network/interfaces → up command args…
   * lxc private network: reach out
-    * /etc/sysctl.conf net.ipv4.ip_forward=1 | /proc/sys/net/ipv4/ip_forward
-    * /etc/network/interfaces → up iptables -t nat -A POSTROUTING -o br0 -j MASQUERADE
     * iptables -t nat -A POSTROUTING -o br0 -s 10.0.0.0/8 -j MASQUERADE
   * lxc private network: get in
     * iptables -t nat -A PREROUTING -i br0 -p tcp --dport 2211 -j DNAT --to 10.0.1.1:22
