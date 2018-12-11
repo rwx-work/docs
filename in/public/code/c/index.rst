@@ -21,7 +21,7 @@ Main
 
 .. code:: c
 
- main() {
+ void main() {
      system("pause");
  }
 
@@ -30,11 +30,14 @@ Declarations
 
 .. code:: c
 
- char operator;
- int entry1 = 0;
- int entry2 = 0;
- long entry = 0;
- float f = (float)1;
+ // unsigned, sizeof()
+ char c = '1';
+ short s = 2;
+ int i = 4;
+ long l = 8;
+ float f = (float)4;
+ double d = (double)8;
+ long double ld = (long double)16;
 
 Output
 ------
