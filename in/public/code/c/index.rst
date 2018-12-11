@@ -1,15 +1,27 @@
 C
 =
 
-Main
-----
+Imports
+-------
 
 .. code:: c
 
  #include <stdio.h>
 
+Comments
+--------
+
+.. code:: c
+
+ // single line comment
+ /* multi line comment */
+
+Main
+----
+
+.. code:: c
+
  main() {
-     printf("Hello, world!\n");
      system("pause");
  }
 
@@ -22,15 +34,22 @@ Declarations
  int entry1 = 0;
  int entry2 = 0;
  long entry = 0;
+ float f = (float)1;
+
+Output
+------
+
+.. code:: c
+
+ printf("int: %d\n", entry1);
+ printf("float: %.2f\n", f);
 
 Input
 -----
 
 .. code:: c
 
- printf("type in 2 integers\n");
  scanf("%d%s%d", &entry1, &operator, &entry2);
- printf("sum: %d\n", entry1 + entry2);
 
 Conditions
 ----------
@@ -55,6 +74,12 @@ Conditions
 
 Loops
 -----
+
+.. code:: c
+
+ for (declarations;conditions;increments) {
+     expression1;
+ }
 
 .. code:: c
 
