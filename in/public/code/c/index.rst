@@ -13,14 +13,21 @@ Main
      system("pause");
  }
 
+Declarations
+------------
+
+.. code:: c
+
+ char operator;
+ int entry1 = 0;
+ int entry2 = 0;
+ long entry = 0;
+
 Input
 -----
 
 .. code:: c
 
- int entry1 = 0;
- char operator;
- int entry2 = 0;
  printf("type in 2 integers\n");
  scanf("%d%s%d", &entry1, &operator, &entry2);
  printf("sum: %d\n", entry1 + entry2);
@@ -44,4 +51,13 @@ Conditions
          break;
      default:
          printf("Nope!\n");
+ }
+
+Loops
+-----
+
+.. code:: c
+
+ while (condition) {
+     expression1;
  }
