@@ -22,13 +22,6 @@ RTFD
    public/web/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Private
-
-   private/
-
-.. toctree::
-   :maxdepth: 4
    :caption: Dispatch
 
    tasks
