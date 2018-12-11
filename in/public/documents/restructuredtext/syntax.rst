@@ -27,6 +27,26 @@ Sections
   Paragraph
   """""""""
 
+Links
+=====
+
+Internal
+--------
+
+declaration
+^^^^^^^^^^^
+
+.. code:: restructuredtext
+
+ .. label_name:
+
+reference
+^^^^^^^^^
+
+.. code:: restructuredtext
+
+ :ref:`label_name`_
+
 ToSort
 ======
 
@@ -40,18 +60,18 @@ ToSort
 * **2 stars**
 * ``2 backquotes``
 
-After this comma,
+| After this comma,
 | output new line
+|
 
+.. image:: image.png
 
-.. comment
+.. this is a really useless comment
 
 ..
     multiline
 
     comment
-
-.. image:: image.png
 
 Indent 0
 
