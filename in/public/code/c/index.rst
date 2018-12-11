@@ -16,6 +16,13 @@ Comments
  // single line comment
  /* multi line comment */
 
+Constants
+---------
+
+.. code:: c
+
+ #define NUMERIC_CONSTANT 123
+
 Main
 ----
 
