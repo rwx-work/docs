@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * pass
   * DNS override /etc/NetworkManager/NetworkManager.conf [main] dns=none
   * firefox ~/.mozilla/plugins ← libflashplayer.so
   * /etc/sysctl.conf net.ipv4.ip_forward=1 | /proc/sys/net/ipv4/ip_forward
