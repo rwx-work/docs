@@ -89,3 +89,9 @@ Loops
  while (condition) {
      expression1;
  }
+
+.. code:: c
+
+ do {
+     expression1;
+ } while (condition);
