@@ -22,6 +22,11 @@ RTFD
    public/web/index
 
 .. toctree::
+   :maxdepth: 2
+
+   private/server/index
+
+.. toctree::
    :caption: Dispatch
 
    tasks
