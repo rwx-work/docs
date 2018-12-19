@@ -4,8 +4,18 @@ Server
 Hardware
 --------
 
-Partition
----------
+=== ================================
+BHS KS-12
+CPU Intel Xeon W3530 4c/8t @ 2.8 GHz
+RAM 32 GB DDR3 ECC @ 1333 MHz
+HDD 2 × 2 TB
+WAN 100 Mbps /128
+IP4 192.99.14.98
+IP6 2607:5300:60:3f62::1
+=== ================================
+
+Partitions
+----------
 
 .. code:: shell
 
