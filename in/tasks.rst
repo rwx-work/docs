@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * parted: print free, unit MB
   * pass
   * DNS override /etc/NetworkManager/NetworkManager.conf [main] dns=none
   * firefox ~/.mozilla/plugins ← libflashplayer.so
