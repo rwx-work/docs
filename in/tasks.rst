@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * grub: have a root menu in grub.cfg, otherwise escape sends to CLI
   * parted: print free, unit MB
   * pass
   * DNS override /etc/NetworkManager/NetworkManager.conf [main] dns=none
