@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * youtube-dl -f bestvideo+bestaudio --merge-output-format mkv url
   * grub: have a root menu in grub.cfg, otherwise escape sends to CLI
   * parted: print free, unit MB
   * pass
