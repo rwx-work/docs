@@ -44,6 +44,13 @@ avoid default use of SHA256
 
 ::
 
+  keyserver-options include-revoked
+  with-keygrip
+  with-subkey-fingerprint
+
+  no-comments
+  no-emit-version
+
   default-preference-list SHA512 AES256 BZIP2
 
   cert-digest-algo SHA512
@@ -55,10 +62,10 @@ avoid default use of SHA256
   personal-digest-preferences SHA512
   personal-compress-preferences BZIP2
 
-  with-keygrip
-  with-subkey-fingerprint
-
-  keyserver-options include-revoked
+  s2k-cipher-algo AES256
+  s2k-digest-algo SHA512
+  s2k-mode 3
+  s2k-count 65011712
 
 avoid DL/UL issues, depending on DNS
 ------------------------------------
