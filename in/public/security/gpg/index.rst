@@ -76,10 +76,10 @@ master key
 ::
 
   8 → RSA (set your own capabilities)
-  4096
   s → toggle the sign capability
   e → toggle the encrypt capability
   q → finished
+  4096
   2y → key expires in 2 years
   y → this is correct
   First Last
