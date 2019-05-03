@@ -44,6 +44,7 @@ avoid default use of SHA256
 
 ::
 
+  keyid-format long
   keyserver-options include-revoked
   list-options show-uid-validity
   verify-options show-uid-validity
