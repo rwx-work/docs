@@ -48,6 +48,7 @@ avoid default use of SHA256
   keyserver-options include-revoked
   list-options show-uid-validity
   verify-options show-uid-validity
+  with-fingerprint
   with-keygrip
   with-subkey-fingerprint
 
