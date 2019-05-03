@@ -236,9 +236,26 @@ set primary UserID
 Export
 ======
 
+public key
+----------
+
 .. code:: shell
 
   gpg --armor --export "Key ID" > pub.asc
+
+private key
+-----------
+
+.. code:: shell
+
+  gpg --armor --export-secret-keys FFIINNGGEERRPPRRIINNTT > key.gpg
+
+private subkeys
+---------------
+
+.. code:: shell
+
+  gpg --armor --export-secret-subkeys FFIINNGGEERRPPRRIINNTT > subkeys.gpg
 
 Dump
 ====
