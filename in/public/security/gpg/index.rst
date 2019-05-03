@@ -52,6 +52,8 @@ avoid default use of SHA256
 
   keyserver-options include-revoked
 
+
+  with-keygrip
   with-subkey-fingerprint
 
 avoid DL/UL issues, depending on DNS
@@ -216,13 +218,6 @@ Dump
 
 Secure
 ======
-
-find out master keygrip
------------------------
-
-.. code:: shell
-
-  gpg --list-keys --with-keygrip
 
 hide the master key in an encrypted container
 ---------------------------------------------
