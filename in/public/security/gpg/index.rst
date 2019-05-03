@@ -71,17 +71,20 @@ master key
 
 .. code:: shell
 
-  gpg --full-generate-key
+  gpg --expert --full-generate-key
 
 ::
 
-  1 → RSA and RSA
+  8 → RSA (set your own capabilities)
   4096
-  0 → key does not expire
+  s → toggle the sign capability
+  e → toggle the encrypt capability
+  q → finished
+  2y → key expires in 2 years
   y → this is correct
   First Last
   user@domain.tld
-  Comment
+  comment
   o → ok
   PassPhrase
 
