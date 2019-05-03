@@ -88,7 +88,10 @@ master key
   user@domain.tld
   comment
   o → ok
-  PassPhrase
+
+.. code:: shell
+
+  gpg --quick-generate-key 'First Last <user@domain.tld>' rsa4096 cert 2y
 
 revocation certificate
 ----------------------
@@ -160,6 +163,12 @@ sign
 ::
 
   e → toggle the encrypt capability
+
+.. code:: shell
+
+  gpg --quick-add-key FFIINNGGEERRPPRRIINNTT rsa4096 auth 1y
+  gpg --quick-add-key FFIINNGGEERRPPRRIINNTT rsa4096 encr 1y
+  gpg --quick-add-key FFIINNGGEERRPPRRIINNTT rsa4096 sign 1y
 
 encrypt
 ^^^^^^^
