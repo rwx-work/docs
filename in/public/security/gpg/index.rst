@@ -15,6 +15,13 @@ TODO
 Configure
 =========
 
+If up:
+
+.. code:: shell
+
+  killall gpg-agent
+  killall dirmngr
+
 wipe if needed
 --------------
 
@@ -55,13 +62,6 @@ avoid DL/UL issues, depending on DNS
 ::
 
   standard-resolver
-
-Also if up:
-
-.. code:: shell
-
-  gpgconf --kill gpg-agent
-  killall dirmngr
 
 Generate
 ========
