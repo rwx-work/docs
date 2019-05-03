@@ -98,7 +98,7 @@ master key
   e → toggle the encrypt capability
   q → finished
   4096
-  2y → key expires in 2 years
+  1y → key expires in 1 year
   y → this is correct
   First Last
   user@domain.tld
@@ -107,7 +107,7 @@ master key
 
 .. code:: shell
 
-  gpg --quick-generate-key 'First Last <user@domain.tld>' rsa4096 cert 2y
+  gpg --quick-generate-key 'First Last <user@domain.tld>' rsa4096 cert 1y
 
 revocation certificate
 ----------------------
