@@ -125,13 +125,12 @@ Modify
 
 .. code:: shell
 
-  gpg --edit-key "KEY ID"
+  gpg --expert --edit-key "KEY ID"
 
 […]
 
 ::
 
-  PassPhrase
   save
 
 add a subkey to a master key
@@ -140,6 +139,41 @@ add a subkey to a master key
 ::
 
   addkey
+  8 → RSA (set your own capabilities)
+
+[…]
+
+::
+
+  q → finished
+  4096
+  1y → key expires in 1 year
+  y → this is correct
+  y → really create
+  PassPhrase
+
+sign
+^^^^
+
+::
+
+  e → toggle the encrypt capability
+
+encrypt
+^^^^^^^
+
+::
+
+  s → toggle the sign capability
+
+authenticate
+^^^^^^^^^^^^
+
+::
+
+  s → toggle the sign capability
+  e → toggle the encrypt capability
+  a → toggle the authenticate capability
 
 set expiration date
 -------------------
