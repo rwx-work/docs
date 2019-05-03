@@ -44,17 +44,21 @@ avoid default use of SHA256
 
 ::
 
+  default-preference-list SHA512 AES256 BZIP2
+
   cert-digest-algo SHA512
+  cipher-algo AES256
+  compress-algo BZIP2
+  digest-algo SHA512
+
+  personal-cipher-preferences AES256
   personal-digest-preferences SHA512
-  personal-cipher-preferences CAMELLIA256 TWOFISH AES256
-  personal-compress-preferences BZIP2 ZLIB ZIP
-  default-preference-list SHA512 CAMELLIA256 TWOFISH AES256 BZIP2 ZLIB ZIP
-
-  keyserver-options include-revoked
-
+  personal-compress-preferences BZIP2
 
   with-keygrip
   with-subkey-fingerprint
+
+  keyserver-options include-revoked
 
 avoid DL/UL issues, depending on DNS
 ------------------------------------
