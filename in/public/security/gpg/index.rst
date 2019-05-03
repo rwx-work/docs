@@ -100,6 +100,22 @@ revocation certificate
 
   gpg --generate-revocation "KeyID" > "FFIINNGGEERRPPRRIINNTT.rev"
 
+::
+
+  y
+
+::
+
+  0 → no reason specified
+  1 → key has been compromised
+  2 → key is superseded
+  3 → key is no longer used
+
+::
+
+  description
+  y
+
 .. warning::
 
   Hide this file in an encrypted container!
@@ -155,7 +171,6 @@ add a subkey to a master key
   1y → key expires in 1 year
   y → this is correct
   y → really create
-  PassPhrase
 
 sign
 ^^^^
@@ -192,6 +207,8 @@ set expiration date
 ::
 
   expire
+  1y
+  y
 
 add another UserID
 ------------------
@@ -201,7 +218,8 @@ add another UserID
   adduid
   First Last
   user@domain.tld
-  Comment
+  comment
+  o
 
 set primary UserID
 ------------------
