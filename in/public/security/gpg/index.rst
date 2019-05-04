@@ -97,6 +97,8 @@ KeyGrip to use if there are several
 
   KKEEYYGGRRIIPP
 
+* export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
 Generate
 ========
 
