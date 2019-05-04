@@ -10,7 +10,6 @@ TODO
 * trust
 * sign
 * delete
-* ssh authentication ???
 
 Configure
 =========
@@ -265,13 +264,6 @@ set primary UserID
 Export
 ======
 
-public key
-----------
-
-.. code:: shell
-
-  gpg --armor --export "Key ID" > pub.asc
-
 private key
 -----------
 
@@ -285,6 +277,20 @@ private subkeys
 .. code:: shell
 
   gpg --armor --export-secret-subkeys FFIINNGGEERRPPRRIINNTT > subkeys.gpg
+
+public key
+----------
+
+.. code:: shell
+
+  gpg --armor --export "Key ID" > id.asc
+
+public SSH key
+--------------
+
+.. code:: shell
+
+  gpg --armor --export-ssh-key "Key ID" > id.pub
 
 Dump
 ====
