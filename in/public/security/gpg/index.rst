@@ -19,8 +19,8 @@ If up:
 
 .. code:: shell
 
-  killall gpg-agent
-  killall dirmngr
+  killall -9 gpg-agent
+  killall -9 dirmngr
 
 wipe if needed
 --------------
