@@ -90,6 +90,14 @@ authenticate
 
   enable-ssh-support
 
+* sshcontrol
+
+KeyGrip to use if there are several
+
+::
+
+  KKEEYYGGRRIIPP
+
 Generate
 ========
 
