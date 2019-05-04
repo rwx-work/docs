@@ -81,6 +81,15 @@ avoid DL/UL issues, depending on DNS
 
   standard-resolver
 
+authenticate
+------------
+
+* gpg-agent.conf
+
+::
+
+  enable-ssh-support
+
 Generate
 ========
 
