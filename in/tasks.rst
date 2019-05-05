@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * chromium --ppapi-flash-path=/path/to/libpepflashplayer.so --ppapi-flash-version=32.0.0.171
   * git commit -S, tag -s, user.signingKey
   * youtube-dl -f bestvideo+bestaudio --all-subs --merge-output-format mkv url
   * grub: have a root menu in grub.cfg, otherwise escape sends to CLI
