@@ -3,6 +3,10 @@ Tasks
 
 * latest
 
+  * pdftk in.pdf background bg.pdf output out.pdf compress
+  * JFIF removal in background PDF files
+  * ghostscript -o in.img.pdf -sDEVICE=pdfwrite -dFILTERTEXT -dFILTERVECTOR in.pdf
+  * ghostscript -o in.tav.pdf -sDEVICE=pdfwrite -dFILTERIMAGE in.pdf
   * chromium --ppapi-flash-path=/path/to/libpepflashplayer.so --ppapi-flash-version=32.0.0.171
   * git commit -S, tag -s, user.signingKey
   * youtube-dl -f bestvideo+bestaudio --all-subs --merge-output-format mkv url
