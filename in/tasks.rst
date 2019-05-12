@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * qrencode -l L -m 1 -s 8 -t PNG -o pgp.png 'openpgp4fpr:FFIINNGGEERRPPRRIINNTT'
   * pdftk in.pdf background bg.pdf output out.pdf compress
   * JFIF removal in background PDF files
   * ghostscript -o in.img.pdf -sDEVICE=pdfwrite -dFILTERTEXT -dFILTERVECTOR in.pdf
