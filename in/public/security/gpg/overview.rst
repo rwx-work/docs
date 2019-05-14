@@ -6,9 +6,13 @@ OverView
 
  * setpref, or elsehow at key generation
  * ! suffix to exclude subkeys
- * trust
- * sign
- * delete
+ * trust key
+ * sign file
+ * sign key
+ * encrypt for [hidden-]recipient
+ * delete secret key
+ * import secret key
+ * refresh keys
 
 Search
 ======
