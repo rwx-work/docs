@@ -1,6 +1,17 @@
 Servers
 =======
 
+Upload
+------
+
+.. code:: shell
+
+ gpg --send-keys "Key ID" \
+ --keyserver hkps://sub.domain.tld
+
+Available
+---------
+
 * hkps://
 
 ::

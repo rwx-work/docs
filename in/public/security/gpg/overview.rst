@@ -177,13 +177,6 @@ hide the master key in an encrypted container
 
 * ~/.gnupg/private-keys-v1.d/KKEEYYGGRRIIPP.key
 
-Upload
-======
-
-.. code:: shell
-
-  gpg --send-keys "KEY ID"
-
 Revoke
 ======
 
