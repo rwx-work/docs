@@ -39,7 +39,6 @@ avoid default use of SHA256
   with-keygrip
   with-subkey-fingerprint
 
-  export-options export-minimal
   no-comments
   no-emit-version
 
