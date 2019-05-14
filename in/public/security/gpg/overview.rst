@@ -31,6 +31,10 @@ List
 
   gpg --list-keys
 
+.. code:: shell
+
+  gpg --list-signatures
+
 Modify
 ======
 
