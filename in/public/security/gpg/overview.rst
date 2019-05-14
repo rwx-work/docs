@@ -159,6 +159,10 @@ Dump
 
 .. code:: shell
 
+  gpg --list-packets
+
+.. code:: shell
+
   pgpdump pub.asc
 
 Secure
