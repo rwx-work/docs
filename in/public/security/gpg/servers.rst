@@ -1,6 +1,22 @@
 Servers
 =======
 
+Search
+------
+
+.. code:: shell
+
+ gpg --search-keys "Key ID" \
+ --keyserver hkps://sub.domain.tld
+
+Download
+--------
+
+.. code:: shell
+
+ gpg --receive-keys "Key ID" \
+ --keyserver hkps://sub.domain.tld
+
 Upload
 ------
 

@@ -14,20 +14,6 @@ OverView
  * import secret key
  * refresh keys
 
-Search
-======
-
-.. code:: shell
-
-  gpg --search-keys "Key ID"
-
-Download
-========
-
-.. code:: shell
-
-  gpg --receive-keys "KEY ID"
-
 List
 ====
 
