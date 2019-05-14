@@ -6,4 +6,5 @@ GnuPG
 
    overview
    configure
+   generate
    servers
