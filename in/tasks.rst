@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * chntpw / reged -e
   * chvt
   * gpg edit change-usage (hidden)
   * qrencode -l L -m 1 -s 8 -t PNG -o pgp.png 'openpgp4fpr:FFIINNGGEERRPPRRIINNTT'
