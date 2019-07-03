@@ -65,6 +65,7 @@ avoid DL/UL issues, depending on DNS
 
 ::
 
+  keyserver hkps://keys.openpgp.org
   standard-resolver
 
 authenticate

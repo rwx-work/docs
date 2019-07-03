@@ -28,6 +28,18 @@ Upload
 Available
 ---------
 
+Mitigated
+^^^^^^^^^
+
+* hkps://
+
+::
+
+ keys.openpgp.org
+
+Vulnerable
+^^^^^^^^^^
+
 * hkps://
 
 ::
