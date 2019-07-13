@@ -57,6 +57,15 @@ Partitions
  mkfs.vfat -n boot /dev/sda2
  mkfs.vfat -n boot /dev/sdb2
 
+.. code:: shell
+
+ cd /mnt
+ mkdir a2 b2
+ mount /dev/sda2 a2
+ mount /dev/sdb2 b2
+ mkdir --parents a2/efi/boot
+ mkdir --parents b2/efi/boot
+
 Boot
 ----
 
@@ -89,4 +98,15 @@ Prepare a grub.cfg
 
 .. code:: shell
 
- grub-mkstandalone
+ grub-mkstandalone \
+ --verbose \
+ --compress xz \
+ --format x86_64-efi \
+ --output bootx64.efi \
+ --themes "" \
+ boot/grub/grub.cfg=grub.cfg
+
+.. code:: shell
+
+ scp bootx64.efi root@rwx.work:/mnt/a2/efi/boot/
+ scp bootx64.efi root@rwx.work:/mnt/b2/efi/boot/
