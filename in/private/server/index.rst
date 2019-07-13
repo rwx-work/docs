@@ -111,7 +111,9 @@ Prepare a grub.cfg
  scp bootx64.efi root@rwx.work:/mnt/a2/efi/boot/
  scp bootx64.efi root@rwx.work:/mnt/b2/efi/boot/
 
-* nano etc/resolv.conf
+* /etc/locale.gen
+* locale-gen
+* /etc/resolv.conf
 * apt update
 * apt upgrade
 * apt install openssh-server
