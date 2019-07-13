@@ -54,3 +54,39 @@ Partitions
 
  mkfs.ext4 -L data /dev/md0p1
  mkswap --label swap /dev/md0p2
+ mkfs.vfat -n boot /dev/sda2
+ mkfs.vfat -n boot /dev/sdb2
+
+Boot
+----
+
+Prepare a grub.cfg
+
+.. code:: shell
+
+ insmod part_gpt
+ insmod mdraid1x
+ insmod ext2
+ insmod search
+ insmod squash4
+ insmod loopback
+ insmod linux
+
+ search --set data --fs-uuid f3eefba5-1f22-4651-bf60-72ec21ec9e30
+ lmp=/fs/default
+ sfs=filesystem.squashfs
+
+ loopback loop (${data})${lmp}/${sfs}
+
+ linux (loop)/vmlinuz \
+ boot=live \
+ elevator=deadline \
+ ip=frommedia \
+ live-media-path=${lmp} \
+ toram=${sfs}
+
+ initrd (loop)/initrd.img
+
+.. code:: shell
+
+ grub-mkstandalone
