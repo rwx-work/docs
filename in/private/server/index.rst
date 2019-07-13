@@ -117,6 +117,7 @@ Prepare a grub.cfg
 * /etc/locale.gen
 * locale-gen
 * /etc/resolv.conf
+* /etc/apt/sources.list
 * apt update
 * apt upgrade
 * apt install openssh-server
@@ -124,3 +125,18 @@ Prepare a grub.cfg
 * /etc/ssh/sshd_config
 * mkdir /root/.ssh
 * echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAFBp8vFUIRu4Bq8EvnCGwlp71GQ4wGT5wKdY1X/c9AfYjsn/pnBNgnfNFxPxoNasG1MXeXjutSLtlXqnsWx2NQpFQC321MeUvd3Z/DCeIvS4WvpOZMyBvVUd2sTsuuCRVuH3fbJF5XPJrFzH3nEFNtcW7lmN+F6nKLB0kYahc3+gyTH+g==" > /root/.ssh/authorized_keys
+* /etc/network/interfaces.d/setup
+
+::
+
+ auto lo
+ iface lo inet loopback
+ iface lo inet6 loopback
+
+ auto eth0
+ iface eth0 inet static
+       address 192.99.14.98/24
+       gateway 192.99.14.254
+ iface eth0 inet6 static
+       address 2607:5300:60:3f62::1/64
+       gateway 2607:5300:60:3fff:ff:ff:ff:ff
