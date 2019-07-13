@@ -73,6 +73,7 @@ Prepare a grub.cfg
 
 .. code:: shell
 
+ insmod efi_gop
  insmod part_gpt
  insmod mdraid1x
  insmod ext2
@@ -95,6 +96,8 @@ Prepare a grub.cfg
  toram=${sfs}
 
  initrd (loop)/initrd.img
+
+ boot
 
 .. code:: shell
 
