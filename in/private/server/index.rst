@@ -129,14 +129,14 @@ Prepare a grub.cfg
 
 ::
 
- auto lo
+ auto  lo
  iface lo inet loopback
  iface lo inet6 loopback
 
- auto eth0
- iface eth0 inet static
+ auto  enp1s0
+ iface enp1s0 inet static
        address 192.99.14.98/24
        gateway 192.99.14.254
- iface eth0 inet6 static
+ iface enp1s0 inet6 static
        address 2607:5300:60:3f62::1/64
        gateway 2607:5300:60:3fff:ff:ff:ff:ff
