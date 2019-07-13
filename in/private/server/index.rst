@@ -110,3 +110,12 @@ Prepare a grub.cfg
 
  scp bootx64.efi root@rwx.work:/mnt/a2/efi/boot/
  scp bootx64.efi root@rwx.work:/mnt/b2/efi/boot/
+
+* nano etc/resolv.conf
+* apt update
+* apt upgrade
+* apt install openssh-server
+* apt clean
+* /etc/ssh/sshd_config
+* mkdir /root/.ssh
+* echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAFBp8vFUIRu4Bq8EvnCGwlp71GQ4wGT5wKdY1X/c9AfYjsn/pnBNgnfNFxPxoNasG1MXeXjutSLtlXqnsWx2NQpFQC321MeUvd3Z/DCeIvS4WvpOZMyBvVUd2sTsuuCRVuH3fbJF5XPJrFzH3nEFNtcW7lmN+F6nKLB0kYahc3+gyTH+g==" > /root/.ssh/authorized_keys
