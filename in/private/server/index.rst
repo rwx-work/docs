@@ -62,7 +62,9 @@ Partitions
 
 .. code:: shell
 
- mkswap --label swap /dev/md0p2
+ mkswap --label swap \
+ -U d8ee4260-4652-7192-7bb3-ebbadeb835a7 \
+ /dev/md0p2
  mkfs.ext4 -L data \
  -U 46527192-7bb3-ebba-deb8-35a7e8606808 \
  /dev/md0p1
