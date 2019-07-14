@@ -14,6 +14,16 @@ IP4 192.99.14.98
 IP6 2607:5300:60:3f62::1
 === ================================
 
+Rescue
+------
+
+.. code:: shell
+
+ ssh-keygen -f /home/user/.ssh/known_hosts -R rwx.work
+ ssh-keygen -f /home/user/.ssh/known_hosts -R 192.99.14.98
+ scp /home/user/.ssh/id_ecdsa.pub root@rwx.work:/root/.ssh/authorized_keys
+ scp /etc/bash.bashrc root@rwx.work:/etc/
+
 Partitions
 ----------
 
