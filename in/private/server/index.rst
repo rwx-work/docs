@@ -63,7 +63,9 @@ Partitions
 .. code:: shell
 
  mkswap --label swap /dev/md0p2
- mkfs.ext4 -L data /dev/md0p1
+ mkfs.ext4 -L data \
+ -U 46527192-7bb3-ebba-deb8-35a7e8606808 \
+ /dev/md0p1
 
 Boot
 ----
@@ -81,7 +83,7 @@ Prepare a grub.cfg
  insmod loopback
  insmod linux
 
- search --set data --fs-uuid ad500d60-4bea-428c-90c3-8a9559fa971b
+ search --set data --fs-uuid 46527192-7bb3-ebba-deb8-35a7e8606808
  lmp=/fs/default
  sfs=filesystem.squashfs
 
