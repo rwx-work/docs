@@ -23,15 +23,15 @@ Partitions
 
  select /dev/sda
  mktable gpt
- mkpart raid 1 2000364
- mkpart boot 2000364 2000399
- toggle 2 bios_grub
+ mkpart boot 1 2
+ mkpart raid 2 2000399
+ toggle 1 bios_grub
 
  select /dev/sdb
  mktable gpt
- mkpart raid 1 2000364
- mkpart boot 2000364 2000399
- toggle 2 bios_grub
+ mkpart boot 1 2
+ mkpart raid 2 2000399
+ toggle 1 bios_grub
 
  q
 
