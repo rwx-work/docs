@@ -25,13 +25,13 @@ Partitions
  mktable gpt
  mkpart raid 1 2000364
  mkpart boot 2000364 2000399
- toggle 2 boot
+ toggle 2 bios_grub
 
  select /dev/sdb
  mktable gpt
  mkpart raid 1 2000364
  mkpart boot 2000364 2000399
- toggle 2 boot
+ toggle 2 bios_grub
 
  q
 
@@ -54,17 +54,6 @@ Partitions
 
  mkfs.ext4 -L data /dev/md0p1
  mkswap --label swap /dev/md0p2
- mkfs.vfat -n boot /dev/sda2
- mkfs.vfat -n boot /dev/sdb2
-
-.. code:: shell
-
- cd /mnt
- mkdir a2 b2
- mount /dev/sda2 a2
- mount /dev/sdb2 b2
- mkdir --parents a2/efi/boot
- mkdir --parents b2/efi/boot
 
 Boot
 ----
@@ -103,6 +92,29 @@ Prepare a grub.cfg
  grub-mkstandalone \
  --verbose \
  --compress xz \
+ --format i386-pc \
+ --output core.img \
+ --themes "" \
+ boot/grub/grub.cfg=grub.cfg \
+ --fonts "" \
+ --locales "" \
+ --install-modules "\
+ part_gpt \
+ mdraid1x \
+ ext2 \
+ search \
+ squash4 \
+ loopback \
+ linux \
+ "
+
+Maybe one day:
+
+.. code:: shell
+
+ grub-mkstandalone \
+ --verbose \
+ --compress xz \
  --format x86_64-efi \
  --output bootx64.efi \
  --themes "" \
@@ -110,8 +122,12 @@ Prepare a grub.cfg
 
 .. code:: shell
 
- scp bootx64.efi root@rwx.work:/mnt/a2/efi/boot/
- scp bootx64.efi root@rwx.work:/mnt/b2/efi/boot/
+ scp core.img root@rwx.work:
+ cp /usr/lib/grub/i386-pc/boot.img . \
+ /usr/lib/grub/i386-pc/grub-bios-setup \
+ --directory . /dev/sda
+ /usr/lib/grub/i386-pc/grub-bios-setup \
+ --directory . /dev/sdb
 
 * /etc/locale.gen
 * locale-gen
