@@ -71,7 +71,7 @@ Prepare a grub.cfg
  insmod loopback
  insmod linux
 
- search --set data --fs-uuid fa715134-28be-49f3-b72f-acb18691a59f
+ search --set data --fs-uuid ad500d60-4bea-428c-90c3-8a9559fa971b
  lmp=/fs/default
  sfs=filesystem.squashfs
 
