@@ -55,8 +55,8 @@ Partitions
  parted /dev/md0
 
  mktable gpt
- mkpart data 1 3966969
- mkpart swap 3966969 4000524
+ mkpart data 1 3966966
+ mkpart swap 3966966 4000523
 
  q
 
