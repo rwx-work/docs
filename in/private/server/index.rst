@@ -72,6 +72,8 @@ Partitions
 Boot
 ----
 
+.. warning:: no ESP boot available!
+
 Prepare a grub.cfg
 
 .. code:: shell
