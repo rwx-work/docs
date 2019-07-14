@@ -46,7 +46,7 @@ Partitions
 
  mktable gpt
  mkpart data 1 3966099
- mkpart swap 3966099 4000458
+ mkpart swap 3966099 4000524
 
  q
 
