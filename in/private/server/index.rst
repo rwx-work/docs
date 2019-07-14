@@ -62,6 +62,7 @@ Prepare a grub.cfg
 
 .. code:: shell
 
+ insmod biosdisk
  insmod part_gpt
  insmod mdraid1x
  insmod ext2
@@ -99,6 +100,7 @@ Prepare a grub.cfg
  --fonts "" \
  --locales "" \
  --install-modules "\
+ biosdisk \
  part_gpt \
  mdraid1x \
  ext2 \
