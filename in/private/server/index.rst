@@ -52,8 +52,8 @@ Partitions
 
 .. code:: shell
 
- mkfs.ext4 -L data /dev/md0p1
  mkswap --label swap /dev/md0p2
+ mkfs.ext4 -L data /dev/md0p1
 
 Boot
 ----
