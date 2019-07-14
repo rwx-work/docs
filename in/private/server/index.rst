@@ -38,7 +38,7 @@ Partitions
 .. code:: shell
 
  mdadm --create /dev/md0 \
- --level 0 --raid-devices 2 /dev/sd[ab]1
+ --level 0 --raid-devices 2 /dev/sd[ab]2
 
 .. code:: shell
 
