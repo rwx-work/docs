@@ -158,6 +158,8 @@ Maybe one day:
  /usr/lib/grub/i386-pc/grub-bios-setup \
  --directory . /dev/sdb
 
+* /etc/bash.bashrc
+* /etc/fstab (/d)
 * /etc/locale.gen
 * locale-gen
 * /etc/resolv.conf
@@ -165,7 +167,12 @@ Maybe one day:
 * /etc/apt/sources.list
 * apt update
 * apt upgrade
-* apt install openssh-server
+* live-boot
+* update-initramfs ← update-initramfs.orig
+* openssh-server
+* parted
+* squashfs-tools
+* tree
 * apt clean
 * /etc/ssh/sshd_config
 * mkdir /root/.ssh
