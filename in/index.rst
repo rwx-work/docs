@@ -25,7 +25,7 @@ RTFD
    :caption: Personal
    :maxdepth: 2
 
-   private/server/index
+   personal/server/index
 
 .. toctree::
    :caption: Dispatch
