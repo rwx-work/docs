@@ -22,6 +22,7 @@ RTFD
    public/web/index
 
 .. toctree::
+   :caption: Personal
    :maxdepth: 2
 
    private/server/index
