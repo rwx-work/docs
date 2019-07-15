@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * vcard spec
   * chntpw / reged -e
   * chvt
   * gpg edit change-usage (hidden)
