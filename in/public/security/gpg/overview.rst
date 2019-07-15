@@ -163,6 +163,13 @@ hide the master key in an encrypted container
 
 * ~/.gnupg/private-keys-v1.d/KKEEYYGGRRIIPP.key
 
+Sign
+====
+
+.. code:: shell
+
+ gpg --armor --detach-sign file
+
 Revoke
 ======
 
@@ -170,3 +177,10 @@ Revoke
 
   gpg --import "FFIINNGGEERRPPRRIINNTT.rev"
   gpg --send-keys "KEY ID"
+
+Verify
+======
+
+.. code:: shell
+
+ gpg --verify file.asc file
