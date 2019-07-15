@@ -161,6 +161,7 @@ Maybe one day:
 * /etc/locale.gen
 * locale-gen
 * /etc/resolv.conf
+* /etc/apt/apt.conf
 * /etc/apt/sources.list
 * apt update
 * apt upgrade
@@ -169,6 +170,7 @@ Maybe one day:
 * /etc/ssh/sshd_config
 * mkdir /root/.ssh
 * echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAFBp8vFUIRu4Bq8EvnCGwlp71GQ4wGT5wKdY1X/c9AfYjsn/pnBNgnfNFxPxoNasG1MXeXjutSLtlXqnsWx2NQpFQC321MeUvd3Z/DCeIvS4WvpOZMyBvVUd2sTsuuCRVuH3fbJF5XPJrFzH3nEFNtcW7lmN+F6nKLB0kYahc3+gyTH+g==" > /root/.ssh/authorized_keys
+* lxc
 * /etc/network/interfaces.d/setup
 
 .. warning:: inet6 dhcp hangs!
