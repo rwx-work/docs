@@ -6,7 +6,6 @@ openssh-server
  LogLevel INFO
  StrictModes yes
  Subsystem sftp internal-sftp
- UsePrivilegeSeparation sandbox
 
  AllowTcpForwarding yes
  Ciphers aes256-gcm@openssh.com
