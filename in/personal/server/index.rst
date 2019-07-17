@@ -30,8 +30,8 @@ Rescue
 
 .. code:: shell
 
- ssh-keygen -f /home/user/.ssh/known_hosts -R rwx.work
- ssh-keygen -f /home/user/.ssh/known_hosts -R 192.99.14.98
+ ssh-keygen -R rwx.work
+ ssh-keygen -R 192.99.14.98
  scp /home/user/.ssh/id_ecdsa.pub root@rwx.work:/root/.ssh/authorized_keys
  scp /etc/bash.bashrc root@rwx.work:/etc/
 
@@ -137,7 +137,7 @@ Prepare a grub.cfg
  linux \
  "
 
-Maybe one day:
+.. todo:: move to public grub
 
 .. code:: shell
 
