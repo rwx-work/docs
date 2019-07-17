@@ -25,6 +25,7 @@ RTFD
    :caption: Personal
    :maxdepth: 2
 
+   personal/openssh-server/index
    personal/server/index
 
 .. toctree::
