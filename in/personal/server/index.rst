@@ -158,6 +158,23 @@ Prepare a grub.cfg
  /usr/lib/grub/i386-pc/grub-bios-setup \
  --directory . /dev/sdb
 
+* debootstrap
+* apt
+* fstab /d
+* systemd
+* linux-image
+* tops
+* hardware
+* completion
+* network
+* interfaces
+* basics
+* openssh-server fixes (sshd user, /run/sshd)
+* live-boot
+* root
+* inception
+* bridge
+
 * /etc/bash.bashrc
 * /etc/fstab (/d)
 * /etc/locale.gen
