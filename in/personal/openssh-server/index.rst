@@ -30,7 +30,7 @@ openssh-server
  MACs hmac-sha2-512-etm@openssh.com
  PasswordAuthentication no
  PermitEmptyPasswords no
- PermitRootLogin no
+ PermitRootLogin prohibit-password
  PubkeyAuthentication yes
  UseDNS no
  UsePAM yes
