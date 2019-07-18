@@ -179,6 +179,8 @@ Prepare a grub.cfg
 * apparmor
 * unbound
 * tree
+* net.ipv4.ip_forward=1
+* net.ipv6.conf.all.forwarding=1
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
