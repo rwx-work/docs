@@ -10,6 +10,7 @@ CPU Intel Xeon W3530 4c/8t @ 2.8 GHz
 RAM 32 GB DDR3 ECC @ 1333 MHz
 HDD 2 × 2 TB
 WAN 100 Mbps /128
+MAC 00:25:90:7b:d4:38
 === ================================
 
 Network
