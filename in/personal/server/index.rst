@@ -233,6 +233,7 @@ Prepare a grub.cfg
  lxc.net.0.flags = up
  lxc.net.0.link = br0
  lxc.net.0.name = eth0
+ lxc.net.0.veth.pair = buster
  lxc.net.0.ipv4.address = 10.0.0.1/24
  lxc.net.0.ipv4.gateway = 10.0.0.254
  lxc.rootfs.path = dir:/var/lib/lxc/buster/squashfs-root
