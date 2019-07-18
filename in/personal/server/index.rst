@@ -178,6 +178,7 @@ Prepare a grub.cfg
 * grub-pc-bin
 * apparmor
 * unbound
+* tree
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
