@@ -177,6 +177,7 @@ Prepare a grub.cfg
 * bridge
 * grub-pc-bin
 * apparmor
+* unbound
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
