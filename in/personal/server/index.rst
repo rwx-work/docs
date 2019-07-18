@@ -176,6 +176,7 @@ Prepare a grub.cfg
 * inception
 * bridge
 * grub-pc-bin
+* apparmor
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
@@ -207,12 +208,27 @@ Prepare a grub.cfg
  iface lo inet loopback
  iface lo inet6 loopback
 
- auto  enp1s0
- iface enp1s0 inet static
+ auto  br0
+ iface br0 inet static
+       address 10.0.0.254/24
+       bridge_fd 0
+       bridge_maxwait 0
+       bridge_ports enp1s0
+       bridge_stp on
+ iface br0 inet static
        address 192.99.14.98/24
        gateway 192.99.14.254
- iface enp1s0 inet static
-       address 10.0.0.254/24
- iface enp1s0 inet6 static
+ iface br0 inet6 static
        address 2607:5300:60:3f62::1/64
        gateway 2607:5300:60:3fff:ff:ff:ff:ff
+
+::
+
+ lxc.net.0.type = veth
+ lxc.net.0.flags = up
+ lxc.net.0.link = br0
+ lxc.net.0.name = eth0
+ lxc.net.0.ipv4.address = 10.0.0.1/24
+ lxc.net.0.ipv4.gateway = 10.0.0.254
+ lxc.rootfs.path = dir:/var/lib/lxc/buster/squashfs-root
+ lxc.mount.entry = /d d none bind,create=dir,ro 0 0
