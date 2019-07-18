@@ -174,6 +174,7 @@ Prepare a grub.cfg
 * root
 * inception
 * bridge
+* grub-pc-bin
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
