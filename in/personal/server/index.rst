@@ -182,6 +182,7 @@ Prepare a grub.cfg
 * net.ipv4.ip_forward=1
 * net.ipv6.conf.all.forwarding=1
 * nftables
+* nginx
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
@@ -227,14 +228,28 @@ Prepare a grub.cfg
        address 2607:5300:60:3f62::1/64
        gateway 2607:5300:60:3fff:ff:ff:ff:ff
 
+.. warning::
+
+ reboot from container doesn't reload config file
+
+/var/lib/lxc/config
+
 ::
 
+ lxc.include = /usr/share/lxc/config/common.conf
+ lxc.mount.entry = /d/mirrors/apt-mirror/debian deb none bind,create=dir,ro 0 0
+ lxc.start.auto = 1
  lxc.net.0.type = veth
  lxc.net.0.flags = up
  lxc.net.0.link = br0
- lxc.net.0.name = eth0
+
+/var/lib/lxc/name/config
+
+::
+
+ lxc.include = /var/lib/lxc/config
+ lxc.mount.entry = /d/lxc/buster d none bind,create=dir,rw 0 0
+ lxc.rootfs.path = dir:/var/lib/lxc/buster
  lxc.net.0.veth.pair = buster
  lxc.net.0.ipv4.address = 10.0.0.1/24
  lxc.net.0.ipv4.gateway = 10.0.0.254
- lxc.rootfs.path = dir:/var/lib/lxc/buster/squashfs-root
- lxc.mount.entry = /d d none bind,create=dir,ro 0 0
