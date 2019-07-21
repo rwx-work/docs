@@ -270,7 +270,7 @@ Prepare a grub.cfg
          type filter hook input priority 0; policy accept;
          iifname "lo" accept
          ip protocol icmp accept
-         ip6 nexthdr ipv6-icmp accept
+         ip6 nexthdr icmp accept
          tcp dport ssh accept
          tcp dport domain accept
          tcp dport http accept
