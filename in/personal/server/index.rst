@@ -183,6 +183,8 @@ Prepare a grub.cfg
 * net.ipv6.conf.all.forwarding=1
 * nftables
 * nginx
+* root/user authorized_keys
+* curl
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
@@ -248,8 +250,46 @@ Prepare a grub.cfg
 ::
 
  lxc.include = /var/lib/lxc/config
- lxc.mount.entry = /d/lxc/buster d none bind,create=dir,rw 0 0
+ lxc.mount.entry = /d/d/buster d none bind,create=dir,rw 0 0
  lxc.rootfs.path = dir:/var/lib/lxc/buster
  lxc.net.0.veth.pair = buster
  lxc.net.0.ipv4.address = 10.0.0.1/24
  lxc.net.0.ipv4.gateway = 10.0.0.254
+
+/etc/nftables.conf
+
+::
+
+ #! /usr/sbin/nft --file
+
+ flush ruleset
+
+ table inet filter {
+     chain input {
+         type filter hook input priority 0; policy accept;
+         iifname "lo" accept
+         ip protocol icmp accept
+         ip6 nexthdr ipv6-icmp accept
+         tcp dport ssh accept
+         tcp dport domain accept
+         tcp dport http accept
+         tcp dport https accept
+     }
+     chain forward {
+         type filter hook forward priority 0; policy accept;
+     }
+     chain output {
+         type filter hook output priority 0; policy accept;
+     }
+ }
+
+ table ip nat {
+     chain prerouting {
+         type nat hook prerouting priority 0; policy accept;
+         tcp dport 65001 dnat to 10.0.0.1:ssh
+     }
+     chain postrouting {
+         type nat hook postrouting priority 0; policy accept;
+         masquerade
+     }
+ }
