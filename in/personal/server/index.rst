@@ -185,6 +185,7 @@ Prepare a grub.cfg
 * nginx
 * root/user authorized_keys
 * curl
+* swap,swappiness
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
