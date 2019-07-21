@@ -186,6 +186,8 @@ Prepare a grub.cfg
 * root/user authorized_keys
 * curl
 * swap,swappiness
+* enable nftables.service
+
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
