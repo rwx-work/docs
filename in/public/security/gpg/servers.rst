@@ -6,24 +6,27 @@ Search
 
 .. code:: shell
 
- gpg --search-keys "Key ID" \
- --keyserver hkps://sub.domain.tld
+ gpg \
+ --keyserver hkps://sub.domain.tld \
+ --search-keys "Key ID"
 
 Download
 --------
 
 .. code:: shell
 
- gpg --receive-keys "Key ID" \
- --keyserver hkps://sub.domain.tld
+ gpg \
+ --keyserver hkps://sub.domain.tld \
+ --receive-keys "Key ID"
 
 Upload
 ------
 
 .. code:: shell
 
- gpg --send-keys "Key ID" \
- --keyserver hkps://sub.domain.tld
+ gpg \
+ --keyserver hkps://sub.domain.tld \
+ --send-keys "Key ID"
 
 Available
 ---------
@@ -61,9 +64,3 @@ Vulnerable
 ::
 
  pgp.uni-mainz.de
-
-* not sure
-
-::
-
- keyserver.oeg.com.au
