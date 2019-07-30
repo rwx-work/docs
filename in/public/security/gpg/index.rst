@@ -8,3 +8,4 @@ GnuPG
    configure
    generate
    servers
+   fun
