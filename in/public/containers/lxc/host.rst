@@ -2,6 +2,10 @@
 Host
 ****
 
+.. warning::
+
+ lxc service has to be enabled for autostart to work
+
 Check
 =====
 
