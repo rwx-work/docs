@@ -5,6 +5,7 @@ Network
    :maxdepth: 2
 
    bind/index
+   curl/index
    hosts/index
    isc-dhcp-server/index
    unbound/index
