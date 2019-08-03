@@ -1,6 +1,6 @@
-******************************************
-Debian GNU/Linux distribution installation
-******************************************
+******************
+Image from scratch
+******************
 
 .. todo::
 
@@ -14,16 +14,16 @@ have up-to-date mirrors available
 
 .. todo:: mirrors
 
-choose critical base packages
------------------------------
+critical base packages
+----------------------
 
-    paquets proposés pour pouvoir travailler correctement
-
-    +-----------+--------------------------------------------------+
-    | locales   | générer des locales binaires pour les messages   |
-    | apt-utils | sinon la configuration des paquets est repoussée |
-    | dialog    | sans quoi APT remonte des messages d’alerte      |
-    +-----------+--------------------------------------------------+
+ +-----------+--------------------------------------------------+
+ | locales   | to get localization binaries for system messages |
+ +-----------+--------------------------------------------------+
+ | apt-utils | otherwise packages configuration gets delayed    |
+ +-----------+--------------------------------------------------+
+ | dialog    | to have user interaction possible with APT       |
+ +-----------+--------------------------------------------------+
 
 decide the desired type of system
 ---------------------------------
