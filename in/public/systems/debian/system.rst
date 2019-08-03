@@ -44,14 +44,14 @@ decide the desired type of system
 Install required tools
 ======================
 
-============== ===============================================
-debootstrap    générer un système de fichiers de base minimal
-squashfs-tools compresser ou décompresser une image de système
-============== ===============================================
+ ============== ========================================
+ debootstrap    generate a minimal base file system
+ squashfs-tools archive or unarchive a file system image
+ ============== ========================================
 
-.. code:: shell
+ .. code:: shell
 
- apt-get install "debootstrap squashfs-tools"
+  apt install debootstrap squashfs-tools
 
 Create a base file hierarchy
 ============================
