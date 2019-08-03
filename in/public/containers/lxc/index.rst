@@ -6,6 +6,7 @@ LXC
 
    host
    container
+   unprivileged
 
 ***
 ESX
