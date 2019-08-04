@@ -5,6 +5,9 @@ OpenSSL
 Generate private key
 ====================
 
+RSA
+---
+
 .. code:: shell
 
   openssl \
@@ -19,8 +22,30 @@ Human readable:
   openssl \
   rsa \
   -in "private_key.pem" \
-  -noout \
   -text \
+  -noout \
+  > "private_key.txt"
+
+ED25519
+-------
+
+.. code:: shell
+
+  openssl \
+  genpkey \
+  -algorithm ED25519 \
+  > "private_key.pem"
+
+Human readable:
+
+.. code:: shell
+
+  openssl \
+  pkey \
+  -in "private_key.pem" \
+  -text \
+  -noout \
+  > "private_key.txt"
 
 Generate a certificate request
 ==============================
@@ -56,9 +81,9 @@ Generate a certificate request
   openssl \
   req \
   -new \
-  -key "private_key.pem" \
-  -out "certificate_request.csr" \
   -utf8 \
+  -key "private_key.pem" \
+  -out "certificate_request.csr"
 
 Human readable:
 
@@ -67,8 +92,9 @@ Human readable:
   openssl \
   req \
   -in "certificate_request.csr" \
-  -noout \
   -text \
+  -noout \
+  > "certificate_request.txt"
 
 Create a Certification Authority
 ================================
