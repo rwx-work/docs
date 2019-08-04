@@ -13,7 +13,7 @@ RSA
   openssl \
   genrsa \
   -out "private_key.pem" \
-  4096 \
+  4096
 
 Human readable:
 
@@ -83,7 +83,8 @@ Generate a certificate request
   -new \
   -utf8 \
   -key "private_key.pem" \
-  -out "certificate_request.csr"
+  -out "certificate_request.csr" \
+  -addext "subjectAltName=DNS:domain.tld"
 
 Human readable:
 
