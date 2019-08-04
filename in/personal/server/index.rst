@@ -309,16 +309,16 @@ Sites
  ssl_certificate_key /etc/nginx/rwx.work/key.pem;
 
  server {
- listen 443 ssl;
- listen [::]:443 ssl;
+ listen 443 ssl http2;
+ listen [::]:443 ssl http2;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
  autoindex on;
  }
 
  server {
- listen 443 ssl default_server;
- listen [::]:443 ssl default_server;
+ listen 443 default_server ssl http2;
+ listen [::]:443 default_server ssl http2;
  server_name .rwx.work;
  location / {
  proxy_pass http://10.0.0.1/;
