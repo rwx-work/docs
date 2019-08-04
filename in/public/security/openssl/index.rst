@@ -12,6 +12,13 @@ Select secure ciphers
  | grep "\(TLS\|ECDHE-RSA\)" \
  | grep "\(GCM\|POLY1305\)"
 
+List curves
+===========
+
+.. code:: shell
+
+ openssl ecparam -list_curves
+
 Generate private key
 ====================
 
