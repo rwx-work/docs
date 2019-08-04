@@ -2,6 +2,16 @@
 OpenSSL
 #######
 
+Select secure ciphers
+=====================
+
+.. code:: shell
+
+ openssl ciphers \
+ | sed -e "s/:/\n/g" \
+ | grep "\(TLS\|ECDHE-RSA\)" \
+ | grep "\(GCM\|POLY1305\)"
+
 Generate private key
 ====================
 
