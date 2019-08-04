@@ -54,13 +54,7 @@ Configure
 
  # Compression
 
- gzip on;
- gzip_buffers 32 8k;
- gzip_comp_level 5;
- gzip_http_version 1.1;
- gzip_proxied any;
- gzip_types *;
- gzip_vary off;
+ gzip off;
 
  # Misc
 
