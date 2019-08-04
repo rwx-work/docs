@@ -43,7 +43,7 @@ Configure
  ssl_dhparam /etc/nginx/dhparam;
  ssl_ecdh_curve secp384r1;
  ssl_prefer_server_ciphers on;
- ssl_protocols TLSv1.2;
+ ssl_protocols TLSv1.3 TLSv1.2;
  ssl_session_cache shared:ssl_session_cache:16m;
  ssl_session_timeout 15m;
 
