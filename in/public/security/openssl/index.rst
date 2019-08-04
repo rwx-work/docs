@@ -19,6 +19,13 @@ List curves
 
  openssl ecparam -list_curves
 
+Generate DHparam file
+=====================
+
+.. code:: shell
+
+ openssl dhparam -out dhparam 4096
+
 Generate private key
 ====================
 
