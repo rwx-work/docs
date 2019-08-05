@@ -1,10 +1,19 @@
-##############
-OpenSSH server
-##############
+openssh-server
+==============
 
-*********
+List algorithms
+---------------
+
+::
+
+ ssh -Q cipher
+ ssh -Q cipher-auth
+ ssh -Q mac
+ ssh -Q kex
+ ssh -Q key
+
 Configure
-*********
+---------
 
 * /etc/ssh/moduli
 
