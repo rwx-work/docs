@@ -2,8 +2,8 @@
 OpenSSL
 #######
 
-Select secure ciphers
-=====================
+List secure ciphers
+===================
 
 .. code:: shell
 
@@ -12,6 +12,16 @@ Select secure ciphers
  | grep "\(TLS\|ECDHE\)" \
  | grep --invert-match "\(DSA\|PSK\)" \
  | grep "\(POLY1305\|GCM\)"
+
+Select cipher suites
+====================
+
+* /etc/ssl/openssl.cnf
+
+::
+
+ [system_default_sect]
+ CipherSuites = TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384:TLS_AES_128_GCM_SHA256
 
 List curves
 ===========
