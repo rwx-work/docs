@@ -192,6 +192,9 @@ Prepare a grub.cfg
 * syslog-ng
 * ssh on port 80
 * domain certificate private key
+* domain certificate bundle
+* /etc/ssl/openssl.cnf tls 1.3 suites
+* nginx configuration
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
