@@ -7,10 +7,11 @@ Select secure ciphers
 
 .. code:: shell
 
- openssl ciphers \
- | sed -e "s/:/\n/g" \
- | grep "\(TLS\|ECDHE-RSA\)" \
- | grep "\(GCM\|POLY1305\)"
+ openssl ciphers ALL \
+ | sed "s/:/\n/g" \
+ | grep "\(TLS\|ECDHE\)" \
+ | grep --invert-match "\(DSA\|PSK\)" \
+ | grep "\(POLY1305\|GCM\)"
 
 List curves
 ===========
