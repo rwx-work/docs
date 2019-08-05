@@ -190,6 +190,8 @@ Prepare a grub.cfg
 * enable lxc.service
 * sources.list file:/
 * syslog-ng
+* ssh on port 80
+* domain certificate private key
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
