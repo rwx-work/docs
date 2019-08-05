@@ -46,6 +46,8 @@ Configure
  ssl_session_cache shared:ssl_session_cache:16m;
  ssl_session_timeout 15m;
 
+ add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload";
+
  # Log
 
  access_log /var/log/nginx/access.log;
@@ -57,7 +59,6 @@ Configure
 
  # Misc
 
- add_header Strict-Transport-Security max-age=31557600;
  client_max_body_size 16m;
  index index.html;
  proxy_pass_request_body on;
