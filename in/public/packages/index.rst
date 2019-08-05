@@ -5,3 +5,4 @@ Packages
    :maxdepth: 2
 
    apt/index
+   apt-mirror/index
