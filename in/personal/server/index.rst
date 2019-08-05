@@ -187,7 +187,9 @@ Prepare a grub.cfg
 * curl
 * swap,swappiness
 * enable nftables.service
-
+* enable lxc.service
+* sources.list file:/
+* syslog-ng
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
