@@ -195,6 +195,7 @@ Prepare a grub.cfg
 * domain certificate bundle
 * /etc/ssl/openssl.cnf tls 1.3 suites
 * nginx configuration
+* nginx in container
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
