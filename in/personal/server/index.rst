@@ -196,6 +196,7 @@ Prepare a grub.cfg
 * /etc/ssl/openssl.cnf tls 1.3 suites
 * nginx configuration
 * nginx in container
+* nginx host sites
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
