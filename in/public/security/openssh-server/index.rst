@@ -1,6 +1,14 @@
 openssh-server
 ==============
 
+Check options
+-------------
+
+::
+
+ sshd -t
+ sshd -T
+
 List algorithms
 ---------------
 
