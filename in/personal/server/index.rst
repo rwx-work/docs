@@ -350,6 +350,18 @@ Sites
 
  server {
  include /etc/nginx/https.conf;
+ server_name docs.rwx.work;
+ root /d/projects/docs/out/docs;
+ }
+
+ server {
+ include /etc/nginx/https.conf;
+ server_name todo.rwx.work;
+ root /d/projects/todo;
+ }
+
+ server {
+ include /etc/nginx/https.conf;
  server_name .rwx.work;
  location / {
  proxy_pass http://10.0.0.1/;
