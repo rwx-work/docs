@@ -341,6 +341,15 @@ Sites
  server {
  include https.conf;
  include rwx.work.conf;
+ server_name *.rwx.work;
+ location / {
+ proxy_pass http://10.0.0.1/;
+ }
+ }
+
+ server {
+ include https.conf;
+ include rwx.work.conf;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
  autoindex on;
@@ -358,15 +367,6 @@ Sites
  include rwx.work.conf;
  server_name todo.rwx.work;
  root /d/projects/todo;
- }
-
- server {
- include https.conf;
- include rwx.work.conf;
- server_name .rwx.work;
- location / {
- proxy_pass http://10.0.0.1/;
- }
  }
 
 Certificate
