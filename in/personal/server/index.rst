@@ -309,8 +309,32 @@ Prepare a grub.cfg
 Web
 ---
 
+Security
+^^^^^^^^
+
+* /etc/nginx/https.conf
+
+::
+
+listen 443 ssl http2;
+listen [::]:443 ssl http2;
+add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload";
+
 Sites
 ^^^^^
+
+* /etc/nginx/sites-enabled/http
+
+::
+
+ server {
+ listen 80 default_server;
+ listen [::]:80 default_server;
+ server_name _;
+ return 301 https://${host}${request_uri};
+ }
+
+* /etc/nginx/sites-enabled/rwx.work
 
 ::
 
@@ -318,16 +342,14 @@ Sites
  ssl_certificate_key /etc/nginx/rwx.work/key.pem;
 
  server {
- listen 443 ssl http2;
- listen [::]:443 ssl http2;
+ include /etc/nginx/https.conf;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
  autoindex on;
  }
 
  server {
- listen 443 default_server ssl http2;
- listen [::]:443 default_server ssl http2;
+ include /etc/nginx/https.conf;
  server_name .rwx.work;
  location / {
  proxy_pass http://10.0.0.1/;
