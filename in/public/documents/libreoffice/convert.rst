@@ -1,11 +1,10 @@
-*******
 Convert
-*******
+=======
 
-.. code::
+.. code:: shell
 
-    libreoffice \
-    --headless \
-    --convert-to "png" \
-    --outdir "chemin/fichier.png" \
-    input_file.o??
+ libreoffice \
+ --headless \
+ --convert-to "png" \
+ --outdir "/path/file.png" \
+ input_file.o??

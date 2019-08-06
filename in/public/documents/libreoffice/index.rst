@@ -1,6 +1,5 @@
-###########
-LibreOffice
-###########
+libreoffice
+===========
 
 .. toctree::
 
