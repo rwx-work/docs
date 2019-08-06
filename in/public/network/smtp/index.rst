@@ -6,7 +6,7 @@ Email with attachment
 
 ::
 
- Content-Type: multipart/mixed; boundary=${separator}; charset="utf8"
+ Content-Type: multipart/mixed; boundary="${separator}"; charset="utf8"
  From: first.last@sub.domain.tld
  To: first.last@sub.domain.tld
  Subject: Email subject
