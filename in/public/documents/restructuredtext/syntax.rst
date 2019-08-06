@@ -2,6 +2,13 @@
 Syntax
 ******
 
+.. todo:: titles
+.. todo:: lists
+.. todo:: code
+.. todo:: tables
+.. todo:: images
+.. todo:: links
+
 Sections
 ========
 
