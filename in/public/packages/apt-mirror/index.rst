@@ -1,6 +1,8 @@
 apt-mirror
 ==========
 
+.. todo:: list files syntax
+
 .. warning::
 
  Translations archived in xz are not fetched
