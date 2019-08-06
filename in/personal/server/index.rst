@@ -391,6 +391,7 @@ Security
  add_header Content-Security-Policy "default-src 'self'";
  add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload" always;
  add_header X-Frame-Options "SAMEORIGIN";
+ add_header X-XSS-Protection "1; mode=block";
 
 Sites
 ^^^^^
