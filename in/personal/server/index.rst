@@ -338,30 +338,31 @@ Sites
 
 ::
 
- ssl_certificate /etc/nginx/rwx.work/bundle.crt;
- ssl_certificate_key /etc/nginx/rwx.work/key.pem;
-
  server {
- include /etc/nginx/https.conf;
+ include https.conf;
+ include rwx.work.conf;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
  autoindex on;
  }
 
  server {
- include /etc/nginx/https.conf;
+ include https.conf;
+ include rwx.work.conf;
  server_name docs.rwx.work;
  root /d/projects/docs/out/docs;
  }
 
  server {
- include /etc/nginx/https.conf;
+ include https.conf;
+ include rwx.work.conf;
  server_name todo.rwx.work;
  root /d/projects/todo;
  }
 
  server {
- include /etc/nginx/https.conf;
+ include https.conf;
+ include rwx.work.conf;
  server_name .rwx.work;
  location / {
  proxy_pass http://10.0.0.1/;
@@ -371,9 +372,16 @@ Sites
 Certificate
 ^^^^^^^^^^^
 
-* /etc/nginx/rwx.work
- * key.pem
- * bundle.crt
+* /etc/nginx/rwx.work.conf
+
+::
+
+ ssl_certificate rwx.work.crt;
+ ssl_certificate_key rwx.work.key;
+
+* /etc/nginx/rwx.work.key
+
+* /etc/nginx/rwx.work.crt
 
 ::
 
