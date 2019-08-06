@@ -341,7 +341,7 @@ Sites
  server {
  include https.conf;
  include rwx.work.conf;
- server_name *.rwx.work;
+ server_name .rwx.work;
  location / {
  proxy_pass http://10.0.0.1/;
  }
