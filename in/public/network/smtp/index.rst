@@ -19,5 +19,5 @@ Email with attachment
  Content-Transfer-Encoding: base64
  Content-Type: application/octet-stream
 
- …
+ ${base64}
  --${separator}--
