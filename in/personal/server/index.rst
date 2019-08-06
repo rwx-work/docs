@@ -386,9 +386,9 @@ Security
 
 ::
 
-listen 443 ssl http2;
-listen [::]:443 ssl http2;
-add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload";
+ listen 443 ssl http2;
+ listen [::]:443 ssl http2;
+ add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload";
 
 Sites
 ^^^^^
