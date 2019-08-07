@@ -390,9 +390,9 @@ Security
  listen [::]:443 ssl http2;
  add_header Content-Security-Policy "default-src 'self'";
  add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload" always;
- add_header X-Content-Type-Options "nosniff";
- add_header X-Frame-Options "SAMEORIGIN";
- add_header X-XSS-Protection "1; mode=block";
+ add_header X-Content-Type-Options "nosniff" always;
+ add_header X-Frame-Options "SAMEORIGIN" always;
+ add_header X-XSS-Protection "1; mode=block" always;
 
 Sites
 ^^^^^
