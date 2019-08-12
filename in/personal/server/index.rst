@@ -216,7 +216,7 @@ Prepare a grub.cfg
 * apt clean
 * /etc/ssh/sshd_config
 * mkdir /root/.ssh
-* echo "ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAFBp8vFUIRu4Bq8EvnCGwlp71GQ4wGT5wKdY1X/c9AfYjsn/pnBNgnfNFxPxoNasG1MXeXjutSLtlXqnsWx2NQpFQC321MeUvd3Z/DCeIvS4WvpOZMyBvVUd2sTsuuCRVuH3fbJF5XPJrFzH3nEFNtcW7lmN+F6nKLB0kYahc3+gyTH+g==" > /root/.ssh/authorized_keys
+* echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICZAs76kQJ0/Et2NGzhxurK2wE0VhYsG9wl85iCmR9xH" > /root/.ssh/authorized_keys
 * lxc
 * /etc/network/interfaces.d/setup
 
