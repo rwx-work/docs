@@ -8,7 +8,7 @@ openssh-server
  Subsystem sftp internal-sftp
 
  AllowTcpForwarding yes
- Ciphers aes256-gcm@openssh.com
+ Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com
  Compression no
  MaxStartups 10:30:50
  PermitTunnel no
@@ -22,9 +22,9 @@ openssh-server
  FingerprintHash sha256
  HostbasedAuthentication no
  IgnoreRhosts yes
- HostKey /etc/ssh/ssh_host_ecdsa_key
- HostKeyAlgorithms ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp521
- KexAlgorithms diffie-hellman-group18-sha512,diffie-hellman-group16-sha512
+ HostKey /etc/ssh/ssh_host_ed25519_key
+ HostKeyAlgorithms ssh-ed25519
+ KexAlgorithms curve25519-sha256@libssh.org
  LoginGraceTime 60
  MACs hmac-sha2-512-etm@openssh.com
  PasswordAuthentication no
