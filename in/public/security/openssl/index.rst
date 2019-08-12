@@ -10,9 +10,8 @@ List secure ciphers
  openssl ciphers ALL \
  | sed "s/:/\n/g" \
  | grep "\(TLS\|ECDHE\)" \
- | grep "\(CHACHA20\|256\)" \
  | grep "\(POLY1305\|GCM\)" \
- | grep --invert-match "\(DSA\|PSK\)"
+ | grep --invert-match "\(DSA\|PSK\|128\)"
 
 Select cipher suites
 ====================
