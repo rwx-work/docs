@@ -397,7 +397,11 @@ Security
  add_header Strict-Transport-Security "max-age=31557600; includeSubDomains; preload" always;
  add_header X-Content-Type-Options "nosniff" always;
  add_header X-Frame-Options "SAMEORIGIN" always;
- add_header Feature-Policy "camera 'none'; payment 'none'" always;
+ set $fp "";
+ set $fp "${fp}camera 'none';";
+ set $fp "${fp}microphone 'none';";
+ set $fp "${fp}payment 'none';";
+ add_header Feature-Policy "${fp}" always;
 
 Sites
 ^^^^^
