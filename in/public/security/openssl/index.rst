@@ -119,7 +119,7 @@ Generate a certificate request
   -utf8 \
   -key "private_key.pem" \
   -out "certificate_request.csr" \
-  -addext "subjectAltName=DNS:domain.tld"
+  -addext "subjectAltName=DNS:*.domain.tld,DNS:*.sub.domain.tld"
 
 Human readable:
 
