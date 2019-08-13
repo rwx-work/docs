@@ -404,9 +404,9 @@ Security
  add_header X-Content-Type-Options "nosniff" always;
  add_header X-Frame-Options "SAMEORIGIN" always;
  set $fp "";
- set $fp "${fp}camera 'none';";
- set $fp "${fp}microphone 'none';";
- set $fp "${fp}payment 'none';";
+ set $fp "${fp} camera 'none';";
+ set $fp "${fp} microphone 'none';";
+ set $fp "${fp} payment 'none';";
  add_header Feature-Policy "${fp}" always;
 
 Sites
