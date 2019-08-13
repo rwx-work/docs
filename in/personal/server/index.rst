@@ -182,7 +182,7 @@ Prepare a grub.cfg
 * net.ipv4.ip_forward=1
 * net.ipv6.conf.all.forwarding=1
 * nftables
-* nginx
+* nginx-extras
 * root/user authorized_keys
 * curl
 * swap,swappiness
@@ -316,6 +316,8 @@ Configuration
 
 ::
 
+ load_module modules/ngx_http_headers_more_filter_module.so;
+
  pid /run/nginx.pid;
  user user;
  worker_processes auto;
@@ -375,6 +377,10 @@ Configuration
  proxy_pass_request_body on;
  proxy_pass_request_headers on;
  proxy_redirect off;
+
+ # Headers
+
+ more_clear_headers Server;
 
  # Includes
 
