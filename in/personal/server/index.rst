@@ -358,8 +358,6 @@ Configuration
  ssl_session_cache shared:ssl_session_cache:16m;
  ssl_session_tickets off;
  ssl_session_timeout 15m;
- ssl_stapling on;
- ssl_stapling_verify on;
 
  # Log
 
@@ -387,6 +385,13 @@ Configuration
  include sites-enabled/*;
 
  }
+
+.. warning:: almost 1 minute to start the service
+
+::
+
+ ssl_stapling on;
+ ssl_stapling_verify on;
 
 Security
 ^^^^^^^^
