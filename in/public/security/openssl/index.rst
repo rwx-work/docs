@@ -119,8 +119,13 @@ Generate a certificate request
   -utf8 \
   -key "private_key.pem" \
   -out "certificate_request.csr" \
-  -addext "tlsfeature=status_request" \
   -addext "subjectAltName=DNS:*.domain.tld,DNS:*.sub.domain.tld"
+
+.. warning:: must staple, problems with nginx and apache
+
+.. code:: shell
+
+ -addext "tlsfeature=status_request"
 
 Human readable:
 
