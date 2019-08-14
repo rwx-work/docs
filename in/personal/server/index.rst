@@ -351,8 +351,8 @@ Configuration
  # Security
 
  ssl_buffer_size 8k;
- ssl_ciphers "ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ARIA256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ARIA128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256";
- ssl_ecdh_curve "X448:X25519:P-521:P-384";
+ ssl_ciphers "ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ARIA256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384";
+ ssl_ecdh_curve "X448:X25519:P-521";
  ssl_prefer_server_ciphers on;
  ssl_protocols TLSv1.3 TLSv1.2;
  ssl_session_cache shared:ssl_session_cache:16m;
