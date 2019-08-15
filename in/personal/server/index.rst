@@ -413,13 +413,16 @@ Security
  set $fp "";
  set $fp "${fp}accelerometer 'none';";
  set $fp "${fp}ambient-light-sensor 'none';";
+ set $fp "${fp}animations 'self';";
  set $fp "${fp}autoplay 'none';";
  set $fp "${fp}camera 'none';";
  set $fp "${fp}document-domain 'none';";
+ set $fp "${fp}document-write 'none';";
  set $fp "${fp}encrypted-media 'none';";
  set $fp "${fp}fullscreen *;";
  set $fp "${fp}geolocation 'none';";
  set $fp "${fp}gyroscope 'none';";
+ set $fp "${fp}legacy-image-formats 'none';";
  set $fp "${fp}magnetometer 'none';";
  set $fp "${fp}microphone 'none';";
  set $fp "${fp}midi 'none';";
@@ -427,7 +430,9 @@ Security
  set $fp "${fp}picture-in-picture 'none';";
  set $fp "${fp}speaker 'self';";
  set $fp "${fp}sync-xhr 'none';";
+ set $fp "${fp}unsized-media 'none';";
  set $fp "${fp}usb 'none';";
+ set $fp "${fp}vertical-scroll 'self';";
  set $fp "${fp}vr 'none';";
  add_header Feature-Policy "${fp}" always;
 
