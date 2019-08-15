@@ -467,7 +467,7 @@ Security
  uwsgi_param server_port      $server_port;
 
  uwsgi_param uri_scheme       $scheme;
- uwsgi_param uri_name         $server_name;
+ uwsgi_param uri_host         $host;
  uwsgi_param uri_request      $request_uri;
  uwsgi_param uri_document     $document_uri;
  uwsgi_param uri_query        $query_string;
