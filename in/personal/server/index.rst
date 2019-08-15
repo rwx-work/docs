@@ -436,7 +436,6 @@ Sites
 ::
 
  server {
- include https.conf;
  include rwx.work.conf;
  server_name .rwx.work;
  location / {
@@ -445,7 +444,6 @@ Sites
  }
 
  server {
- include https.conf;
  include rwx.work.conf;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
@@ -453,14 +451,12 @@ Sites
  }
 
  server {
- include https.conf;
  include rwx.work.conf;
  server_name docs.rwx.work;
  root /d/projects/docs/out/docs;
  }
 
  server {
- include https.conf;
  include rwx.work.conf;
  server_name todo.rwx.work;
  root /d/projects/todo;
@@ -473,6 +469,7 @@ Certificate
 
 ::
 
+ include https.conf;
  ssl_certificate rwx.work.crt;
  ssl_certificate_key rwx.work.key;
 
