@@ -199,6 +199,7 @@ Prepare a grub.cfg
 * nginx configuration
 * nginx in container
 * nginx host sites
+* python3-sphinx-rtd-theme
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
