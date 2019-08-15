@@ -320,6 +320,7 @@ Configuration
 
 ::
 
+ load_module modules/ngx_http_fancyindex_module.so;
  load_module modules/ngx_http_headers_more_filter_module.so;
 
  pid /run/nginx.pid;
@@ -476,7 +477,7 @@ Sites
  include rwx.work.conf;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
- autoindex on;
+ fancyindex on;
  }
 
  server {
