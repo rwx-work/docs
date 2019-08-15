@@ -200,6 +200,7 @@ Prepare a grub.cfg
 * nginx in container
 * nginx host sites
 * python3-sphinx-rtd-theme
+* uwsgi-plugin-python3
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
