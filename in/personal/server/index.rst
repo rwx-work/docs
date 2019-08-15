@@ -417,8 +417,6 @@ Security
  set $fp "${fp}camera 'none';";
  set $fp "${fp}document-domain 'none';";
  set $fp "${fp}fullscreen *;";
- set $fp "${fp}execution-while-not-rendered 'none';";
- set $fp "${fp}execution-while-out-of-viewport 'none';";
  set $fp "${fp}gyroscope 'none';";
  set $fp "${fp}magnetometer 'none';";
  set $fp "${fp}microphone 'none';";
@@ -427,8 +425,7 @@ Security
  set $fp "${fp}picture-in-picture 'none';";
  set $fp "${fp}sync-xhr 'none';";
  set $fp "${fp}usb 'none';";
- set $fp "${fp}wake-lock 'none';";
- set $fp "${fp}xr 'none';";
+ set $fp "${fp}vr 'none';";
  add_header Feature-Policy "${fp}" always;
 
 .. todo:: find policy not blocking sphinx search
