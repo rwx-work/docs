@@ -312,6 +312,17 @@ Prepare a grub.cfg
      }
  }
 
+Security
+--------
+
+* /etc/sudoers
+
+.. todo:: all directives
+
+::
+
+ user ALL=NOPASSWD: /bin/systemctl restart uwsgi
+
 Web
 ---
 
