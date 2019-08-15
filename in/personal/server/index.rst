@@ -161,6 +161,7 @@ Prepare a grub.cfg
 
 * debootstrap
 * apt
+* user account and home directory
 * fstab /d
 * systemd
 * linux-image
