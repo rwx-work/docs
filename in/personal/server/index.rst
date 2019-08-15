@@ -372,6 +372,9 @@ Configuration
 
  client_max_body_size 16m;
  index index.html;
+
+ # Proxy
+
  proxy_pass_request_body on;
  proxy_pass_request_headers on;
  proxy_redirect off;
