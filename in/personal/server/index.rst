@@ -202,6 +202,7 @@ Prepare a grub.cfg
 * python3-sphinx-rtd-theme
 * uwsgi
 * uwsgi-plugin-python3
+* sudo
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
