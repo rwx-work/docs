@@ -452,29 +452,29 @@ Security
 
 ::
 
- uwsgi_param client_address   $remote_addr;
- uwsgi_param client_port      $remote_port;
- uwsgi_param client_ciphers   $ssl_ciphers;
- uwsgi_param client_curves    $ssl_curves;
+ uwsgi_param client_address   ${remote_addr};
+ uwsgi_param client_port      ${remote_port};
+ uwsgi_param client_ciphers   ${ssl_ciphers};
+ uwsgi_param client_curves    ${ssl_curves};
 
- uwsgi_param session_reused   $ssl_session_reused;
- uwsgi_param session_id       $ssl_session_id;
- uwsgi_param session_cipher   $ssl_cipher;
- uwsgi_param session_protocol $ssl_protocol;
+ uwsgi_param session_reused   ${ssl_session_reused};
+ uwsgi_param session_id       ${ssl_session_id};
+ uwsgi_param session_cipher   ${ssl_cipher};
+ uwsgi_param session_protocol ${ssl_protocol};
 
- uwsgi_param server_protocol  $server_protocol;
- uwsgi_param server_address   $server_addr;
- uwsgi_param server_port      $server_port;
+ uwsgi_param server_protocol  ${server_protocol};
+ uwsgi_param server_address   ${server_addr};
+ uwsgi_param server_port      ${server_port};
 
- uwsgi_param uri_scheme       $scheme;
- uwsgi_param uri_host         $host;
- uwsgi_param uri_request      $request_uri;
- uwsgi_param uri_document     $document_uri;
- uwsgi_param uri_query        $query_string;
- uwsgi_param uri_method       $request_method;
+ uwsgi_param uri_scheme       ${scheme};
+ uwsgi_param uri_host         ${host};
+ uwsgi_param uri_request      ${request_uri};
+ uwsgi_param uri_document     ${document_uri};
+ uwsgi_param uri_query        ${query_string};
+ uwsgi_param uri_method       ${request_method};
 
- uwsgi_param content_type     $content_type;
- uwsgi_param content_length   $content_length;
+ uwsgi_param content_type     ${content_type};
+ uwsgi_param content_length   ${content_length};
 
 Apps
 ^^^^
