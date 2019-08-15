@@ -169,6 +169,7 @@ Prepare a grub.cfg
 * completion
 * network
 * interfaces
+* iputils-ping
 * basics
 * openssh-server fixes (sshd user, /run/sshd)
 * live-boot
