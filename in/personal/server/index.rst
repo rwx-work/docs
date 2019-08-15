@@ -438,6 +438,8 @@ Security
 
 .. todo:: find policy not blocking sphinx search
 
+::
+
  add_header Content-Security-Policy "default-src 'self'" always;
 
 Sites
