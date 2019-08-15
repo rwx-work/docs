@@ -410,13 +410,30 @@ Security
  add_header Strict-Transport-Security "max-age=31557600;includeSubDomains;preload" always;
  add_header X-Content-Type-Options "nosniff" always;
  add_header X-Frame-Options "DENY" always;
+ set $fp "";
+ set $fp "${fp}accelerometer 'none';";
+ set $fp "${fp}ambient-light-sensor 'none';";
+ set $fp "${fp}autoplay 'none';";
+ set $fp "${fp}camera 'none';";
+ set $fp "${fp}document-domain 'none';";
+ set $fp "${fp}fullscreen *;";
+ set $fp "${fp}execution-while-not-rendered 'none';";
+ set $fp "${fp}execution-while-out-of-viewport 'none';";
+ set $fp "${fp}gyroscope 'none';";
+ set $fp "${fp}magnetometer 'none';";
+ set $fp "${fp}microphone 'none';";
+ set $fp "${fp}midi 'none';";
+ set $fp "${fp}payment 'self';";
+ set $fp "${fp}picture-in-picture 'none';";
+ set $fp "${fp}sync-xhr 'none';";
+ set $fp "${fp}usb 'none';";
+ set $fp "${fp}wake-lock 'none';";
+ set $fp "${fp}xr 'none';";
+ add_header Feature-Policy "${fp}" always;
+
+.. todo:: find policy not blocking sphinx search
 
  add_header Content-Security-Policy "default-src 'self'" always;
- set $fp "";
- set $fp "${fp} camera 'none';";
- set $fp "${fp} microphone 'none';";
- set $fp "${fp} payment 'none';";
- add_header Feature-Policy "${fp}" always;
 
 Sites
 ^^^^^
