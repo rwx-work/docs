@@ -416,13 +416,16 @@ Security
  set $fp "${fp}autoplay 'none';";
  set $fp "${fp}camera 'none';";
  set $fp "${fp}document-domain 'none';";
+ set $fp "${fp}encrypted-media 'none';";
  set $fp "${fp}fullscreen *;";
+ set $fp "${fp}geolocation 'none';";
  set $fp "${fp}gyroscope 'none';";
  set $fp "${fp}magnetometer 'none';";
  set $fp "${fp}microphone 'none';";
  set $fp "${fp}midi 'none';";
  set $fp "${fp}payment 'self';";
  set $fp "${fp}picture-in-picture 'none';";
+ set $fp "${fp}speaker 'self';";
  set $fp "${fp}sync-xhr 'none';";
  set $fp "${fp}usb 'none';";
  set $fp "${fp}vr 'none';";
