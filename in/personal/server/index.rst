@@ -407,11 +407,11 @@ Security
  listen [::]:443 ssl http2;
  add_header Expect-CT "enforce,max-age=0" always;
  add_header Strict-Transport-Security "max-age=31557600;includeSubDomains;preload" always;
+ add_header X-Content-Type-Options "nosniff" always;
  add_header X-Frame-Options "DENY" always;
 
  add_header Content-Security-Policy "default-src 'self'" always;
  add_header Referrer-Policy "no-referrer-when-downgrade" always;
- add_header X-Content-Type-Options "nosniff" always;
  set $fp "";
  set $fp "${fp} camera 'none';";
  set $fp "${fp} microphone 'none';";
