@@ -249,3 +249,16 @@ from CA key & certificate
  -days 365 \
  -out "client.crt" \
  -set_serial nn
+
+Export client PFX
+=================
+
+.. code:: shell
+
+ openssl \
+ pkcs12 \
+ -certfile ca.crt \
+ -in client.crt \
+ -inkey client.key \
+ -export \
+ -out client.pfx
