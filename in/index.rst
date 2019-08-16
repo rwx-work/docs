@@ -4,6 +4,7 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
+   public/firefox/index
    public/archives/index
    public/code/index
    public/containers/index
