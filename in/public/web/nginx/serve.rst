@@ -34,6 +34,14 @@ Serve
      }
  }
 
+Certificates
+------------
+
+::
+
+ application/x-x509-ca-cert   crt der pem;
+ application/x-x509-user-cert pfx;
+
 Check client certificate
 ------------------------
 
