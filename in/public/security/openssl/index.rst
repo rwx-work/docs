@@ -204,6 +204,21 @@ quick & dirty variant
   -selfsign \
   -keyfile "private_key.pem" \
 
+----
+
+dirtier certificate only variant
+--------------------------------
+
+.. code:: shell
+
+ openssl \
+ req \
+ -new \
+ -x509 \
+ -days 365 \
+ -key ca.key \
+ -out ca.crt
+
 Sign request
 ============
 
