@@ -34,6 +34,16 @@ Serve
      }
  }
 
+Check client certificate
+------------------------
+
+::
+
+ location /protected {
+ ssl_client_certificate ca.crt;
+ ssl_verify_client on;
+ }
+
 Redirect http to https
 ----------------------
 
