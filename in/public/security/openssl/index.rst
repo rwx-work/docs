@@ -250,15 +250,19 @@ from CA key & certificate
  -out "client.crt" \
  -set_serial nn
 
-Export client PFX
-=================
+Export client P12/PFX
+=====================
+
+* client private key
+* client certificate
+* CA certificate
 
 .. code:: shell
 
  openssl \
  pkcs12 \
- -certfile ca.crt \
- -in client.crt \
- -inkey client.key \
  -export \
- -out client.pfx
+ -out client.pfx \
+ -inkey client.key \
+ -in client.crt \
+ -certfile ca.crt
