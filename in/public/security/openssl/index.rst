@@ -255,7 +255,6 @@ Export client P12/PFX
 
 * client private key
 * client certificate
-* CA certificate
 
 .. code:: shell
 
@@ -264,5 +263,4 @@ Export client P12/PFX
  -export \
  -out client.pfx \
  -inkey client.key \
- -in client.crt \
- -certfile ca.crt
+ -in client.crt
