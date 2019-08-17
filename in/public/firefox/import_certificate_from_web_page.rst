@@ -13,6 +13,8 @@ CA certificate
 Client certificate
 ------------------
 
+.. warning:: doesn't work, bug still open
+
 ::
 
  application/x-x509-user-cert p12 pfx;
