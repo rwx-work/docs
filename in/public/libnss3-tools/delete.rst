@@ -1,7 +1,18 @@
 Delete
 ======
 
-.. todo:: key
+.. warning::
+
+ deletion of key removes associated certificate
+
+Key
+---
+
+.. code:: shell
+
+ certutil \
+ -d ~/.mozilla/firefox/default \
+ -F -n "Name"
 
 Certificate
 -----------
