@@ -482,7 +482,6 @@ Security
  uwsgi_param request_host     ${host};
  uwsgi_param request_document ${document_uri};
  uwsgi_param request_query    ${query_string};
- uwsgi_param request_status   ${status};
  uwsgi_param request_method   ${request_method};
 
  uwsgi_param content_type     ${content_type};
@@ -558,8 +557,8 @@ Sites
  root /d/projects/todo;
  }
 
-Certificate
-^^^^^^^^^^^
+Certificate and errors
+^^^^^^^^^^^^^^^^^^^^^^
 
 * /etc/nginx/rwx.work.conf
 
@@ -568,6 +567,13 @@ Certificate
  include https.conf;
  ssl_certificate rwx.work.crt;
  ssl_certificate_key rwx.work.key;
+ location @error {
+ return https://rwx.work/error/${status};
+ }
+ error_page 496 =496 @error; # Certificate Required
+ error_page
+ 404 # Not Found
+ @error;
 
 * /etc/nginx/rwx.work.key
 
