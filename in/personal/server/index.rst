@@ -573,6 +573,7 @@ Certificate and errors
  error_page 496 =496 @error; # Certificate Required
  error_page 497 =497 @error; # HTTP Request Sent to HTTPS Port
  error_page
+ 403 # Forbidden
  404 # Not Found
  @error;
 
