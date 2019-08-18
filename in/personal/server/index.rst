@@ -571,6 +571,7 @@ Certificate and errors
  return https://rwx.work/error/${status};
  }
  error_page 496 =496 @error; # Certificate Required
+ error_page 497 =497 @error; # HTTP Request Sent to HTTPS Port
  error_page
  404 # Not Found
  @error;
