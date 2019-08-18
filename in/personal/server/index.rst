@@ -478,15 +478,22 @@ Security
  uwsgi_param server_address   ${server_addr};
  uwsgi_param server_port      ${server_port};
 
- uwsgi_param uri_scheme       ${scheme};
- uwsgi_param uri_host         ${host};
- uwsgi_param uri_request      ${request_uri};
- uwsgi_param uri_document     ${document_uri};
- uwsgi_param uri_query        ${query_string};
- uwsgi_param uri_method       ${request_method};
+ uwsgi_param request_scheme   ${scheme};
+ uwsgi_param request_host     ${host};
+ uwsgi_param request_document ${document_uri};
+ uwsgi_param request_query    ${query_string};
+ uwsgi_param request_status   ${status};
+ uwsgi_param request_method   ${request_method};
 
  uwsgi_param content_type     ${content_type};
  uwsgi_param content_length   ${content_length};
+
+ uwsgi_param client_verify    ${ssl_client_verify};
+ uwsgi_param client_issuer    ${ssl_client_i_dn};
+ uwsgi_param client_subject   ${ssl_client_s_dn};
+ uwsgi_param client_start     ${ssl_client_v_start};
+ uwsgi_param client_remain    ${ssl_client_v_remain};
+ uwsgi_param client_end       ${ssl_client_v_end};
 
 Apps
 ^^^^
