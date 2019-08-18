@@ -5,6 +5,7 @@ RTFD
    :maxdepth: 2
 
    public/firefox/index
+   public/libnss3-tools/index
    public/archives/index
    public/code/index
    public/containers/index
