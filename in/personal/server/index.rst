@@ -553,6 +553,12 @@ Sites
 
  server {
  include rwx.work.conf;
+ server_name sites.rwx.work;
+ root /d/projects/sites/out/content;
+ }
+
+ server {
+ include rwx.work.conf;
  server_name todo.rwx.work;
  root /d/projects/todo;
  }
