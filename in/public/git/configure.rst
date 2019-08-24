@@ -1,9 +1,8 @@
-*********
 Configure
-*********
+=========
 
 Identity
-========
+--------
 
 .. code:: shell
 
@@ -17,3 +16,17 @@ Identity
   [user]
       name = "First Last"
       email = "user@domain.tld"
+
+Auto-build
+----------
+
+.. code:: shell
+
+ git config receive.denyCurrentBranch updateInstead
+
+* .git/hooks/post-receive (+x)
+
+.. code:: shell
+
+ #! /bin/sh
+ ../build_script
