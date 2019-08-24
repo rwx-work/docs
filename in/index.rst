@@ -23,7 +23,6 @@ RTFD
    public/desktops/index
    public/documents/index
    public/init/index
-   public/machines/index
    public/media/index
    public/network/index
    public/packages/index
