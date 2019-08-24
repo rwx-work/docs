@@ -2,12 +2,19 @@ RTFD
 ====
 
 .. toctree::
+   :caption: Alphabetical
    :maxdepth: 2
 
-   public/firefox/index
-   public/ifupdown2/index
-   public/libnss3-tools/index
-   public/openssl/index
+ public/firefox/index
+ public/ifupdown2/index
+ public/libnss3-tools/index
+ public/nginx/index
+ public/openssl/index
+
+.. toctree::
+   :caption: Categories
+   :maxdepth: 2
+
    public/archives/index
    public/code/index
    public/containers/index
