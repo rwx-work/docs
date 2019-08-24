@@ -7,6 +7,8 @@ RTFD
 
    public/firefox/index
    public/git/index
+   public/git-bash/index
+   public/gource/index
    public/ifupdown2/index
    public/libnss3-tools/index
    public/nginx/index
@@ -29,7 +31,6 @@ RTFD
    public/security/index
    public/storage/index
    public/systems/index
-   public/versions/index
 
 .. toctree::
    :caption: Personal
