@@ -5,12 +5,12 @@ RTFD
    :caption: Alphabetical
    :maxdepth: 2
 
- public/firefox/index
- public/git/index
- public/ifupdown2/index
- public/libnss3-tools/index
- public/nginx/index
- public/openssl/index
+   public/firefox/index
+   public/git/index
+   public/ifupdown2/index
+   public/libnss3-tools/index
+   public/nginx/index
+   public/openssl/index
 
 .. toctree::
    :caption: Categories
