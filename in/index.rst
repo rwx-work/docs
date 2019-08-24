@@ -6,6 +6,7 @@ RTFD
 
    public/firefox/index
    public/libnss3-tools/index
+   public/openssl/index
    public/archives/index
    public/code/index
    public/containers/index
