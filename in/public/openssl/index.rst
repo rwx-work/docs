@@ -4,4 +4,4 @@ openssl
 .. toctree::
 
    dispatch
-   ca
+   ca/index
