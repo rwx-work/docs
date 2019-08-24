@@ -8,5 +8,4 @@ Security
    gpg/index
    openssh-client/index
    openssh-server/index
-   openssl/index
    tcplay/index

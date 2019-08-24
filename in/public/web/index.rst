@@ -5,7 +5,7 @@ Web
    :maxdepth: 2
 
    nginx/index
-   apache/index
+   apache2/index
 
    nodejs/index
    tomcat/index

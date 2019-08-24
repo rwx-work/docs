@@ -3,7 +3,7 @@ Tasks
 
 * latest
 
-  * tty size → setfont (/usr/share/consolefonts/*.psf.gz)
+  * tty size → setfont (/usr/share/consolefonts/\*.psf.gz)
   * vcard spec
   * chntpw / reged -e
   * chvt
@@ -136,29 +136,6 @@ Tasks
     * on-the-fly LibreOffice documents conversion
     * send emails as own domain name's alias
     * personal GPG key signature
-
-Network interfaces
-------------------
-
-* /etc/network/interfaces
-
-.. code:: shell
-
-  source /etc/network/interfaces.d/*
-
-* /etc/network/interfaces.d/lo
-
-::
-
-  auto lo
-  iface lo inet loopback
-
-* /etc/network/interfaces.d/eth0
-
-::
-
-  auto eth0
-  iface eth0 inet dhcp
 
 Name resolution
 ---------------

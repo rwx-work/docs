@@ -5,6 +5,7 @@ RTFD
    :maxdepth: 2
 
    public/firefox/index
+   public/ifupdown2/index
    public/libnss3-tools/index
    public/openssl/index
    public/archives/index
