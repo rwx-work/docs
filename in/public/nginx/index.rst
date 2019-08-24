@@ -1,8 +1,7 @@
-#####
-NginX
-#####
+nginx
+=====
 
 .. toctree::
 
-   configure
-   serve
+ configure
+ serve

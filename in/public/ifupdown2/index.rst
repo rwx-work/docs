@@ -1,4 +1,4 @@
-ifupdwon2
+ifupdown2
 =========
 
 .. toctree::
