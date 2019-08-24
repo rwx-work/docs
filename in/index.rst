@@ -31,7 +31,6 @@ RTFD
    public/storage/index
    public/systems/index
    public/versions/index
-   public/web/index
 
 .. toctree::
    :caption: Personal
