@@ -6,5 +6,4 @@ Systems
 
    debian/index
    grub/index
-   linux/index
    windows/index
