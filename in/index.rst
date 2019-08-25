@@ -29,6 +29,7 @@ RTFD
    public/openssl/index
    public/pandoc/index
    public/parted/index
+   public/pdftk/index
    public/python3/index
    public/python3-sphinx/index
    public/rsync/index
