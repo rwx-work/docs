@@ -6,8 +6,10 @@ RTFD
 
    public/apt/index
    public/apt-mirror/index
+   public/bash/index
    public/c/index
    public/dd/index
+   public/debian/index
    public/docker/index
    public/ffmpeg/index
    public/firefox/index
@@ -37,7 +39,6 @@ RTFD
    public/documents/index
    public/network/index
    public/security/index
-   public/storage/index
 
 .. toctree::
    :caption: Personal
