@@ -1,8 +1,0 @@
-###
-SQL
-###
-
-.. toctree::
-
-   syntax
-   snippets

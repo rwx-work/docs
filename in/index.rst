@@ -25,7 +25,6 @@ RTFD
 
    public/archives/index
    public/code/index
-   public/data/index
    public/desktops/index
    public/documents/index
    public/init/index

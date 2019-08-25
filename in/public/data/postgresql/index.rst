@@ -1,7 +1,0 @@
-##########
-PostGreSQL
-##########
-
-.. toctree::
-   configure
-   create
