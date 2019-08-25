@@ -8,6 +8,7 @@ RTFD
    public/apt-mirror/index
    public/bash/index
    public/c/index
+   public/curl/index
    public/dd/index
    public/debian/index
    public/docker/index
