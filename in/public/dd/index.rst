@@ -1,4 +1,4 @@
-DD
+dd
 ==
 
 .. code:: shell

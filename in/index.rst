@@ -7,6 +7,7 @@ RTFD
    public/apt/index
    public/apt-mirror/index
    public/c/index
+   public/dd/index
    public/docker/index
    public/ffmpeg/index
    public/firefox/index
@@ -17,9 +18,12 @@ RTFD
    public/ifupdown2/index
    public/libnss3-tools/index
    public/lxc/index
+   public/mdadm/index
    public/nginx/index
    public/openssl/index
+   public/parted/index
    public/python3/index
+   public/rsync/index
    public/squashfs-tools/index
    public/systemd/index
    public/tar/index

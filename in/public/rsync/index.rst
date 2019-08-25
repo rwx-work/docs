@@ -1,4 +1,4 @@
-Rsync
+rsync
 =====
 
 .. toctree::

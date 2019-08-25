@@ -1,8 +1,8 @@
-Parted
+parted
 ======
 
-Examples with 2 × 2 TB hard disk drives as MBR,
-for a virtual 4 TB with data and 32 GB of swap as GPT.
+| Examples with 2 × 2 TB hard disk drives as MBR,
+| for a virtual 4 TB with data and 32 GB of swap as GPT.
 
 MBR
 ---
