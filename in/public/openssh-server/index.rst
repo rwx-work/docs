@@ -1,6 +1,8 @@
 openssh-server
 ==============
 
+.. todo:: refresh sshd_config configuration
+
 Check options
 -------------
 

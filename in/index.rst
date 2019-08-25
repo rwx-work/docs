@@ -25,6 +25,7 @@ RTFD
    public/lxc/index
    public/mdadm/index
    public/nginx/index
+   public/openssh-server/index
    public/openssl/index
    public/pandoc/index
    public/parted/index
