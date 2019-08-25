@@ -7,4 +7,3 @@ Documents
    markdown/index
    recommonmark/index
    restructuredtext/index
-   texlive/index

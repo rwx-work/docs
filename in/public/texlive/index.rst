@@ -1,6 +1,5 @@
-#######
-TexLive
-#######
+texlive
+=======
 
 .. toctree::
 
