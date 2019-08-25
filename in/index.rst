@@ -2,7 +2,6 @@ RTFD
 ====
 
 .. toctree::
-   :caption: Alphabetical
    :maxdepth: 2
 
    public/firefox/index
