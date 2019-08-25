@@ -19,13 +19,14 @@ RTFD
    public/nginx/index
    public/openssl/index
    public/python3/index
+   public/squashfs-tools/index
+   public/tar/index
    public/windows/index
 
 .. toctree::
    :caption: Categories
    :maxdepth: 2
 
-   public/archives/index
    public/desktops/index
    public/documents/index
    public/init/index
