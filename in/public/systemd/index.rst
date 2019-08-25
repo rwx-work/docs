@@ -1,4 +1,4 @@
-SystemD
+systemd
 =======
 
 .. toctree::

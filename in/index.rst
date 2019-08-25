@@ -21,6 +21,7 @@ RTFD
    public/openssl/index
    public/python3/index
    public/squashfs-tools/index
+   public/systemd/index
    public/tar/index
    public/windows/index
 
@@ -30,7 +31,6 @@ RTFD
 
    public/desktops/index
    public/documents/index
-   public/init/index
    public/network/index
    public/security/index
    public/storage/index
