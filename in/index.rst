@@ -9,6 +9,7 @@ RTFD
    public/git/index
    public/git-bash/index
    public/gource/index
+   public/grub/index
    public/ifupdown2/index
    public/libnss3-tools/index
    public/nginx/index

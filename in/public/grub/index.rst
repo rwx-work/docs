@@ -1,4 +1,4 @@
-GRUB
+grub
 ====
 
 .. toctree::
