@@ -4,7 +4,8 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
-   public/bash/index
+   public/apt/index
+   public/apt-mirror/index
    public/c/index
    public/docker/index
    public/ffmpeg/index
@@ -31,7 +32,6 @@ RTFD
    public/documents/index
    public/init/index
    public/network/index
-   public/packages/index
    public/security/index
    public/storage/index
 

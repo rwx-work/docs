@@ -1,4 +1,4 @@
-APT
+apt
 ===
 
 .. toctree::
