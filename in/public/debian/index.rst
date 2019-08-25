@@ -1,6 +1,5 @@
-######
-Debian
-######
+debian
+======
 
 .. toctree::
 

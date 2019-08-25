@@ -4,6 +4,7 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
+   public/debian/index
    public/firefox/index
    public/git/index
    public/git-bash/index
