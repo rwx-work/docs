@@ -1,6 +1,5 @@
-######
-PanDoc
-######
+pandoc
+======
 
 .. toctree::
 
