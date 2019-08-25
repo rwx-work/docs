@@ -37,6 +37,7 @@ RTFD
    public/systemd/index
    public/tar/index
    public/windows/index
+   public/xorriso/index
 
 .. toctree::
    :caption: Categories
