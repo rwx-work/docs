@@ -6,6 +6,7 @@ RTFD
 
    public/debian/index
    public/docker/index
+   public/ffmpeg/index
    public/firefox/index
    public/git/index
    public/git-bash/index
@@ -28,7 +29,6 @@ RTFD
    public/desktops/index
    public/documents/index
    public/init/index
-   public/media/index
    public/network/index
    public/packages/index
    public/security/index

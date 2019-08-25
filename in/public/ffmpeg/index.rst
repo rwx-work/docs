@@ -1,6 +1,5 @@
-######
-FFMPEG
-######
+ffmpeg
+======
 
 .. toctree::
 

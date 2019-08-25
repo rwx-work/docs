@@ -1,7 +1,0 @@
-###########
-ImageMagick
-###########
-
-.. toctree::
-
-   snippets
