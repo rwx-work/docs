@@ -7,4 +7,3 @@ Network
    bind/index
    hosts/index
    smtp/index
-   unbound/index

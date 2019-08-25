@@ -39,6 +39,7 @@ RTFD
    public/squashfs-tools/index
    public/systemd/index
    public/tar/index
+   public/unbound/index
    public/windows/index
    public/xorriso/index
 

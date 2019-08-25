@@ -1,4 +1,4 @@
-Unbound
+unbound
 =======
 
 * /etc/unbound/unbound.conf
