@@ -1,10 +1,8 @@
-###############
-ISC-DHCP-server
-###############
+isc-dhcp-server
+===============
 
-*************
-Configuration
-*************
+Configure
+---------
 
 * /etc/dhcp/dhcpd.conf
 

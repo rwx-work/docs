@@ -21,6 +21,7 @@ RTFD
    public/gource/index
    public/grub/index
    public/ifupdown2/index
+   public/isc-dhcp-server/index
    public/libnss3-tools/index
    public/libreoffice/index
    public/lxc/index
