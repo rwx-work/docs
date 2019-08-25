@@ -15,6 +15,7 @@ RTFD
    public/firefox/index
    public/git/index
    public/git-bash/index
+   public/gnome/index
    public/gource/index
    public/grub/index
    public/ifupdown2/index
@@ -35,7 +36,6 @@ RTFD
    :caption: Categories
    :maxdepth: 2
 
-   public/desktops/index
    public/documents/index
    public/network/index
    public/security/index
