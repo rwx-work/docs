@@ -4,7 +4,8 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
-   public/debian/index
+   public/bash/index
+   public/c/index
    public/docker/index
    public/ffmpeg/index
    public/firefox/index
@@ -17,6 +18,7 @@ RTFD
    public/lxc/index
    public/nginx/index
    public/openssl/index
+   public/python3/index
    public/windows/index
 
 .. toctree::
@@ -24,7 +26,6 @@ RTFD
    :maxdepth: 2
 
    public/archives/index
-   public/code/index
    public/desktops/index
    public/documents/index
    public/init/index

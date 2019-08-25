@@ -1,6 +1,5 @@
-####
-BASH
-####
+bash
+====
 
 .. toctree::
 
