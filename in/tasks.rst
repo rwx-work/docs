@@ -136,14 +136,3 @@ Tasks
     * on-the-fly LibreOffice documents conversion
     * send emails as own domain name's alias
     * personal GPG key signature
-
-Name resolution
----------------
-
-* /etc/hosts
-
-::
-
-  127.0.0.1 localhost
-
-  ::1 localhost

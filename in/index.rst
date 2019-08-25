@@ -12,6 +12,7 @@ RTFD
    public/curl/index
    public/dd/index
    public/debian/index
+   public/dns/index
    public/docker/index
    public/ffmpeg/index
    public/firefox/index
@@ -52,7 +53,7 @@ RTFD
    :caption: Categories
    :maxdepth: 2
 
-   public/network/index
+   public/code
 
 .. toctree::
    :caption: Personal
