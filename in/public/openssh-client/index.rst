@@ -1,18 +1,15 @@
-##############
-OpenSSH client
-##############
+openssh-client
+==============
 
-*********
 Configure
-*********
+---------
 
 * /etc/ssh/ssh_config
 
 .. todo:: lines
 
-**********
 Create key
-**********
+----------
 
 * ~/.ssh/id_rsa*
 

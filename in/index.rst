@@ -25,6 +25,7 @@ RTFD
    public/lxc/index
    public/mdadm/index
    public/nginx/index
+   public/openssh-client/index
    public/openssh-server/index
    public/openssl/index
    public/pandoc/index
@@ -45,7 +46,6 @@ RTFD
 
    public/documents/index
    public/network/index
-   public/security/index
 
 .. toctree::
    :caption: Personal
