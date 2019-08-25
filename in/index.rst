@@ -21,6 +21,7 @@ RTFD
    public/grub/index
    public/ifupdown2/index
    public/libnss3-tools/index
+   public/libreoffice/index
    public/lxc/index
    public/mdadm/index
    public/nginx/index
