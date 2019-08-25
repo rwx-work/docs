@@ -7,6 +7,7 @@ RTFD
    public/apt/index
    public/apt-mirror/index
    public/bash/index
+   public/bind9/index
    public/c/index
    public/curl/index
    public/dd/index

@@ -1,10 +1,8 @@
-####
-BIND
-####
+bind9
+=====
 
-******
 Domain
-******
+------
 
 * /etc/bind/named.conf.local
 
