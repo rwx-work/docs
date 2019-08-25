@@ -16,6 +16,7 @@ RTFD
    public/git/index
    public/git-bash/index
    public/gnome/index
+   public/gnupg/index
    public/gource/index
    public/grub/index
    public/ifupdown2/index

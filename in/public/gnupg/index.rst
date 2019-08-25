@@ -1,4 +1,4 @@
-GnuPG
+gnupg
 =====
 
 .. toctree::
