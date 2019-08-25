@@ -14,6 +14,7 @@ RTFD
    public/libnss3-tools/index
    public/nginx/index
    public/openssl/index
+   public/windows/index
 
 .. toctree::
    :caption: Categories
@@ -31,7 +32,6 @@ RTFD
    public/packages/index
    public/security/index
    public/storage/index
-   public/systems/index
 
 .. toctree::
    :caption: Personal
