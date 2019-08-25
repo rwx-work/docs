@@ -36,9 +36,9 @@ RTFD
    public/parted/index
    public/pdftk/index
    public/python3/index
-   public/python3-sphinx/index
    public/rsync/index
    public/smtp/index
+   public/sphinx/index
    public/squashfs-tools/index
    public/systemd/index
    public/tar/index

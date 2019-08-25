@@ -1,5 +1,5 @@
-python3-sphinx
-==============
+sphinx
+======
 
 .. toctree::
 
