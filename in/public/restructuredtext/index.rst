@@ -1,0 +1,7 @@
+restructuredtext
+================
+
+.. toctree::
+
+   tree
+   syntax

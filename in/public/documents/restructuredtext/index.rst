@@ -1,8 +1,0 @@
-################
-ReStructuredText
-################
-
-.. toctree::
-
-   tree
-   syntax

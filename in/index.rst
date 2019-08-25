@@ -36,6 +36,7 @@ RTFD
    public/parted/index
    public/pdftk/index
    public/python3/index
+   public/restructuredtext/index
    public/rsync/index
    public/smtp/index
    public/sphinx/index
