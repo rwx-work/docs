@@ -5,4 +5,3 @@ Network
    :maxdepth: 2
 
    hosts/index
-   smtp/index
