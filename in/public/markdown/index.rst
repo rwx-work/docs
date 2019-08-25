@@ -1,0 +1,6 @@
+markdown
+========
+
+.. toctree::
+
+   syntax

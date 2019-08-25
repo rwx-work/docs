@@ -1,7 +1,0 @@
-########
-MarkDown
-########
-
-.. toctree::
-
-   syntax

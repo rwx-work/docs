@@ -26,6 +26,7 @@ RTFD
    public/libnss3-tools/index
    public/libreoffice/index
    public/lxc/index
+   public/markdown/index
    public/mdadm/index
    public/nginx/index
    public/openssh-client/index
