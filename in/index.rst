@@ -5,6 +5,7 @@ RTFD
    :maxdepth: 2
 
    public/debian/index
+   public/docker/index
    public/firefox/index
    public/git/index
    public/git-bash/index
@@ -12,6 +13,7 @@ RTFD
    public/grub/index
    public/ifupdown2/index
    public/libnss3-tools/index
+   public/lxc/index
    public/nginx/index
    public/openssl/index
    public/windows/index
@@ -22,7 +24,6 @@ RTFD
 
    public/archives/index
    public/code/index
-   public/containers/index
    public/data/index
    public/desktops/index
    public/documents/index

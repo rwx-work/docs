@@ -1,6 +1,5 @@
-###
-LXC
-###
+lxc
+===
 
 .. toctree::
 
@@ -8,9 +7,8 @@ LXC
    container
    unprivileged
 
-***
 ESX
-***
+---
 
 .. warning::
 

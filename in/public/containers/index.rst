@@ -1,8 +1,0 @@
-Containers
-==========
-
-.. toctree::
-   :maxdepth: 2
-
-   lxc/index
-   docker/index
