@@ -73,7 +73,7 @@ dirtier certificate only variant
 
  openssl \
  req \
- -new \
+ -in ca.csr \
  -x509 \
  -days 365 \
  -key ca.key \
