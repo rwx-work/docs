@@ -1,4 +1,0 @@
-recommonmark
-============
-
-.. todo:: extensions

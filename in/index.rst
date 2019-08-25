@@ -52,7 +52,6 @@ RTFD
    :caption: Categories
    :maxdepth: 2
 
-   public/documents/index
    public/network/index
 
 .. toctree::
