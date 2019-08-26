@@ -60,6 +60,8 @@ RTFD
    :caption: Personal
    :maxdepth: 2
 
+   personal/certificate
+   personal/dns
    personal/openssh-server/index
    personal/server/index
 
