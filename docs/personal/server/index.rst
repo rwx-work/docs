@@ -505,7 +505,7 @@ Apps
  chown-socket = user
  uid = user
  gid = user
- chdir = /d/projects/root
+ chdir = /d/projects/rwx.work/root
  plugins = python3
  module = __init__
  callable = app
@@ -548,19 +548,19 @@ Sites
  server {
  include rwx.work.conf;
  server_name docs.rwx.work;
- root /d/projects/docs/out/docs;
+ root /d/projects/rwx.work/docs/out/docs;
  }
 
  server {
  include rwx.work.conf;
  server_name sites.rwx.work;
- root /d/projects/sites/out/content;
+ root /d/projects/rwx.work/sites/out/content;
  }
 
  server {
  include rwx.work.conf;
  server_name todo.rwx.work;
- root /d/projects/todo;
+ root /d/projects/rwx.work/todo/out/todo;
  }
 
 Certificate and errors
@@ -586,69 +586,3 @@ Certificate and errors
 * /etc/nginx/rwx.work.key
 
 * /etc/nginx/rwx.work.crt
-
-::
-
- -----BEGIN CERTIFICATE-----
- MIIGVTCCBT2gAwIBAgISAxK7abRAlgNZ1QfhWkuBbd/yMA0GCSqGSIb3DQEBCwUA
- MEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQD
- ExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0xOTA4MDQxMjU2MzFaFw0x
- OTExMDIxMjU2MzFaMBUxEzARBgNVBAMMCioucnd4LndvcmswggIiMA0GCSqGSIb3
- DQEBAQUAA4ICDwAwggIKAoICAQDnX5lshzKsh9eiFaCxJqJ9Oh7yc9x/br2uIzdG
- iBoOMVmHNB+3t67JVbFJ/RA38HZ29g2CDyJjY5z7VfdsUxs4caFKExwlXCujNtWS
- Exj1LO4Y4ykvkQhhbkWgThDiREZv+FNw/D8cV6KjNFrx5QKHjKW++GRCJKl5+9dr
- YXSCKld0ejFckd5WwajKCAto6ugfayLK/qf4CYj/na1UrgP3a1BSgMrDVdHIjACB
- khoujVL+tTgNUPBwSR8s5whCaOKdVU4mBO36qc08hQAwqa94ye2ltDDVFULm62vF
- LW5SeGpjIEaPAsk5xNdjOnm5HlIJjvmNo8m0qiWJ8rcjVxGWJzMmu8JzvZbmy/k+
- G242C+ECuSAVMPBBZLn28Rc7Lr6YtmEo3phhdwSEDXTnlyluYtVq5Q6B2Iwwbdsb
- WUa00unUHNDEmOTp6njy/K9vhJF82FyVxXQoCBqAbN8tSk/rshTYDYDPnjcZGi5R
- okK7m7qeRfDiyLGvuF0xUKFODSuNYmnu2Q4WDNGTXXwsEloIvLflKKYz5vqbQ2f1
- Il/tKEM0Ok9CUcj1Ty1GdNt3gCLucC8eI22t3QstUla/wiMtoAWeydzi3dneIrQ7
- SmJ6rfBIxVUXGUFKlsRVBPbFbDj9kEsIUY5pUfUnDYIYVCjqm1F+XGMgGt+nMkaV
- exuI0QIDAQABo4ICaDCCAmQwDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsG
- AQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBRf3Sg57QsE
- XePyTwCeSEZ7YyA0BDAfBgNVHSMEGDAWgBSoSmpjBH3duubRObemRWXv86jsoTBv
- BggrBgEFBQcBAQRjMGEwLgYIKwYBBQUHMAGGImh0dHA6Ly9vY3NwLmludC14My5s
- ZXRzZW5jcnlwdC5vcmcwLwYIKwYBBQUHMAKGI2h0dHA6Ly9jZXJ0LmludC14My5s
- ZXRzZW5jcnlwdC5vcmcvMB8GA1UdEQQYMBaCCioucnd4LndvcmuCCHJ3eC53b3Jr
- MEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUH
- AgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBAwYKKwYBBAHWeQIEAgSB
- 9ASB8QDvAHYAKTxRllTIOWW6qlD8WAfUt2+/WHopctykwwz05UVH9HgAAAFsXOrd
- qgAABAMARzBFAiEAwlPkETp6PtvOY2LgY4j2SAjCRYWgTLwVLVtZs+cQHGcCICk6
- O3HBqxEugr/onac7MudZow4YhRBCwVIOYsq8q42sAHUAdH7agzGtMxCRIZzOJU9C
- cMK//V5CIAjGNzV55hB7zFYAAAFsXOrfgQAABAMARjBEAiBMJwKp49s6GmgCkn0I
- It+05HN8zYhde6Rw5F3KS16r/QIgWL5LHcjdi5pkrEhyr6vWCQg3oO3T/oZusPDu
- Z3NSsNgwDQYJKoZIhvcNAQELBQADggEBADHetLlUkXFuxk0Yb/PPeErezRCFuwrj
- 34mzb4Rbgzv5vmSCPhNKqVC//j6ocrF+oA0VFbYncgX4Wugi7SXNR9vOhMxg0a//
- SkjveXQQ7zAm52NvjGm0Lc25sLXszVvef2T4haBNgB9osIFiLfOHewyFBFOnIvWS
- yu3Alrwo6xuxZSPLvrCJZlXpiNmJN684KJEvDT8Y9tlWTBHxQl+sP8IpF8EuV9oA
- Jbrdj7ZhE9guk/y0D/evYU4irV+8sC7pWPdZDLCcqk9X2WLsbyWYqbTQb5c9cLZn
- OOA0WMwsL9Ly8AAbk1c41mJOKOuvv2+XzVY/NPU3uZCWOXlhqtWyusw=
- -----END CERTIFICATE-----
- -----BEGIN CERTIFICATE-----
- MIIEkjCCA3qgAwIBAgIQCgFBQgAAAVOFc2oLheynCDANBgkqhkiG9w0BAQsFADA/
- MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMT
- DkRTVCBSb290IENBIFgzMB4XDTE2MDMxNzE2NDA0NloXDTIxMDMxNzE2NDA0Nlow
- SjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxIzAhBgNVBAMT
- GkxldCdzIEVuY3J5cHQgQXV0aG9yaXR5IFgzMIIBIjANBgkqhkiG9w0BAQEFAAOC
- AQ8AMIIBCgKCAQEAnNMM8FrlLke3cl03g7NoYzDq1zUmGSXhvb418XCSL7e4S0EF
- q6meNQhY7LEqxGiHC6PjdeTm86dicbp5gWAf15Gan/PQeGdxyGkOlZHP/uaZ6WA8
- SMx+yk13EiSdRxta67nsHjcAHJyse6cF6s5K671B5TaYucv9bTyWaN8jKkKQDIZ0
- Z8h/pZq4UmEUEz9l6YKHy9v6Dlb2honzhT+Xhq+w3Brvaw2VFn3EK6BlspkENnWA
- a6xK8xuQSXgvopZPKiAlKQTGdMDQMc2PMTiVFrqoM7hD8bEfwzB/onkxEz0tNvjj
- /PIzark5McWvxI0NHWQWM6r6hCm21AvA2H3DkwIDAQABo4IBfTCCAXkwEgYDVR0T
- AQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAYYwfwYIKwYBBQUHAQEEczBxMDIG
- CCsGAQUFBzABhiZodHRwOi8vaXNyZy50cnVzdGlkLm9jc3AuaWRlbnRydXN0LmNv
- bTA7BggrBgEFBQcwAoYvaHR0cDovL2FwcHMuaWRlbnRydXN0LmNvbS9yb290cy9k
- c3Ryb290Y2F4My5wN2MwHwYDVR0jBBgwFoAUxKexpHsscfrb4UuQdf/EFWCFiRAw
- VAYDVR0gBE0wSzAIBgZngQwBAgEwPwYLKwYBBAGC3xMBAQEwMDAuBggrBgEFBQcC
- ARYiaHR0cDovL2Nwcy5yb290LXgxLmxldHNlbmNyeXB0Lm9yZzA8BgNVHR8ENTAz
- MDGgL6AthitodHRwOi8vY3JsLmlkZW50cnVzdC5jb20vRFNUUk9PVENBWDNDUkwu
- Y3JsMB0GA1UdDgQWBBSoSmpjBH3duubRObemRWXv86jsoTANBgkqhkiG9w0BAQsF
- AAOCAQEA3TPXEfNjWDjdGBX7CVW+dla5cEilaUcne8IkCJLxWh9KEik3JHRRHGJo
- uM2VcGfl96S8TihRzZvoroed6ti6WqEBmtzw3Wodatg+VyOeph4EYpr/1wXKtx8/
- wApIvJSwtmVi4MFU5aMqrSDE6ea73Mj2tcMyo5jMd6jmeWUHK8so/joWUoHOUgwu
- X4Po1QYz+3dszkDqMp4fklxBwXRsW10KXzPMTZ+sOPAveyxindmjkW8lGy+QsRlG
- PfZ+G6Z6h7mjem0Y+iWlkYcV4PIWL1iwBi8saCbGS5jN2p8M+X+Q7UNKEkROb3N6
- KOqkqm57TH2H3eDJAkSnh6/DNFu0Qg==
- -----END CERTIFICATE-----
