@@ -25,6 +25,7 @@ RTFD
    public/grub/index
    public/ifupdown2/index
    public/isc-dhcp-server/index
+   public/letsencrypt/index
    public/libnss3-tools/index
    public/libreoffice/index
    public/lxc/index
