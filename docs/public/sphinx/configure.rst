@@ -25,6 +25,7 @@ Sphinx
  pygments_style = 'sphinx'
  release = ''
  show_authors = False
+ smartquotes = False
  source_suffix = [
      '.rst',
  ]
@@ -41,7 +42,6 @@ HTML
  html_show_sphinx = False
  html_theme = 'sphinx_rtd_theme'
  html_title = 'Title'
- html_use_smartypants = False
 
 MarkDown
 --------
