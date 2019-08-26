@@ -12,6 +12,7 @@ RTFD
    public/curl/index
    public/dd/index
    public/debian/index
+   public/debootstrap/index
    public/dns/index
    public/docker/index
    public/ffmpeg/index
