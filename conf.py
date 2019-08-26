@@ -11,3 +11,4 @@ html_show_sphinx = False
 html_show_copyright = False
 html_title = 'ToDo'
 html_use_smartypants = False
+todo_include_todos = True
