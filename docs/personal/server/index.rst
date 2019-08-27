@@ -554,7 +554,7 @@ Sites
  server {
  include rwx.work.conf;
  server_name sites.rwx.work;
- root /d/projects/rwx.work/sites/out/content;
+ root /d/projects/rwx.work/sites/out/sites;
  }
 
  server {
