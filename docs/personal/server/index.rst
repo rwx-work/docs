@@ -563,6 +563,37 @@ Sites
  root /d/projects/rwx.work/todo/out/todo;
  }
 
+* /etc/nginx/sites-enabled/marc-beninca.fr
+
+::
+
+ server {
+ include marc-beninca.fr.conf;
+ include uwsgi.conf;
+ server_name .marc-beninca.fr;
+ location / {
+ uwsgi_pass unix:/run/uwsgi/app/root/socket;
+ }
+ }
+
+ server {
+ include marc-beninca.fr.conf;
+ server_name docs.marc-beninca.fr;
+ root /d/projects/marc-beninca.fr/docs/out/docs;
+ }
+
+ server {
+ include marc-beninca.fr.conf;
+ server_name sites.marc-beninca.fr;
+ root /d/projects/marc-beninca.fr/sites/out/sites;
+ }
+
+ server {
+ include marc-beninca.fr.conf;
+ server_name todo.marc-beninca.fr;
+ root /d/projects/marc-beninca.fr/todo/out/todo;
+ }
+
 Certificate and errors
 ^^^^^^^^^^^^^^^^^^^^^^
 
