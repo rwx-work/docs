@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * peek
   * tty size → setfont (/usr/share/consolefonts/\*.psf.gz)
   * vcard spec
   * chntpw / reged -e
