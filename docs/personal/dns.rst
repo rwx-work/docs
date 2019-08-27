@@ -29,8 +29,8 @@ DNS
  rwx.work. CAA 128 issue "letsencrypt.org"
  rwx.work. CAA 128 issuewild "letsencrypt.org"
 
- _acme-challenge.rwx.work. 60 IN TXT 4JWiOzemeGXZ6TNTFUY9acNRBR9WgDyvT3hnfMmrUUE
- _acme-challenge.rwx.work. 60 IN TXT 7gPydde0lq6fp3j_I3APYi-xD4g7KzLueseQHjndveo
+ _acme-challenge.rwx.work. 60 IN TXT WD4jQ2O8P3KJwirPHyyzXizlgS2RmfkV88nqzEZY8Go
+ _acme-challenge.rwx.work. 60 IN TXT LLbjKm7UTSFRrdVFOeL7UQn8arZthF2RSxqTLxGnaHY
 
  ; domain.tld
 
