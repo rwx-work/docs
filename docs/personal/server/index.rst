@@ -423,6 +423,14 @@ Security
 
  listen 443 ssl http2;
  listen [::]:443 ssl http2;
+
+ error_page 496 =496 @error; # Certificate Required
+ error_page 497 =497 @error; # HTTP Request Sent to HTTPS Port
+ error_page
+ 403 # Forbidden
+ 404 # Not Found
+ @error;
+
  add_header Expect-CT "enforce,max-age=0" always;
  add_header Referrer-Policy "no-referrer-when-downgrade" always;
  add_header Strict-Transport-Security "max-age=31557600;includeSubDomains;preload" always;
@@ -607,16 +615,20 @@ Certificate and errors
  location @error {
  return https://rwx.work/error/${status};
  }
- error_page 496 =496 @error; # Certificate Required
- error_page 497 =497 @error; # HTTP Request Sent to HTTPS Port
- error_page
- 403 # Forbidden
- 404 # Not Found
- @error;
+
+* /etc/nginx/marc-beninca.fr.conf
+
+::
+
+ include https.conf;
+ ssl_certificate marc-beninca.fr.crt;
+ ssl_certificate_key marc-beninca.fr.key;
+ location @error {
+ return https://marc-beninca.fr/error/${status};
+ }
 
 * /etc/nginx/rwx.work.key
-
 * /etc/nginx/rwx.work.crt
 
-  * certificate
-  * ca_bundle
+* /etc/nginx/marc-beninca.fr.key
+* /etc/nginx/marc-beninca.fr.crt
