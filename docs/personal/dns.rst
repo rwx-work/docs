@@ -26,11 +26,11 @@ DNS
 
  ; acme-challenge
 
- _acme-challenge.rwx.work. 60 IN TXT 4JWiOzemeGXZ6TNTFUY9acNRBR9WgDyvT3hnfMmrUUE
- _acme-challenge.rwx.work. 60 IN TXT 7gPydde0lq6fp3j_I3APYi-xD4g7KzLueseQHjndveo
-
  rwx.work. CAA 128 issue "letsencrypt.org"
  rwx.work. CAA 128 issuewild "letsencrypt.org"
+
+ _acme-challenge.rwx.work. 60 IN TXT 4JWiOzemeGXZ6TNTFUY9acNRBR9WgDyvT3hnfMmrUUE
+ _acme-challenge.rwx.work. 60 IN TXT 7gPydde0lq6fp3j_I3APYi-xD4g7KzLueseQHjndveo
 
  ; domain.tld
 
@@ -38,3 +38,7 @@ DNS
 
  @ IN A    192.99.14.98
  @ IN AAAA 2607:5300:60:3f62::1
+
+ ; google.com
+
+ rwx.work. IN TXT google-site-verification=GOZKfz4ZacW9oEJpI8MVn24nFHGkZchd80iWphZsaFM
