@@ -586,3 +586,6 @@ Certificate and errors
 * /etc/nginx/rwx.work.key
 
 * /etc/nginx/rwx.work.crt
+
+  * certificate
+  * ca_bundle
