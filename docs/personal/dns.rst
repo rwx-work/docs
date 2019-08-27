@@ -5,7 +5,7 @@ DNS
 
  $TTL 3600
  @ IN SOA dns200.anycast.me. tech.ovh.net. (
-   2019081400   ; Serial
+   2019082700   ; Serial
         86400   ; Refresh
          3600   ; Retry
       3600000   ; Expire
@@ -24,7 +24,7 @@ DNS
 
  IN TXT "v=spf1 include:mailbox.org"
 
- ; sslforfree.com
+ ; acme-challenge
 
  _acme-challenge.rwx.work. 60 IN TXT 4JWiOzemeGXZ6TNTFUY9acNRBR9WgDyvT3hnfMmrUUE
  _acme-challenge.rwx.work. 60 IN TXT 7gPydde0lq6fp3j_I3APYi-xD4g7KzLueseQHjndveo
@@ -32,7 +32,7 @@ DNS
  rwx.work. CAA 128 issue "letsencrypt.org"
  rwx.work. CAA 128 issuewild "letsencrypt.org"
 
- ; rwx.work
+ ; domain.tld
 
  * IN CNAME rwx.work.
 
