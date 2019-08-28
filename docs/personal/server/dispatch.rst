@@ -615,6 +615,12 @@ Sites
  }
  }
 
+ server {
+ include tilde.link.conf;
+ server_name docs.tilde.link;
+ root /d/projects/tilde.link/docs/out/docs;
+ }
+
 Certificate and errors
 ^^^^^^^^^^^^^^^^^^^^^^
 
