@@ -522,7 +522,7 @@ Apps
 Sites
 ^^^^^
 
-* /etc/nginx/sites-enabled/http
+* "/etc/nginx/sites-enabled/0 http"
 
 ::
 
@@ -533,7 +533,7 @@ Sites
  return 301 https://${host}${request_uri};
  }
 
-* /etc/nginx/sites-enabled/rwx.work
+* "/etc/nginx/sites-enabled/1 rwx.work"
 
 ::
 
@@ -571,7 +571,7 @@ Sites
  root /d/projects/rwx.work/todo/out/todo;
  }
 
-* /etc/nginx/sites-enabled/marc-beninca.fr
+* "/etc/nginx/sites-enabled/2 marc-beninca.fr"
 
 ::
 
@@ -602,7 +602,7 @@ Sites
  root /d/projects/marc-beninca.fr/todo/out/todo;
  }
 
-* /etc/nginx/sites-enabled/tilde.link
+* "/etc/nginx/sites-enabled/3 tilde.link"
 
 ::
 
