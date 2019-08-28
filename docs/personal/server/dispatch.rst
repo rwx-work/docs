@@ -602,6 +602,19 @@ Sites
  root /d/projects/marc-beninca.fr/todo/out/todo;
  }
 
+* /etc/nginx/sites-enabled/tilde.link
+
+::
+
+ server {
+ include tilde.link.conf;
+ include uwsgi.conf;
+ server_name .tilde.link;
+ location / {
+ uwsgi_pass unix:/run/uwsgi/app/root/socket;
+ }
+ }
+
 Certificate and errors
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -627,8 +640,22 @@ Certificate and errors
  return https://marc-beninca.fr/error/${status};
  }
 
+* /etc/nginx/tilde.link.conf
+
+::
+
+ include https.conf;
+ ssl_certificate tilde.link.crt;
+ ssl_certificate_key tilde.link.key;
+ location @error {
+ return https://tilde.link/error/${status};
+ }
+
 * /etc/nginx/rwx.work.key
 * /etc/nginx/rwx.work.crt
 
 * /etc/nginx/marc-beninca.fr.key
 * /etc/nginx/marc-beninca.fr.crt
+
+* /etc/nginx/tilde.link.key
+* /etc/nginx/tilde.link.crt
