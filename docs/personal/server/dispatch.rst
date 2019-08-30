@@ -1,5 +1,5 @@
-Server
-======
+To dispatch
+===========
 
 Hardware
 --------
@@ -550,6 +550,13 @@ Sites
  include rwx.work.conf;
  server_name deb.rwx.work;
  root /d/mirrors/apt-mirror/debian;
+ fancyindex on;
+ }
+
+ server {
+ include rwx.work.conf;
+ server_name git.rwx.work;
+ root /d/projects/rwx.work;
  fancyindex on;
  }
 
