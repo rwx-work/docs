@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * .git/description (gitweb)
   * peek
   * tty size → setfont (/usr/share/consolefonts/\*.psf.gz)
   * vcard spec
