@@ -556,8 +556,18 @@ Sites
  server {
  include rwx.work.conf;
  server_name git.rwx.work;
+ location ~ ^.*/(info/refs|git-upload-pack)$ {
+ fastcgi_pass unix:/run/fcgiwrap.socket;
+ fastcgi_param SCRIPT_FILENAME /usr/lib/git-core/git-http-backend;
+ fastcgi_param PATH_INFO ${uri};
+ fastcgi_param GIT_PROJECT_ROOT /d/projects/rwx.work;
+ fastcgi_param GIT_HTTP_EXPORT_ALL "";
+ include fastcgi_params;
+ }
+ location / {
  root /d/projects/rwx.work;
  fancyindex on;
+ }
  }
 
  server {
