@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * fcgiwrap for git over http and gitweb
   * file
   * .git/description (gitweb)
   * peek
