@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * file
   * .git/description (gitweb)
   * peek
   * tty size → setfont (/usr/share/consolefonts/\*.psf.gz)
