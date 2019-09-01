@@ -15,6 +15,7 @@ RTFD
    public/debootstrap/index
    public/dns/index
    public/docker/index
+   public/fcgiwrap/index
    public/ffmpeg/index
    public/firefox/index
    public/git/index
