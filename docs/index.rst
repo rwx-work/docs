@@ -52,12 +52,6 @@ RTFD
    public/xorriso/index
 
 .. toctree::
-   :caption: Categories
-   :maxdepth: 2
-
-   public/code
-
-.. toctree::
    :caption: Personal
    :maxdepth: 2
 
