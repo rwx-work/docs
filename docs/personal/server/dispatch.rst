@@ -471,6 +471,18 @@ Security
 
  add_header Content-Security-Policy "default-src 'self'" always;
 
+* /etc/nginx/fcgi.conf
+
+::
+
+ fastcgi_param SERVER_PORT    ${server_port};
+
+ fastcgi_param QUERY_STRING   ${query_string};
+
+ fastcgi_param REQUEST_METHOD ${request_method};
+ fastcgi_param CONTENT_TYPE   ${content_type};
+ fastcgi_param CONTENT_LENGTH ${content_length};
+
 * /etc/nginx/uwsgi.conf
 
 ::
@@ -567,7 +579,7 @@ Sites
  include rwx.work.conf;
  server_name git.rwx.work;
  location ~ ^.*/(info/refs|git-upload-pack)$ {
- include fastcgi_params;
+ include fcgi.conf;
  fastcgi_param SCRIPT_FILENAME /usr/lib/git-core/git-http-backend;
  fastcgi_param PATH_INFO ${uri};
  fastcgi_param GIT_PROJECT_ROOT /d/projects/rwx.work;
@@ -578,7 +590,7 @@ Sites
  root /usr/share/gitweb;
  }
  location / {
- include fastcgi_params;
+ include fcgi.conf;
  fastcgi_param SCRIPT_FILENAME /usr/share/gitweb/gitweb.cgi;
  fastcgi_param PATH_INFO ${uri};
  fastcgi_pass unix:/run/fcgiwrap.socket;
