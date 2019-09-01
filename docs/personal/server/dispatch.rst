@@ -203,6 +203,9 @@ Prepare a grub.cfg
 * uwsgi
 * uwsgi-plugin-python3
 * sudo
+* file
+* fcgiwrap
+* gitweb
 
 * /etc/bash.bashrc
 * /etc/fstab (/d)
@@ -505,6 +508,13 @@ Security
 Apps
 ^^^^
 
+* /etc/gitweb.conf
+
+::
+
+ $projectroot = "/d/projects/rwx.work";
+ $git_temp = "/tmp";
+
 * /etc/uwsgi/apps-enabled/root.ini
 
 .. code:: ini
@@ -557,16 +567,21 @@ Sites
  include rwx.work.conf;
  server_name git.rwx.work;
  location ~ ^.*/(info/refs|git-upload-pack)$ {
- fastcgi_pass unix:/run/fcgiwrap.socket;
+ include fastcgi_params;
  fastcgi_param SCRIPT_FILENAME /usr/lib/git-core/git-http-backend;
  fastcgi_param PATH_INFO ${uri};
  fastcgi_param GIT_PROJECT_ROOT /d/projects/rwx.work;
  fastcgi_param GIT_HTTP_EXPORT_ALL "";
- include fastcgi_params;
+ fastcgi_pass unix:/run/fcgiwrap.socket;
+ }
+ location /static/ {
+ root /usr/share/gitweb;
  }
  location / {
- root /d/projects/rwx.work;
- fancyindex on;
+ include fastcgi_params;
+ fastcgi_param SCRIPT_FILENAME /usr/share/gitweb/gitweb.cgi;
+ fastcgi_param PATH_INFO ${uri};
+ fastcgi_pass unix:/run/fcgiwrap.socket;
  }
  }
 
