@@ -592,7 +592,6 @@ Sites
  location / {
  include fcgi.conf;
  fastcgi_param SCRIPT_FILENAME /usr/share/gitweb/gitweb.cgi;
- fastcgi_param PATH_INFO ${uri};
  fastcgi_pass unix:/run/fcgiwrap.socket;
  }
  }
