@@ -520,6 +520,22 @@ Security
 Apps
 ^^^^
 
+* /lib/systemd/system/fcgiwrap.socket
+
+::
+
+ [Unit]
+ Description=fcgiwrap socket
+
+ [Socket]
+ SocketMode=0600
+ SocketUser=user
+ SocketGroup=user
+ ListenStream=/run/fcgiwrap.socket
+
+ [Install]
+ WantedBy=sockets.target
+
 * /etc/gitweb.conf
 
 ::
