@@ -20,6 +20,7 @@ RTFD
    public/firefox/index
    public/git/index
    public/git-bash/index
+   public/gitweb/index
    public/gnome/index
    public/gnupg/index
    public/gource/index
