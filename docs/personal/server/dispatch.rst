@@ -645,6 +645,12 @@ Sites
 
  server {
  include marc-beninca.fr.conf;
+ server_name cnam.marc-beninca.fr;
+ root /d/projects/marc-beninca.fr/cnam/out/cnam;
+ }
+
+ server {
+ include marc-beninca.fr.conf;
  server_name docs.marc-beninca.fr;
  root /d/projects/marc-beninca.fr/docs/out/docs;
  }
