@@ -49,6 +49,7 @@ RTFD
    public/tar/index
    public/texlive/index
    public/unbound/index
+   public/wget/index
    public/windows/index
    public/xorriso/index
 
