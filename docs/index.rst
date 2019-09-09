@@ -55,14 +55,6 @@ RTFD
    public/xorriso/index
 
 .. toctree::
-   :caption: Personal
-   :maxdepth: 2
-
-   personal/dns
-   personal/openssh-server/index
-   personal/server/index
-
-.. toctree::
    :caption: Dispatch
 
    tasks

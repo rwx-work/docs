@@ -1,7 +1,0 @@
-Server
-======
-
-.. toctree::
-
-   certificate
-   dispatch
