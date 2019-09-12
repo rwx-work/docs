@@ -21,6 +21,7 @@ RTFD
    public/firefox/index
    public/git/index
    public/git-bash/index
+   public/gitlab-ci/index
    public/gitweb/index
    public/gnome/index
    public/gnupg/index
