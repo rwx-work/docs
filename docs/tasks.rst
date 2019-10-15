@@ -3,6 +3,7 @@ Tasks
 
 * latest
 
+  * /etc/bash.bashrc ← HISTTIMEFORMAT="%Y%m%d-%H%M%S "
   * fcgiwrap for git over http and gitweb
   * file
   * .git/description (gitweb)
