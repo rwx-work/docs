@@ -237,7 +237,16 @@ boot a prepared system
   linux "${path}/bzImage64" iso_filename="${file}" load_ramdisk=1
   initrd "${path}/initrd.img" "${path}/fu.img" "${path}/m64.img"
 
-* Windows
+* Windows ≥ Vista
+
+.. code:: shell
+
+  menuentry "Windows" {
+      root=(hd0,msdos2)
+      ntldr /bootmgr
+  }
+
+* Windows ≤ XP
 
 .. code:: shell
 
