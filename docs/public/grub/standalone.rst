@@ -323,3 +323,14 @@ boot a prepared system
   -exclude live/boot/debian.squashfs/live \
   -root "live" \
   "live"
+
+power
+-----
+
+.. code:: shell
+
+ reboot
+
+.. code:: shell
+
+ halt
