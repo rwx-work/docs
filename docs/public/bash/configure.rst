@@ -227,7 +227,10 @@ Described
   --format="%C(auto)%h%d %C(red)%ai%n%C(auto)%B" --patch'
 
   # log medium information
-  alias glm='git log --all --decorate --graph --pretty=medium'
+  alias glm='git log --all --decorate --graph --format=medium'
+
+  # log medium information with patches
+  alias glp='git log --all --decorate --graph --format=medium --patch'
 
   # fast-forward to remote branch
   alias gmf='git merge --ff-only'
