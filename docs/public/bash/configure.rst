@@ -122,6 +122,9 @@ Described
   # add all to index
   alias gaa='git add --all'
 
+  # add interactively
+  alias gai='git add --interactive'
+
   # create a branch
   alias gb='git branch'
 
