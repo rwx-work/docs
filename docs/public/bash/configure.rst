@@ -140,6 +140,9 @@ Described
   # set the link to a remote branch from a local branch
   alias gbu='git branch -u'
 
+  # list branches verbosely
+  alias gbv='git branch --verbose --verbose'
+
   # clone a remote repository
   alias gc='git clone'
 
