@@ -248,13 +248,13 @@ Described
   alias gmt='git mergetool'
 
   # push to the remote repository
-  alias gp='git push --set-upstream --verbose'
+  alias gp='git push --verbose --tags --set-upstream'
 
   # delete from the remote repository
   alias gpd='git push --verbose --delete'
 
   # force the push to the remote repository
-  alias gpf='git push --set-upstream --verbose --force'
+  alias gpf='git push --verbose --tags --set-upstream --force'
 
   # rebase current branch onto another
   alias grb='git rebase'
