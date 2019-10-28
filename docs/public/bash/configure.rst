@@ -219,10 +219,6 @@ Described
   alias gl='git log --all --graph \
   --format="%C(auto)%h%d %C(red)%ai%n%C(auto)%B"'
 
-  # log commits history with patches
-  alias glp='git log --all --graph \
-  --format="%C(auto)%h%d %C(red)%ai%n%C(auto)%B" --patch'
-
   # log medium information
   alias glm='git log --all --decorate --graph --format=medium'
 
