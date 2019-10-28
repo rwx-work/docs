@@ -204,10 +204,7 @@ Described
   alias gdw='git diff --word-diff-regex=.'
 
   # fetch from the remote repository
-  alias gf='git fetch --tags --verbose'
-
-  # fetch from remote repository and prune local orphan branches
-  alias gfp='git fetch --prune --tags --verbose'
+  alias gf='git fetch --verbose --tags'
 
   # garbage collect all orphan commits
   alias ggc='git reflog expire --expire=now --all;git gc --prune=now'
