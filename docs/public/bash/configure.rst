@@ -149,6 +149,9 @@ Described
   # clean untracked files
   alias gcf='git clean -d --force'
 
+  # clean untracked files interactively
+  alias gci='git clean -d --interactive'
+
   # index all and commit
   alias gacm='git add --all;git commit -m'
 
