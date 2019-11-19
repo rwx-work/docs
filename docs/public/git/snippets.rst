@@ -1,9 +1,8 @@
-********
 Snippets
-********
+========
 
 TODO
-====
+----
 
 * .gitignore
 * aliases
@@ -11,3 +10,11 @@ TODO
 
     * cached (staging area)
     * character
+
+Reverse .gitignore
+------------------
+
+*
+!.gitignore
+!*/
+!SHA*SUMS
