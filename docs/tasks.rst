@@ -3,6 +3,8 @@ Tasks
 
 * latest
 
+  * rdesktop
+  * youtube-dl -f bestaudio --extract-audio
   * /etc/bash.bashrc ← HISTTIMEFORMAT="%Y%m%d-%H%M%S "
   * fcgiwrap for git over http and gitweb
   * file
