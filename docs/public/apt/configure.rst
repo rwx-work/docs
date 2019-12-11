@@ -1,41 +1,41 @@
-*********
 Configure
-*********
+=========
 
 Keys
-====
+----
 
 .. code:: shell
 
-  apt-key add "path/to/key/file"
+ apt-key add "path/to/key/file"
 
 Configuration
-=============
+-------------
 
 * etc/apt/apt.conf
 
 ::
 
-  APT::Get::Show-Versions true;
-  Dpkg::Progress-Fancy true;
+ APT::Default-Release buster;
+ APT::Get::Show-Versions true;
+ Dpkg::Progress-Fancy true;
 
-  Acquire::Check-Valid-Until false;
+ Acquire::Check-Valid-Until false;
 
 * etc/apt/preferences
 
 ::
 
-  Package: *
-  Pin: release n=stretch-backports
-  Pin-Priority: 400
+ Package: *
+ Pin: release n=stretch-backports
+ Pin-Priority: 400
 
-  Package: *
-  Pin: release n=buster
-  Pin-Priority: 200
+ Package: *
+ Pin: release n=buster
+ Pin-Priority: 200
 
-  Package: *
-  Pin: release n=sid
-  Pin-Priority: 100
+ Package: *
+ Pin: release n=sid
+ Pin-Priority: 100
 
 * etc/apt/sources.list
 
@@ -45,26 +45,26 @@ Configuration
 
 ::
 
-  deb-src https://deb.debian.org/debian sid main contrib non-free
+ deb-src https://deb.debian.org/debian sid main contrib non-free
 
-  deb [arch=amd64,i386] https://deb.debian.org/debian sid main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian sid main contrib non-free
 
-  deb [arch=amd64,i386] https://deb.debian.org/debian bullseye main contrib non-free
-  deb [arch=amd64,i386] https://deb.debian.org/debian bullseye-updates main contrib non-free
-  deb [arch=amd64,i386] https://deb.debian.org/debian-security bullseye-security main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian bullseye main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian bullseye-updates main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian-security bullseye-security main contrib non-free
 
-  deb [arch=amd64,i386] https://deb.debian.org/debian buster main contrib non-free
-  deb [arch=amd64,i386] https://deb.debian.org/debian buster-backports main contrib non-free
-  deb [arch=amd64,i386] https://deb.debian.org/debian buster-updates main contrib non-free
-  deb [arch=amd64,i386] https://deb.debian.org/debian-security buster/updates main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian buster main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian buster-backports main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian buster-updates main contrib non-free
+ deb [arch=amd64,i386] https://deb.debian.org/debian-security buster/updates main contrib non-free
 
-  deb [arch=amd64] https://deb.debian.org/debian stretch main contrib non-free
-  deb [arch=amd64] https://deb.debian.org/debian stretch-backports main contrib non-free
-  deb [arch=amd64] https://deb.debian.org/debian stretch-updates main contrib non-free
-  deb [arch=amd64] https://deb.debian.org/debian-security stretch/updates main contrib non-free
+ deb [arch=amd64] https://deb.debian.org/debian stretch main contrib non-free
+ deb [arch=amd64] https://deb.debian.org/debian stretch-backports main contrib non-free
+ deb [arch=amd64] https://deb.debian.org/debian stretch-updates main contrib non-free
+ deb [arch=amd64] https://deb.debian.org/debian-security stretch/updates main contrib non-free
 
-  deb [arch=amd64] https://deb.debian.org/debian jessie main contrib non-free
-  deb [arch=amd64] https://deb.debian.org/debian-security jessie/updates main contrib non-free
+ deb [arch=amd64] https://deb.debian.org/debian jessie main contrib non-free
+ deb [arch=amd64] https://deb.debian.org/debian-security jessie/updates main contrib non-free
 
 .. warning::
 
@@ -72,4 +72,4 @@ Configuration
 
 ::
 
-  deb file:/media/deb.debian.org/debian stretch main contrib non-free
+ deb file:/media/deb.debian.org/debian stretch main contrib non-free
