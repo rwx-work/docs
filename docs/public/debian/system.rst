@@ -28,18 +28,18 @@ critical base packages
 decide the desired type of system
 ---------------------------------
 
-    * le système sera-t-il architecturé
-        * en 64 bits ?
-        * en 32 bits ?
-        * les 2 ?!
-    * le système sera-t-il exécuté
-        * sur une machine physique ?
-        * dans une machine virtuelle ?
-        * dans un conteneur ?
-        * dans un conteneur dans une machine virtuelle ?
-    * le système sera-t-il utilisé
-        * en écriture, sur un support de stockage ?
-        * en lecture, chargé en mémoire au démarrage ?
+ * will the system run
+   * 64 bits?
+   * 32 bits?
+   * both?
+ * will the system be run by
+   * a physical machine?
+   * a virtual machine?
+   * a container?
+   * a container inside a virtual machine?
+ * will the system be stored
+   * read-write, as a file system on a dedicated partition?
+   * read-only, as a single file loaded in RAM at boot time?
 
 Install required tools
 ======================
@@ -59,8 +59,8 @@ Create a base file hierarchy
 prepare the system's directory
 ------------------------------
 
-* devenir root
-* créer un répertoire, et s’y positionner
+* become root
+* make a directory and step into it
 
 .. code:: shell
 
@@ -68,8 +68,8 @@ prepare the system's directory
 
 .. code:: shell
 
- mkdir -p "chemin"
- cd "chemin"
+ mkdir -p "path"
+ cd "path"
 
 generate the minimal base
 -------------------------
