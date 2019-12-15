@@ -4,6 +4,7 @@ RTFD
 .. toctree::
    :maxdepth: 2
 
+   public/alsa/index
    public/ansible/index
    public/apt/index
    public/apt-mirror/index
