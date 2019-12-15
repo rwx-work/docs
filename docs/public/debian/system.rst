@@ -12,7 +12,8 @@ Choices
 have up-to-date mirrors available
 ---------------------------------
 
-.. todo:: mirrors
+.. todo:: sync mirrors
+.. todo:: check mirrors
 
 critical base packages
 ----------------------
