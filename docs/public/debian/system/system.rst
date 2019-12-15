@@ -1,7 +1,3 @@
-******************
-Image from scratch
-******************
-
 .. todo::
 
  * /etc/motd

@@ -5,4 +5,4 @@ debian
 
    packages
    repositories
-   system
+   system/index
