@@ -1,6 +1,16 @@
 u-boot
 ======
 
+compile
+-------
+
+.. code:: shell
+
+export CROSS_COMPILE=arm-linux-gnueabihf-
+make distclean
+make rpi_0_w_defconfig
+make u-boot.bin
+
 environment
 -----------
 
@@ -8,6 +18,8 @@ environment
 
 default
 ^^^^^^^
+
+.. code:: ini
 
  arch=arm
  baudrate=115200
