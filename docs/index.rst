@@ -55,6 +55,7 @@ RTFD
    public/systemd/index
    public/tar/index
    public/texlive/index
+   public/u-boot/index
    public/unbound/index
    public/wget/index
    public/windows/index
