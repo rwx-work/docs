@@ -31,6 +31,7 @@ RTFD
    public/gource/index
    public/grub/index
    public/ifupdown2/index
+   public/imagemagick/index
    public/isc-dhcp-server/index
    public/letsencrypt/index
    public/libnss3-tools/index
