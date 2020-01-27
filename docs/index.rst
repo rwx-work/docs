@@ -11,6 +11,7 @@ RTFD
    public/bash/index
    public/bind9/index
    public/c/index
+   public/coreutils/index
    public/curl/index
    public/dd/index
    public/debian/index
