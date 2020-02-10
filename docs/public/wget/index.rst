@@ -11,4 +11,5 @@ Mirror website
  --convert-links \
  --page-requisites \
  --continue \
+ --no-parent \
  protocol://sub.domain.tld
