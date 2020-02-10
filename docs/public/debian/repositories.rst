@@ -71,20 +71,23 @@ Files
 README
 ------
 
-============================= ===================================================
-oldoldstable, or wheezy       the released Debian 7.11
-oldstable, or jessie          the released Debian 8.9
-stable, or stretch            the released Debian 9.2
-oldoldstable-proposed-updates possible updates to Debian 7
-oldstable-proposed-updates    possible updates to Debian 8
-stable-proposed-updates       possible updates to Debian 9
-wheezy-updates                important updates to Debian 7
-jessie-updates                important updates to Debian 8
-stretch-updates               important updates to Debian 9
-testing, or buster            the development version of the next release
-unstable, or sid              untested candidate packages for future releases
-experimental, or rc-buggy     experimental packages to be used on top of unstable
-============================= ===================================================
+::
+
+ This directory, dists, is the canonical way to access the distributions.
+ Each distribution can be accessed by name or state from here.
+
+ oldoldstable, or jessie        - the released Debian 8.11
+ oldstable, or stretch          - the released Debian 9.12
+ stable, or buster              - the released Debian 10.3
+ oldoldstable-proposed-updates  - possible updates to Debian 8
+ oldstable-proposed-updates     - possible updates to Debian 9
+ stable-proposed-updates        - possible updates to Debian 10
+ jessie-updates                 - important updates to Debian 8
+ stretch-updates                - important updates to Debian 9
+ buster-updates                 - important updates to Debian 10
+ testing, or bullseye           - the development version of the next release
+ unstable, or sid               - untested candidate packages for future releases
+ experimental, or rc-buggy      - experimental packages to be used on top of unstable
 
 Release
 -------
