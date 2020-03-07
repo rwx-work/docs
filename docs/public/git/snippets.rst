@@ -14,7 +14,9 @@ TODO
 Reverse .gitignore
 ------------------
 
-*
-!.gitignore
-!*/
-!SHA*SUMS
+::
+
+ *
+ !.gitignore
+ !*/
+ !SHA*SUMS
