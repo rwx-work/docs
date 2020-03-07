@@ -63,6 +63,7 @@ RTFD
    public/wget/index
    public/windows/index
    public/xorriso/index
+   public/xrdp/index
 
 .. toctree::
    :caption: Dispatch
