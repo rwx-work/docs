@@ -22,3 +22,10 @@ Create key
   ssh-keygen -b 4096
 
 .. todo:: other arguments
+
+Tunnel
+------
+
+.. code:: shell
+
+ ssh -N -D local_port domain.tld
