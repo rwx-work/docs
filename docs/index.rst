@@ -9,6 +9,7 @@ RTFD
    public/apt/index
    public/apt-mirror/index
    public/bash/index
+   public/bcompare/index
    public/bind9/index
    public/c/index
    public/connect/index
