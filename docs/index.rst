@@ -40,6 +40,7 @@ RTFD
    public/lxc/index
    public/markdown/index
    public/mdadm/index
+   public/msys2/index
    public/nginx/index
    public/openssl/index
    public/pandoc/index
