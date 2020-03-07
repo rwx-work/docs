@@ -41,8 +41,6 @@ RTFD
    public/markdown/index
    public/mdadm/index
    public/nginx/index
-   public/openssh-client/index
-   public/openssh-server/index
    public/openssl/index
    public/pandoc/index
    public/parted/index
@@ -53,6 +51,8 @@ RTFD
    public/smtp/index
    public/sphinx/index
    public/squashfs-tools/index
+   public/ssh/index
+   public/sshd/index
    public/systemd/index
    public/tar/index
    public/texlive/index

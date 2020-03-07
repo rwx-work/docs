@@ -1,5 +1,9 @@
-openssh-server
-==============
+sshd
+====
+
+====== ==============
+debian openssh-server
+====== ==============
 
 .. todo:: refresh sshd_config configuration
 

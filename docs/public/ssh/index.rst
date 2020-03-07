@@ -1,5 +1,9 @@
-openssh-client
-==============
+ssh
+===
+
+====== ==============
+debian openssh-client
+====== ==============
 
 Configure
 ---------
