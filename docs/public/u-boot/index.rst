@@ -6,10 +6,10 @@ compile
 
 .. code:: shell
 
-export CROSS_COMPILE=arm-linux-gnueabihf-
-make distclean
-make rpi_0_w_defconfig
-make u-boot.bin
+ export CROSS_COMPILE=arm-linux-gnueabihf-
+ make distclean
+ make rpi_0_w_defconfig
+ make u-boot.bin
 
 environment
 -----------
