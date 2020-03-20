@@ -33,34 +33,43 @@ Create bridge br0 onto host's network main interface:
 
 ::
 
-  auto br0
-  iface br0 inet static
-      address host_ip/network_mask_bits
-      gateway gateway_ip
-      bridge_fd 0
-      bridge_maxwait 0
-      bridge_ports eth0
-      bridge_stp on
+ auto br0
+
+ iface br0 inet static
+       bridge_fd 0
+       bridge_maxwait 0
+       bridge_ports eth0
+       bridge_stp off
+       address host_ip/network_mask_bits
+
+ iface br0 inet static
+       address host_ip/network_mask_bits
+       gateway gateway_ip
+
+ iface br0 inet6 static
+       address host_ip/network_mask_bits
+       gateway gateway_ip
 
 Example with a SoYouStart server:
 
 ::
 
  auto  br0
+
+ iface br0 inet static
+       bridge_fd 0
+       bridge_maxwait 0
+       bridge_ports enp4s0
+       bridge_stp off
+       address 10.0.0.254/24
+
  iface br0 inet static
        address 192.99.37.216/24
        gateway 192.99.37.254
-       bridge_fd 0
-       bridge_maxwait 0
-       bridge_ports enp4s0
-       bridge_stp on
+
  iface br0 inet6 static
        address 2607:5300:60:4cd8::/64
        gateway 2607:5300:60:4cff:ff:ff:ff:ff
-       bridge_fd 0
-       bridge_maxwait 0
-       bridge_ports enp4s0
-       bridge_stp on
 
 Service
 =======
