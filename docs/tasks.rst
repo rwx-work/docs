@@ -3,6 +3,9 @@ Tasks
 
 * latest
 
+  * ssh -n -N -T -R remote_port:localhost:local_port domain.tld
+  * gotty
+  * buster noise alsa unmute mic
   * rdesktop
   * youtube-dl -f bestaudio --extract-audio
   * /etc/bash.bashrc ← HISTTIMEFORMAT="%Y%m%d-%H%M%S "
