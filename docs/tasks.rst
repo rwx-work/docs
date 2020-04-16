@@ -3,6 +3,10 @@ Tasks
 
 * latest
 
+  * ffmpeg -i input.mkv -filter:v "setpts=0.5*PTS" output.mkv
+  * ffmpeg -i input.mkv -r 16 -filter:v "setpts=0.25*PTS" output.mkv
+  * ffmpeg -i input.mkv -filter:a "atempo=2.0,atempo=2.0" -vn output.mkv
+  * ffmpeg -i input.mkv -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2.0[a]" -map "[v]" -map "[a]" output.mkv
   * ssh -n -N -T -R remote_port:localhost:local_port domain.tld
   * gotty
   * buster noise alsa unmute mic
