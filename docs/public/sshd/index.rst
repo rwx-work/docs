@@ -69,7 +69,7 @@ types: rsa/ed25519/…?
   TCPKeepAlive yes
   UseDNS no
   UseLogin no
-  UsePAM yes
+  UsePAM no
   X11Forwarding no
 
   # authentication
@@ -82,7 +82,7 @@ types: rsa/ed25519/…?
   MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256
   PasswordAuthentication no
   PermitEmptyPasswords no
-  PermitRootLogin without-password
+  PermitRootLogin prohibit-password
   PubkeyAuthentication yes
   StrictModes yes
   UsePrivilegeSeparation sandbox
