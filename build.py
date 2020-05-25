@@ -3,7 +3,7 @@
 import os
 import shutil
 
-import sphinx
+import sphinx.cmd.build
 
 INPUT = ["docs"]
 OUTPUT = "out"
@@ -27,7 +27,7 @@ def main():
             os.path.join(directory, doc),
             os.path.join(output_directory, doc),
         ]
-        sphinx.build_main(arguments)
+        sphinx.cmd.build.build_main(arguments)
 
 
 if __name__ == "__main__":
