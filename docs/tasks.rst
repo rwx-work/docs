@@ -5,6 +5,8 @@ Tasks
 
   * openssl pkcs12 -nocerts -nodes -in input.p12 -out output.pem
   * openssl pkcs12 -nokeys -in input.p12 -out output.crt
+  * (openssl pkcs12 -nokeys -cacerts -in input.p12 -out output.crt)
+  * (openssl pkcs12 -nokeys -clcerts -in input.p12 -out output.crt)
   * ffmpeg -i input.mkv -filter:v "setpts=0.5*PTS" output.mkv
   * ffmpeg -i input.mkv -r 16 -filter:v "setpts=0.25*PTS" output.mkv
   * ffmpeg -i input.mkv -filter:a "atempo=2.0,atempo=2.0" -vn output.mkv
