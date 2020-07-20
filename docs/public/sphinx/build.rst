@@ -6,9 +6,9 @@ HTML
 
 .. code:: python3
 
- import sphinx
+ import sphinx.cmd.build
 
- sphinx.build_main([
+ sphinx.cmd.build.build_main([
      '-E',
      '-j', '2',
      '-b', 'html',
