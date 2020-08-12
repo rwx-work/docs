@@ -12,6 +12,7 @@ RTFD
    public/bcompare/index
    public/bind9/index
    public/c/index
+   public/certbot/index
    public/connect/index
    public/coreutils/index
    public/curl/index
